@@ -4,6 +4,11 @@ defmodule Aquario.Tanks.Tank do
 
 
   schema "tanks" do
+    many_to_many :species, Aquario.Species.Specy,
+      join_through: "species_tanks",
+      on_delete: :delete_all,
+      on_replace: :delete
+
     field :description_en_us, :string
     field :description_es_es, :string
     field :description_pt_br, :string

@@ -1,4 +1,4 @@
-defmodule Aquario.Species.Specie do
+defmodule Aquario.Species.Specy do
   use Ecto.Schema
   import Ecto.Changeset
 
@@ -23,8 +23,8 @@ defmodule Aquario.Species.Specie do
   end
 
   @doc false
-  def changeset(specie, attrs) do
-    specie
+  def changeset(specy, attrs) do
+    specy
     |> cast(attrs, [:name_pt_br, :name_en_us, :name_es_es, :scientific_name_pt_br, :scientific_name_en_us, :scientific_name_es_es, :order, :image, :description_pt_br, :description_en_us, :description_es_es, :title_pt_br, :title_en_us, :title_es_es])
     |> validate_required([:name_pt_br, :name_en_us, :name_es_es, :scientific_name_pt_br, :scientific_name_en_us, :scientific_name_es_es, :order, :image, :description_pt_br, :description_en_us, :description_es_es, :title_pt_br, :title_en_us, :title_es_es])
   end

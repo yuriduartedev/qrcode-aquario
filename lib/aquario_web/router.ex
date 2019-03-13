@@ -22,7 +22,7 @@ defmodule AquarioWeb.Router do
       get "/", PageController, :index
       resources "/tanks", TankController
       resources "/researches", ResearchController
-      resources "/species", SpecieController
+      resources "/species", SpecyController
     end
   end
 

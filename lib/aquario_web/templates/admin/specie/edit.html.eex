@@ -1,5 +1,0 @@
-<h2>Edit Specie</h2>
-
-<%= render "form.html", Map.put(assigns, :action, admin_specie_path(@conn, :update, @specie)) %>
-
-<span><%= link "Back", to: admin_specie_path(@conn, :index) %></span>
