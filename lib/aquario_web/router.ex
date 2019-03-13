@@ -17,6 +17,10 @@ defmodule AquarioWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+
+    scope "/admin", as: "admin", alias: Admin do
+      get "/", PageController, :index
+    end
   end
 
   # Other scopes may use custom stacks.
