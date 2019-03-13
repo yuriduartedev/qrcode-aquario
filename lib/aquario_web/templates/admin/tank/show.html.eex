@@ -1,0 +1,73 @@
+<h2>Show Tank</h2>
+
+<ul>
+
+  <li>
+    <strong>Name pt br:</strong>
+    <%= @tank.name_pt_br %>
+  </li>
+
+  <li>
+    <strong>Name en us:</strong>
+    <%= @tank.name_en_us %>
+  </li>
+
+  <li>
+    <strong>Name es es:</strong>
+    <%= @tank.name_es_es %>
+  </li>
+
+  <li>
+    <strong>Order:</strong>
+    <%= @tank.order %>
+  </li>
+
+  <li>
+    <strong>Image:</strong>
+    <%= @tank.image %>
+  </li>
+
+  <li>
+    <strong>Description pt br:</strong>
+    <%= @tank.description_pt_br %>
+  </li>
+
+  <li>
+    <strong>Description en us:</strong>
+    <%= @tank.description_en_us %>
+  </li>
+
+  <li>
+    <strong>Description es es:</strong>
+    <%= @tank.description_es_es %>
+  </li>
+
+  <li>
+    <strong>Title pt br:</strong>
+    <%= @tank.title_pt_br %>
+  </li>
+
+  <li>
+    <strong>Title en us:</strong>
+    <%= @tank.title_en_us %>
+  </li>
+
+  <li>
+    <strong>Title es es:</strong>
+    <%= @tank.title_es_es %>
+  </li>
+
+  <li>
+    <strong>Link libras:</strong>
+    <%= @tank.link_libras %>
+  </li>
+
+  <li>
+    <strong>Link audio:</strong>
+    <%= @tank.link_audio %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: admin_tank_path(@conn, :edit, @tank) %></span>
+<span><%= link "Back", to: admin_tank_path(@conn, :index) %></span>

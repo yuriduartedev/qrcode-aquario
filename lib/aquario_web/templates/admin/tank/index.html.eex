@@ -1,0 +1,50 @@
+<h2>Listing Tanks</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name pt br</th>
+      <th>Name en us</th>
+      <th>Name es es</th>
+      <th>Order</th>
+      <th>Image</th>
+      <th>Description pt br</th>
+      <th>Description en us</th>
+      <th>Description es es</th>
+      <th>Title pt br</th>
+      <th>Title en us</th>
+      <th>Title es es</th>
+      <th>Link libras</th>
+      <th>Link audio</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for tank <- @tanks do %>
+    <tr>
+      <td><%= tank.name_pt_br %></td>
+      <td><%= tank.name_en_us %></td>
+      <td><%= tank.name_es_es %></td>
+      <td><%= tank.order %></td>
+      <td><%= tank.image %></td>
+      <td><%= tank.description_pt_br %></td>
+      <td><%= tank.description_en_us %></td>
+      <td><%= tank.description_es_es %></td>
+      <td><%= tank.title_pt_br %></td>
+      <td><%= tank.title_en_us %></td>
+      <td><%= tank.title_es_es %></td>
+      <td><%= tank.link_libras %></td>
+      <td><%= tank.link_audio %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: admin_tank_path(@conn, :show, tank), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: admin_tank_path(@conn, :edit, tank), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: admin_tank_path(@conn, :delete, tank), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Tank", to: admin_tank_path(@conn, :new) %></span>

@@ -20,6 +20,7 @@ defmodule AquarioWeb.Router do
 
     scope "/admin", as: "admin", alias: Admin do
       get "/", PageController, :index
+      resources "/tanks", TankController
     end
   end
 
