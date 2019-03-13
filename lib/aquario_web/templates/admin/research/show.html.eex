@@ -1,0 +1,58 @@
+<h2>Show Research</h2>
+
+<ul>
+
+  <li>
+    <strong>Title pt br:</strong>
+    <%= @research.title_pt_br %>
+  </li>
+
+  <li>
+    <strong>Title en us:</strong>
+    <%= @research.title_en_us %>
+  </li>
+
+  <li>
+    <strong>Title es es:</strong>
+    <%= @research.title_es_es %>
+  </li>
+
+  <li>
+    <strong>Image:</strong>
+    <%= @research.image %>
+  </li>
+
+  <li>
+    <strong>Description pt br:</strong>
+    <%= @research.description_pt_br %>
+  </li>
+
+  <li>
+    <strong>Description en us:</strong>
+    <%= @research.description_en_us %>
+  </li>
+
+  <li>
+    <strong>Description es es:</strong>
+    <%= @research.description_es_es %>
+  </li>
+
+  <li>
+    <strong>Author:</strong>
+    <%= @research.author %>
+  </li>
+
+  <li>
+    <strong>Link libras:</strong>
+    <%= @research.link_libras %>
+  </li>
+
+  <li>
+    <strong>Link audio:</strong>
+    <%= @research.link_audio %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: admin_research_path(@conn, :edit, @research) %></span>
+<span><%= link "Back", to: admin_research_path(@conn, :index) %></span>

@@ -1,0 +1,5 @@
+<h2>Edit Research</h2>
+
+<%= render "form.html", Map.put(assigns, :action, admin_research_path(@conn, :update, @research)) %>
+
+<span><%= link "Back", to: admin_research_path(@conn, :index) %></span>

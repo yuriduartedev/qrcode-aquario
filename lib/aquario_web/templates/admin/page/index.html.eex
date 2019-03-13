@@ -1,3 +1,5 @@
 <div class="jumbotron">
   <h2>Área administrativa!</h2>
+  <span><%= link "Tanques", to: admin_tank_path(@conn, :index) %></span>
+  <span><%= link "Pesquisas", to: admin_research_path(@conn, :index) %></span>
 </div>

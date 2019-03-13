@@ -1,0 +1,65 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check the errors below.</p>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= label f, :title_pt_br, class: "control-label" %>
+    <%= text_input f, :title_pt_br, class: "form-control" %>
+    <%= error_tag f, :title_pt_br %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :title_en_us, class: "control-label" %>
+    <%= text_input f, :title_en_us, class: "form-control" %>
+    <%= error_tag f, :title_en_us %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :title_es_es, class: "control-label" %>
+    <%= text_input f, :title_es_es, class: "form-control" %>
+    <%= error_tag f, :title_es_es %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :image, class: "control-label" %>
+    <%= text_input f, :image, class: "form-control" %>
+    <%= error_tag f, :image %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :description_pt_br, class: "control-label" %>
+    <%= text_input f, :description_pt_br, class: "form-control" %>
+    <%= error_tag f, :description_pt_br %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :description_en_us, class: "control-label" %>
+    <%= text_input f, :description_en_us, class: "form-control" %>
+    <%= error_tag f, :description_en_us %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :description_es_es, class: "control-label" %>
+    <%= text_input f, :description_es_es, class: "form-control" %>
+    <%= error_tag f, :description_es_es %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :link_libras, class: "control-label" %>
+    <%= text_input f, :link_libras, class: "form-control" %>
+    <%= error_tag f, :link_libras %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :link_audio, class: "control-label" %>
+    <%= text_input f, :link_audio, class: "form-control" %>
+    <%= error_tag f, :link_audio %>
+  </div>
+
+  <div class="form-group">
+    <%= submit "Submit", class: "btn btn-primary" %>
+  </div>
+<% end %>

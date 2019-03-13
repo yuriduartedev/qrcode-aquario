@@ -1,0 +1,44 @@
+<h2>Listing Researches</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title pt br</th>
+      <th>Title en us</th>
+      <th>Title es es</th>
+      <th>Image</th>
+      <th>Description pt br</th>
+      <th>Description en us</th>
+      <th>Description es es</th>
+      <th>Author</th>
+      <th>Link libras</th>
+      <th>Link audio</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for research <- @researches do %>
+    <tr>
+      <td><%= research.title_pt_br %></td>
+      <td><%= research.title_en_us %></td>
+      <td><%= research.title_es_es %></td>
+      <td><%= research.image %></td>
+      <td><%= research.description_pt_br %></td>
+      <td><%= research.description_en_us %></td>
+      <td><%= research.description_es_es %></td>
+      <td><%= research.author %></td>
+      <td><%= research.link_libras %></td>
+      <td><%= research.link_audio %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: admin_research_path(@conn, :show, research), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: admin_research_path(@conn, :edit, research), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: admin_research_path(@conn, :delete, research), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Research", to: admin_research_path(@conn, :new) %></span>
