@@ -1,0 +1,78 @@
+<h2>Show Specie</h2>
+
+<ul>
+
+  <li>
+    <strong>Name pt br:</strong>
+    <%= @specie.name_pt_br %>
+  </li>
+
+  <li>
+    <strong>Name en us:</strong>
+    <%= @specie.name_en_us %>
+  </li>
+
+  <li>
+    <strong>Name es es:</strong>
+    <%= @specie.name_es_es %>
+  </li>
+
+  <li>
+    <strong>Scientific name pt br:</strong>
+    <%= @specie.scientific_name_pt_br %>
+  </li>
+
+  <li>
+    <strong>Scientific name en us:</strong>
+    <%= @specie.scientific_name_en_us %>
+  </li>
+
+  <li>
+    <strong>Scientific name es es:</strong>
+    <%= @specie.scientific_name_es_es %>
+  </li>
+
+  <li>
+    <strong>Order:</strong>
+    <%= @specie.order %>
+  </li>
+
+  <li>
+    <strong>Image:</strong>
+    <%= @specie.image %>
+  </li>
+
+  <li>
+    <strong>Description pt br:</strong>
+    <%= @specie.description_pt_br %>
+  </li>
+
+  <li>
+    <strong>Description en us:</strong>
+    <%= @specie.description_en_us %>
+  </li>
+
+  <li>
+    <strong>Description es es:</strong>
+    <%= @specie.description_es_es %>
+  </li>
+
+  <li>
+    <strong>Title pt br:</strong>
+    <%= @specie.title_pt_br %>
+  </li>
+
+  <li>
+    <strong>Title en us:</strong>
+    <%= @specie.title_en_us %>
+  </li>
+
+  <li>
+    <strong>Title es es:</strong>
+    <%= @specie.title_es_es %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: admin_specie_path(@conn, :edit, @specie) %></span>
+<span><%= link "Back", to: admin_specie_path(@conn, :index) %></span>

@@ -1,0 +1,52 @@
+<h2>Listing Species</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name pt br</th>
+      <th>Name en us</th>
+      <th>Name es es</th>
+      <th>Scientific name pt br</th>
+      <th>Scientific name en us</th>
+      <th>Scientific name es es</th>
+      <th>Order</th>
+      <th>Image</th>
+      <th>Description pt br</th>
+      <th>Description en us</th>
+      <th>Description es es</th>
+      <th>Title pt br</th>
+      <th>Title en us</th>
+      <th>Title es es</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for specie <- @species do %>
+    <tr>
+      <td><%= specie.name_pt_br %></td>
+      <td><%= specie.name_en_us %></td>
+      <td><%= specie.name_es_es %></td>
+      <td><%= specie.scientific_name_pt_br %></td>
+      <td><%= specie.scientific_name_en_us %></td>
+      <td><%= specie.scientific_name_es_es %></td>
+      <td><%= specie.order %></td>
+      <td><%= specie.image %></td>
+      <td><%= specie.description_pt_br %></td>
+      <td><%= specie.description_en_us %></td>
+      <td><%= specie.description_es_es %></td>
+      <td><%= specie.title_pt_br %></td>
+      <td><%= specie.title_en_us %></td>
+      <td><%= specie.title_es_es %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: admin_specie_path(@conn, :show, specie), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: admin_specie_path(@conn, :edit, specie), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: admin_specie_path(@conn, :delete, specie), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Specie", to: admin_specie_path(@conn, :new) %></span>
