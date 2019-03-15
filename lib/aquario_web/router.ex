@@ -13,12 +13,18 @@ defmodule AquarioWeb.Router do
     plug :accepts, ["json"]
   end
 
+  pipeline :admin_layout do
+    plug :put_layout, {AquarioWeb.LayoutView, :admin}
+  end
+
   scope "/", AquarioWeb do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
 
     scope "/admin", as: "admin", alias: Admin do
+      pipe_through :admin_layout
+
       get "/", PageController, :index
       resources "/tanks", TankController
       resources "/researches", ResearchController
