@@ -23,33 +23,15 @@
             <th>Título Es</th>
             <th>Link Libras</th>
             <th>Link Áudio</th>
-            <th></th>
+            <th>Opções</th>
           </tr>
         </thead>
-        <tfoot>
-          <tr>
-            <th>Ordem</th>
-            <th>Nome Pt</th>
-            <th>Nome En</th>
-            <th>Nome Es</th>            
-            <th>Imagem</th>
-            <th>Descrição Pt</th>
-            <th>Descrição En</th>
-            <th>Descrição Es</th>
-            <th>Título Pt</th>
-            <th>Título En</th>
-            <th>Título Es</th>
-            <th>Link Libras</th>
-            <th>Link Áudio</th>
-            <th></th>
-          </tr>
-        </tfoot>
         <tbody>
           <%= for tank <- @tanks do %>
             <tr>
               <td>
-                <%= tank.name_pt_br %>
-              </td>
+                <%= tank.order %>
+              </td>              
               <td>
                 <%= tank.name_en_us %>
               </td>
@@ -57,7 +39,7 @@
                 <%= tank.name_es_es %>
               </td>
               <td>
-                <%= tank.order %>
+                <%= tank.name_pt_br %>
               </td>
               <td>
                 <%= tank.image %>

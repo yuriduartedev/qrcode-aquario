@@ -1,5 +1,3 @@
-<h2>New Tank</h2>
+<h2>Criando Tanque</h2>
 
 <%= render "form.html", Map.put(assigns, :action, admin_tank_path(@conn, :create)) %>
-
-<span><%= link "Back", to: admin_tank_path(@conn, :index) %></span>
