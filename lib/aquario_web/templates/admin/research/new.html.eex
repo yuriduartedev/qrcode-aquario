@@ -1,5 +1,3 @@
-<h2>New Research</h2>
+<h2>Criando Pesquisa</h2>
 
 <%= render "form.html", Map.put(assigns, :action, admin_research_path(@conn, :create)) %>
-
-<span><%= link "Back", to: admin_research_path(@conn, :index) %></span>
