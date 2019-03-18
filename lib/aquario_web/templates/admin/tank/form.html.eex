@@ -98,10 +98,12 @@
           </div>
         </div>
       </div>
-      <div class="custom-file">        
-        <%= text_input f, :image, class: "custom-file-input" %>
-        <%= label f, "Selecionar a imagem...", class: "custom-file-label" %>
-        <%= error_tag f, :image %>
+      <div class="form-row">
+        <div class="col-md-4 ml-1 custom-file">        
+          <%= text_input f, :image, class: "custom-file-input" %>
+          <%= label f, "Selecionar a imagem...", class: "custom-file-label" %>
+          <%= error_tag f, :image %>
+        </div>
       </div>
       <div class="mt-3 form-group">
         <%= submit "Submit", class: "btn btn-success" %>
