@@ -30,12 +30,12 @@
                 <td><%= research.tank_id %></td>
                 <td><%= research.title_pt_br %></td>
                 <td><%= research.title_en_us %></td>
-                <td><%= research.title_es_es %></td>
-                <td><%= research.image %></td>
+                <td><%= research.title_es_es %></td>                
                 <td><%= research.description_pt_br %></td>
                 <td><%= research.description_en_us %></td>
                 <td><%= research.description_es_es %></td>
                 <td><%= research.author %></td>
+                <td><%= research.image %></td>
                 <td><%= research.link_libras %></td>
                 <td><%= research.link_audio %></td>
 

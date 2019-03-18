@@ -1,78 +1,207 @@
-<h2>Show Specy</h2>
+<h2>Espécie: <%= @specy.name_pt_br %></h2>
+<div class="card shadow mb-4 p-3">
 
-<ul>
+  <div class="row">
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-4 col-md-4 mb-3">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-2">Nome em Portugês:</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @specy.name_pt_br %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-4 col-md-4 mb-3">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-2">Nome em Inglês:</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @specy.name_en_us %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-4 col-md-4 mb-3">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-2">Nome em Espanhol:</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @specy.name_es_es %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>   
+  </div>
 
-  <li>
-    <strong>Name pt br:</strong>
-    <%= @specy.name_pt_br %>
-  </li>
+  <div class="row">
+  <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-4 col-md-4 mb-3">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-2">Nome Científico em Portugês:</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @specy.scientific_name_pt_br %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-4 col-md-4 mb-3">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-2">Nome Científico em Inglês:</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @specy.scientific_name_en_us %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-4 col-md-4 mb-3">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-2">Nome Científico em Espanhol:</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @specy.scientific_name_es_es %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>   
+  </div>
 
-  <li>
-    <strong>Name en us:</strong>
-    <%= @specy.name_en_us %>
-  </li>
+  <!-- Initial Cards Title -->
+  <div class="row">
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-4 col-md-4 mb-3">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Título em Portugês:</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @specy.title_pt_br %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-4 col-md-4 mb-3">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Título em Inglês:</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @specy.title_en_us %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-4 col-md-4 mb-3">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Título em Espanhol:</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @specy.title_es_es %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
 
-  <li>
-    <strong>Name es es:</strong>
-    <%= @specy.name_es_es %>
-  </li>
+  <!-- Initial Cards Description -->
+  <div class="row">
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-4 col-md-4 mb-3">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Descrição em Portugês:</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @specy.description_pt_br %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-4 col-md-4 mb-3">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Descrição em Inglês:</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @specy.description_en_us %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-4 col-md-4 mb-3">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Descrição em Espanhol:</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @specy.description_es_es %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
 
-  <li>
-    <strong>Scientific name pt br:</strong>
-    <%= @specy.scientific_name_pt_br %>
-  </li>
+  <!-- Initial Cards Order and Links -->
+  <div class="row">
+    <div class="col-xl-8 col-md-8 mb-12">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Imagem do Tanque:</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @specy.image %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-4 col-md-4 mb-3">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Ordem da Espécie:</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @specy.order %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
 
-  <li>
-    <strong>Scientific name en us:</strong>
-    <%= @specy.scientific_name_en_us %>
-  </li>
-
-  <li>
-    <strong>Scientific name es es:</strong>
-    <%= @specy.scientific_name_es_es %>
-  </li>
-
-  <li>
-    <strong>Order:</strong>
-    <%= @specy.order %>
-  </li>
-
-  <li>
-    <strong>Image:</strong>
-    <%= @specy.image %>
-  </li>
-
-  <li>
-    <strong>Description pt br:</strong>
-    <%= @specy.description_pt_br %>
-  </li>
-
-  <li>
-    <strong>Description en us:</strong>
-    <%= @specy.description_en_us %>
-  </li>
-
-  <li>
-    <strong>Description es es:</strong>
-    <%= @specy.description_es_es %>
-  </li>
-
-  <li>
-    <strong>Title pt br:</strong>
-    <%= @specy.title_pt_br %>
-  </li>
-
-  <li>
-    <strong>Title en us:</strong>
-    <%= @specy.title_en_us %>
-  </li>
-
-  <li>
-    <strong>Title es es:</strong>
-    <%= @specy.title_es_es %>
-  </li>
-
-</ul>
-
-<span><%= link "Edit", to: admin_specy_path(@conn, :edit, @specy) %></span>
-<span><%= link "Back", to: admin_specy_path(@conn, :index) %></span>
+  <div class="mt-3 form-group">
+    <span><%= link "Editar", to: admin_specy_path(@conn, :edit, @specy), class: "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" %></span>
+    <span><%= link "Voltar", to: admin_specy_path(@conn, :index), class: "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" %></span>
+  </div>   
+</div>
