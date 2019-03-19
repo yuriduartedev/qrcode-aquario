@@ -12,18 +12,8 @@
           <tr>
             <th>Ordem</th>
             <th>Nome Pt</th>
-            <th>Nome En</th>
-            <th>Nome Es</th> 
-            <th>Nome Científico Pt</th>
-            <th>Nome Científico En</th>
-            <th>Nome Científico Es</th>                        
-            <th>Imagem</th>
-            <th>Descrição Pt</th>
-            <th>Descrição En</th>
-            <th>Descrição Es</th>
+            <th>Nome Científico Pt</th>   
             <th>Título Pt</th>
-            <th>Título En</th>
-            <th>Título Es</th>
             <th>Opções</th>
           </tr>
         </thead>
@@ -32,18 +22,8 @@
               <tr>
                 <td><%= specy.order %></td>
                 <td><%= specy.name_pt_br %></td>
-                <td><%= specy.name_en_us %></td>
-                <td><%= specy.name_es_es %></td>
-                <td><%= specy.scientific_name_pt_br %></td>
-                <td><%= specy.scientific_name_en_us %></td>
-                <td><%= specy.scientific_name_es_es %></td>                
-                <td><%= specy.image %></td>
-                <td><%= specy.description_pt_br %></td>
-                <td><%= specy.description_en_us %></td>
-                <td><%= specy.description_es_es %></td>
+                <td><%= specy.scientific_name_pt_br %></td>  
                 <td><%= specy.title_pt_br %></td>
-                <td><%= specy.title_en_us %></td>
-                <td><%= specy.title_es_es %></td>
                 <td class="text-center align-middle">
                   <div class="btn-group btn-group-sm" role="group" aria-label="...">
                     <span><%= link "Mostrar", to: admin_specy_path(@conn, :show, specy), class: "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" %></span>

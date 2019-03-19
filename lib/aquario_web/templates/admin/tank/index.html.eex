@@ -11,16 +11,8 @@
         <thead>
           <tr>
             <th>Ordem</th>
-            <th>Nome Pt</th>
-            <th>Nome En</th>
-            <th>Nome Es</th>            
-            <th>Imagem</th>
-            <th>Descrição Pt</th>
-            <th>Descrição En</th>
-            <th>Descrição Es</th>
+            <th>Nome Pt</th>   
             <th>Título Pt</th>
-            <th>Título En</th>
-            <th>Título Es</th>
             <th>Link Libras</th>
             <th>Link Áudio</th>
             <th>Opções</th>
@@ -29,45 +21,11 @@
         <tbody>
           <%= for tank <- @tanks do %>
             <tr>
-              <td>
-                <%= tank.order %>
-              </td>              
-              <td>
-                <%= tank.name_en_us %>
-              </td>
-              <td>
-                <%= tank.name_es_es %>
-              </td>
-              <td>
-                <%= tank.name_pt_br %>
-              </td>
-              <td>
-                <%= tank.image %>
-              </td>
-              <td>
-                <%= tank.description_pt_br %>
-              </td>
-              <td>
-                <%= tank.description_en_us %>
-              </td>
-              <td>
-                <%= tank.description_es_es %>
-              </td>
-              <td>
-                <%= tank.title_pt_br %>
-              </td>
-              <td>
-                <%= tank.title_en_us %>
-              </td>
-              <td>
-                <%= tank.title_es_es %>
-              </td>
-              <td>
-                <%= tank.link_libras %>
-              </td>
-              <td>
-                <%= tank.link_audio %>
-              </td>
+              <td><%= tank.order %></td>              
+              <td><%= tank.name_pt_br %></td>
+              <td><%= tank.title_pt_br %></td>
+              <td><%= tank.link_libras %></td>
+              <td><%= tank.link_audio %></td>
               <td class="text-center align-middle">
                 <div class="btn-group btn-group-sm" role="group" aria-label="...">
                   <span><%= link "Mostrar", to: admin_tank_path(@conn, :show, tank), class: "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" %></span>
