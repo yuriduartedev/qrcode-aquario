@@ -8,9 +8,9 @@ defmodule Aquario.Repo.Migrations.CreateTanks do
       add :name_es_es, :string
       add :order, :integer
       add :image, :string
-      add :description_pt_br, :string
-      add :description_en_us, :string
-      add :description_es_es, :string
+      add :description_pt_br, :text
+      add :description_en_us, :text
+      add :description_es_es, :text
       add :title_pt_br, :string
       add :title_en_us, :string
       add :title_es_es, :string

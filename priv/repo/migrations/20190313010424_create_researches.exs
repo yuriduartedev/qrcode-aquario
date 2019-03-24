@@ -7,9 +7,9 @@ defmodule Aquario.Repo.Migrations.CreateResearches do
       add :title_en_us, :string
       add :title_es_es, :string
       add :image, :string
-      add :description_pt_br, :string
-      add :description_en_us, :string
-      add :description_es_es, :string
+      add :description_pt_br, :text
+      add :description_en_us, :text
+      add :description_es_es, :text
       add :author, {:array, :string}
       add :link_libras, :string
       add :link_audio, :string
