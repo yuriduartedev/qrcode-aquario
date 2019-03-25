@@ -19,11 +19,30 @@
   <body>
     <div class="page-top">
       
+      <!-- Start Particle Animation -->
+      <section>
+        <div id="particles-js">
+          <img class="fish fish1" src="<%= static_path(@conn, "/images/shark.png") %>">
+          <img class="fish fish2" src="<%= static_path(@conn, "/images/fish4.png") %>">
+          <img class="fish fish3" src="<%= static_path(@conn, "/images/fish1.png") %>">
+          <img class="fish fish4" src="<%= static_path(@conn, "/images/cardume.png") %>">
+          <img class="fish fish5" src="<%= static_path(@conn, "/images/cardume2.png") %>">
+          <img class="dive" src="<%= static_path(@conn, "/images/dive.png") %>">
+        </div>  
+      </section>
+      <!-- End Particle Animation -->
+
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
       </main>
 
     </div> <!-- /container -->
+
+    <!-- Particle JS -->
+    <script src="<%= static_path(@conn, "/js/particles/particles.js") %>"></script>
+    <script src="<%= static_path(@conn, "/js/particles/app.js") %>"></script>
+
+    <!-- Global JS -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
     
     <!-- Bootstrap core JavaScript-->

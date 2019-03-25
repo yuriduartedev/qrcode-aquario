@@ -1,1 +1,97 @@
-/* This file is for your main application css. */
+html {
+  width:100%;
+  height:100%;  
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;  
+}
+section {
+  height: 100vh;  
+  width:100%;
+  background: linear-gradient(to top, #126edf, #96e7ff);
+  position: fixed;
+}
+#particles-js {
+  width: 100%;
+  height: 100%;
+}
+.fish {
+  position: absolute;
+}
+.fish1 {
+  top: 30%;
+  height: 140px;
+  animation: animate 16s linear infinite;
+  opacity: .9;
+}
+.fish2 {
+  top: 50%;
+  height: 70px;
+  animation: animate 25s linear infinite;
+  opacity: .7;
+}
+.fish3 {
+  top: 70%;
+  height: 80px;
+  animation: animate2 20s linear infinite;
+  opacity: .6;
+}
+.fish4 {
+  top: 25%;
+  height: 80px;
+  animation: animate 35s linear infinite;
+  opacity: .5;
+}
+.fish5 {
+  top: 80%;
+  height: 90px;
+  animation: animate2 50s linear infinite;
+  opacity: .6;
+}
+.dive {
+  position: absolute;
+  top: 10%;
+  height: 30px;
+  animation: animate 30s linear infinite;
+  opacity: .9;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(-50px);
+    left: -25%;
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-50px);
+    left: 150%;
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: translateY(-50px);
+    right: -25%;
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-50px);
+    right: 150%;
+  }
+}
