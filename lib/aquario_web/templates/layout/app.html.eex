@@ -11,13 +11,62 @@
 
     <link rel="stylesheet" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/vendor/fontawesome-free/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/sb-admin-2.min.css") %>">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">    
   </head>
 
   <body>
     <div class="page-top">
+
+      <!--Navbar -->
+      <nav class=" my-nav navbar navbar-light navbar-expand-lg">
+        <div class="container">  
+          
+          <!-- Start Flags -->
+          <ul class="list-inline links-list pull-left ml-2"><li class="dropdown language-selector">            
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true" aria-expanded="false"> 
+              <img width="16" height="16" class="" src="<%= static_path(@conn, "/images/br.png") %>">
+            </a>
+            <ul class="dropdown-menu pull-right bg-dropdown"> 
+              <li><a href="#"><img width="16" height="16" class="ml-2" src="<%= static_path(@conn, "/images/br.png") %>"><span> Português</span></a></li>
+              <li class="active"><a href="#"><img width="16" height="16" class="ml-2" src="<%= static_path(@conn, "/images/us.png") %>"><span> English</span></a></li>
+              <li><a href="#"><img width="16" height="16" class="ml-2" src="<%= static_path(@conn, "/images/es.png") %>"><span> Espanol</span></a></li>
+            </ul>
+          </ul>
+            <!-- End Flags -->          
+
+           <!-- Logo Aqua -->
+           <%#= link "text", to: url %>   
+          <%= link to: page_path(@conn, :index), class: "logo-link" do %>
+            <img class="logo" src="<%= static_path(@conn, "/images/aqua-logo.svg") %>">
+          <% end %>        
+  
+           <!-- Start Button Selector -->
+          <button class="navbar-toggler no-border mb-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav nav-personalize bg-dropdown">
+              <li class="nav-item">
+                <%= link "Tanques", to: page_path(@conn, :index), class: "nav-link" %>
+              </li>
+              <li class="nav-item">
+                <%= link "Pesquisas", to: page_path(@conn, :index), class: "nav-link" %>
+              </li>
+              <li class="nav-item">
+                <%= link "Mapa do circuito", to: page_path(@conn, :index), class: "nav-link" %>
+              </li>
+              <li class="nav-item">
+                <%= link "Atividades Extras", to: page_path(@conn, :index), class: "nav-link" %>
+              </li>
+            </ul>
+          </div>
+          <!-- End Button Selector -->
+
+        </div>
+      </nav>
+      <!--/.Navbar -->
       
       <!-- Start Particle Animation -->
       <section>
