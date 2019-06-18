@@ -31,7 +31,8 @@ html {
   position: fixed;
 }
 .content {
-  padding-top: 5em;
+  padding-top: 7em;
+  position: relative;
 }
 #particles-js {
   width: 100%;
