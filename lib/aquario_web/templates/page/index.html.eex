@@ -1,4 +1,4 @@
-<div class="container home">
+<div class="container-fluid">
   <div class="row">
     <div class="col-md-6">
       <button type="button" class="btn btn-pesquisa">
@@ -23,6 +23,24 @@
         <span><img class="float-left" src="<%= static_path(@conn, "/images/extra.png") %>"></span> 
         <span class="align-txt-btn">Atividades Extras</span>  
       </button>
-    </div>    
+    </div>  
+    <div class="col-md-6">
+      <button type="button" class="btn btn-tank">
+        <span><img class="float-left" src="<%= static_path(@conn, "/images/tanque.png") %>"></span> 
+        <span class="align-txt-btn">Tanques</span>  
+      </button>
+    </div>
+    <div class="col-md-6">
+      <button type="button" class="btn btn-mapa">
+        <span><img class="float-left" src="<%= static_path(@conn, "/images/mapa.png") %>"></span> 
+        <span class="align-txt-btn">Mapa do Circuito</span>  
+      </button>
+    </div>
+    <div class="col-md-6">
+      <button type="button" class="btn btn-extra">
+        <span><img class="float-left" src="<%= static_path(@conn, "/images/extra.png") %>"></span> 
+        <span class="align-txt-btn">Atividades Extras</span>  
+      </button>
+    </div>   
   </div>
 </div>

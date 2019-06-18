@@ -2,7 +2,7 @@ html {
   width:100%;
   height:100%;  
 }
-body {
+.background-ocean {
   background-image: url("https://s3.us-east-2.amazonaws.com/aquario-staging/manual/bghome.jpg");
   background-position: center;
   background-size: cover;
@@ -12,300 +12,28 @@ body {
   padding: 0;
   overflow: hidden;  
   font-family: 'Baloo', cursive;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
 }
-section {
+.fish-animation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.particles-animation {
   height: 100vh;  
   width:100%;
   position: fixed;
+}
+.content {
+  padding-top: 5em;
 }
 #particles-js {
   width: 100%;
   height: 100%;
 }
-.fish {
-  position: absolute;
-  color: #49B4CE;
-}
-.fish1 {
-  top: 30%;
-  height: 140px;
-  animation: animate 25s linear infinite;
-  opacity: .8;
-}
-.fish2 {
-  top: 50%;
-  height: 40px;
-  animation: animate 28s linear infinite;
-  opacity: .7;
-}
-.fish3 {
-  top: 70%;
-  height: 80px;
-  animation: animate2 20s linear infinite;
-  opacity: .7;
-}
-.fish4 {
-  top: 25%;
-  height: 80px;
-  animation: animate 55s linear infinite;
-  opacity: .5;
-}
-.fish5 {
-  top: 80%;
-  height: 90px;
-  animation: animate2 50s linear infinite;
-  opacity: .6;
-}
-.dive {
-  position: absolute;
-  top: 10%;
-  height: 30px;
-  animation: animate 32s linear infinite;
-  opacity: .9;
-}
-@keyframes animate {
-  0% {
-    transform: translateY(-50px);
-    left: -25%;
-  }
-  25% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(50px);
-  }
-  75% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(-50px);
-    left: 150%;
-  }
-}
-@keyframes animate2 {
-  0% {
-    transform: translateY(-50px);
-    right: -25%;
-  }
-  25% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(50px);
-  }
-  75% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(-50px);
-    right: 150%;
-  }
-}
-
-.my-nav{
-  background-color: #DBF8FF;
-  position: absolute!important;
-  z-index: 10;
-  width: 100%;  
-  height: 3em;
-  border: 0.1px #fff solid;
-  border-bottom-right-radius: 2.0rem;
-  border-bottom-left-radius: 2.0rem;
-  box-shadow: 0px 1px 10px #000;
-}
-.logo {
-  width: 2.5em;
-}
-.logo-link{
-  cursor: pointer;
-}
-.ul-btn-audio {
-  width: 24px;
-  list-style-type: none;
-}
-a{
-
-}
-a:hover {
-  text-decoration: none!important;
-}
-.navbar-light .navbar-toggler {
-  color: #2B9BBF;
-  border-color: rgba(0,0,0,0);
-}
-ul {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-.collapse {
-  justify-content: flex-end;
-}
-
-.collapse:not(.show) {
-  display: none!important;
-}
-a {
-  color: #0079A9;
-}
-
-.bg-dropdown {
-  border: solid 0.5px #009BC5;
-  background-color: #DBF8FF;
-}
-.nav-personalize {
-    width: 40%;    
-    border-radius: 0.5em;    
-    float: right!important;
-}
-.nav-link {
-  color: #0079A9!important;
-}
-.nav-personalize li {
-  margin-right: 10px;
-}
-.my-footer{
-  background-color: #EEEEEE;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  height: 3.5em;
-  width: 100%;
-  color: white;
-  text-align: center;
-  border: 0.1px #fff solid;
-  border-top-right-radius: 2.0rem;
-  border-top-left-radius: 2.0rem;
-}
-
-@media (min-width: 992px) {
-  .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
-    -ms-flex-wrap: nowrap;
-    flex-flow: row-reverse;
-  }
-}
-
-.home {
-  position: fixed;
-  top: 15%;
-  left: 3.8%;
-}
-.btn {
-  margin: 0.75em;
-  width: 85%;
-  height: 6em;
-  border-radius: .9em;
-  display: flex;
-  justify-content: space-evenly;
-  color: #fff;
-  text-align: center;
-  vertical-align: middle;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-.btn:hover {
-  text-decoration: none;
-}
-
-.btn:focus, .btn.focus {
-  outline: 0;
-  box-shadow: none;
-}
-
-.btn.disabled, .btn:disabled {
-  opacity: 0.65;
-}
-.align-txt-btn {
-  align-self: center;
-  text-align: center;
-  width: 70%;
-  padding-right: 17%;
-  font-size: 1.2rem;
-}
-.btn-pesquisa {
- background-color: #FFA900; 
-}
-.btn-pesquisa:hover {
-  color: #fff;
-  background-color: #FFA900;
-  border-color: #FFA900;
-}
-.btn-pesquisa:active {
-  color: #fff;
-  background-color: rgba(255, 170, 0, 0.692);
-  border-color: #FFA900;
-}
-.btn:hover {
-  color: #fff;
-  text-decoration: none;
-}
-.btn-pesquisa:not(:disabled):not(.disabled):active:focus, .btn-pesquisa:not(:disabled):not(.disabled).active:focus,
-.show > .btn-pesquisa.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem #FFA900;
-}
-
-.btn-tank {
-  background-color: #EC6500; 
- }
- .btn-tank:hover {
-   color: #fff;
-   background-color: #EC6500;
-   border-color: #EC6500;
- }
- .btn-tank:active {
-   color: #fff;
-   background-color: rgba(236, 102, 0, 0.705);
-   border-color: #EC6500;
- }
- .btn:hover {
-   color: #fff;
-   text-decoration: none;
- }
- .btn-tank:not(:disabled):not(.disabled):active:focus, .btn-tank:not(:disabled):not(.disabled).active:focus,
- .show > .btn-tank.dropdown-toggle:focus {
-   box-shadow: 0 0 0 0.2rem #EC6500;
- }
-
- .btn-mapa {
-  background-color: #2AAAAF; 
- }
- .btn-mapa:hover {
-   color: #fff;
-   background-color: #2AAAAF;
-   border-color: #2AAAAF;
- }
- .btn-mapa:active {
-   color: #fff;
-   background-color: rgba(42, 170, 175, 0.685);
-   border-color: #2AAAAF;
- }
- .btn:hover {
-   color: #fff;
-   text-decoration: none;
- }
- .btn-mapa:not(:disabled):not(.disabled):active:focus, .btn-mapa:not(:disabled):not(.disabled).active:focus,
- .show > .btn-mapa.dropdown-toggle:focus {
-   box-shadow: 0 0 0 0.2rem #2AAAAF;
- }
-
- .btn-extra {
-  background-color: #0079A9; 
- }
- .btn-extra:hover {
-   color: #fff;
-   background-color: #0079A9;
-   border-color: #0079A9;
- }
- .btn-extra:active {
-   color: #fff;
-   background-color: rgba(0, 121, 169, 0.705);
-   border-color: #0079A9;
- }
- .btn:hover {
-   color: #fff;
-   text-decoration: none;
- }
- .btn-extra:not(:disabled):not(.disabled):active:focus, .btn-extra:not(:disabled):not(.disabled).active:focus,
- .show > .btn-extra.dropdown-toggle:focus {
-   box-shadow: 0 0 0 0.2rem #0079A9;
- }

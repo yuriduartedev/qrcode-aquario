@@ -1,0 +1,79 @@
+.fish {
+  position: absolute;
+  color: #49B4CE;
+}
+.fish1 {
+  top: 30%;
+  height: 140px;
+  animation: animate 25s linear infinite;
+  opacity: .8;
+}
+.fish2 {
+  top: 50%;
+  height: 40px;
+  animation: animate 28s linear infinite;
+  opacity: .7;
+}
+.fish3 {
+  top: 70%;
+  height: 80px;
+  animation: animate2 20s linear infinite;
+  opacity: .7;
+}
+.fish4 {
+  top: 25%;
+  height: 80px;
+  animation: animate 55s linear infinite;
+  opacity: .5;
+}
+.fish5 {
+  top: 80%;
+  height: 90px;
+  animation: animate2 50s linear infinite;
+  opacity: .6;
+}
+.dive {
+  position: absolute;
+  top: 10%;
+  height: 30px;
+  animation: animate 32s linear infinite;
+  opacity: .9;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(-50px);
+    left: -25%;
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-50px);
+    left: 150%;
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: translateY(-50px);
+    right: -25%;
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-50px);
+    right: 150%;
+  }
+}
