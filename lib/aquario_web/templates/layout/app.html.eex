@@ -34,11 +34,52 @@
     <!-- End Particle Animation -->
     
     <div class="content">
-      <!--Navbar -->
+
+      <!-- Novo Navbar-->
+        <header>
+          <div class="menu">
+            <div class="bar"></div>
+          </div>
+          <div class="overlay"></div>
+          <nav>  
+            <div class="logo">
+              <!-- Logo Aqua -->
+              <%= link to: page_path(@conn, :index), class: "logo-link" do %>
+                <img class="logo brand" src="<%= static_path(@conn, "/images/aqua-logo.svg") %>">
+              <% end %> 
+              <!-- End Logo  -->    
+              <ul>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Tanques</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Pesquisas</a>
+                </li>                
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Mapa do Circuito</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Atividades Extras</a>
+                </li>
+              </ul>
+            </div>
+            <div class="bandeiras">
+              <a href="#"><img width="16" height="16" class="ml-2" src="<%= static_path(@conn, "/images/br.png") %>"><span></span></a>
+              <a href="#"><img width="16" height="16" class="ml-2" src="<%= static_path(@conn, "/images/us.png") %>"><span></span></a>
+              <a href="#"><img width="16" height="16" class="ml-2" src="<%= static_path(@conn, "/images/es.png") %>"><span></span></a>
+            </div>
+          </nav>
+          <main role="main">
+            <%= render @view_module, @view_template, assigns %>
+          </main>
+        </header> 
+      <!--End Navbar-->
+
+      <!--Navbar 
       <nav class=" my-nav navbar navbar-light navbar-expand-lg">
         <div class="container">  
           
-          <!-- Start Flags -->
+            Start Flags 
           <ul class="list-inline links-list pull-left ml-2"><li class="dropdown language-selector">            
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true" aria-expanded="false"> 
               <img width="16" height="16" class="" src="<%= static_path(@conn, "/images/br.png") %>">
@@ -49,15 +90,16 @@
               <li><a href="#"><img width="16" height="16" class="ml-2" src="<%= static_path(@conn, "/images/es.png") %>"><span> Espanol</span></a></li>
             </ul>
           </ul>
-            <!-- End Flags -->          
+            End Flags -->          
 
            <!-- Logo Aqua -->
-           <%#= link "text", to: url %>   
+           <%#= link "text", to: url %>  
+           <!-- 
           <%= link to: page_path(@conn, :index), class: "logo-link" do %>
             <img class="logo" src="<%= static_path(@conn, "/images/aqua-logo.svg") %>">
-          <% end %>        
+          <% end %> -->
   
-           <!-- Start Button Selector -->
+           <!-- Start Button Selector 
           <button class="navbar-toggler no-border mb-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
           </button>
@@ -77,15 +119,12 @@
               </li>
             </ul>
           </div>
-          <!-- End Button Selector -->
-
+          End Button Selector 
         </div>
       </nav>
-      <!--/.Navbar -->
+      /.Navbar -->
 
-      <main role="main">
-        <%= render @view_module, @view_template, assigns %>
-      </main>
+      
 
     </div> <!-- /container -->
 

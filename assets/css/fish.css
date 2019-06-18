@@ -42,7 +42,7 @@
 @keyframes animate {
   0% {
     transform: translateY(-50px);
-    left: -25%;
+    left: -40%;
   }
   25% {
     transform: translateY(0px);

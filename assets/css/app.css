@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo&display=swap');
 html {
   width:100%;
   height:100%;  
+}
+body{
+  font-family: 'Baloo', cursive;
 }
 .background-ocean {
   background-image: url("https://s3.us-east-2.amazonaws.com/aquario-staging/manual/bghome.jpg");
@@ -11,7 +16,6 @@ html {
   margin: 0;
   padding: 0;
   overflow: hidden;  
-  font-family: 'Baloo', cursive;
   top: 0;
   right: 0;
   left: 0;
@@ -31,7 +35,6 @@ html {
   position: fixed;
 }
 .content {
-  padding-top: 7em;
   position: relative;
 }
 #particles-js {

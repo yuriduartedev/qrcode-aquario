@@ -1,6 +1,7 @@
 .btn {
-  margin: 0.75em;
-  height: 6em;
+  width: 90%;
+  margin: 0.75rem auto;
+  height: 9em;
   border-radius: .9em;
   display: flex;
   justify-content: space-evenly;
@@ -28,17 +29,17 @@
   text-align: center;
   width: 70%;
   padding-right: 17%;
-  font-size: 1.2rem;
+  font-size: 2.3rem;
 }
-.btn-pesquisa {
+.btn-tank {
  background-color: #FFA900; 
 }
-.btn-pesquisa:hover {
+.btn-tank:hover {
   color: #fff;
   background-color: #FFA900;
   border-color: #FFA900;
 }
-.btn-pesquisa:active {
+.btn-tank:active {
   color: #fff;
   background-color: rgba(255, 170, 0, 0.692);
   border-color: #FFA900;
@@ -47,73 +48,96 @@
   color: #fff;
   text-decoration: none;
 }
-.btn-pesquisa:not(:disabled):not(.disabled):active:focus, .btn-pesquisa:not(:disabled):not(.disabled).active:focus,
-.show > .btn-pesquisa.dropdown-toggle:focus {
+.btn-tank:not(:disabled):not(.disabled):active:focus, .btn-tank:not(:disabled):not(.disabled).active:focus,
+.show > .btn-tank.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem #FFA900;
 }
 
-.btn-tank {
+.btn-pesquisa {
   background-color: #EC6500; 
- }
- .btn-tank:hover {
-   color: #fff;
-   background-color: #EC6500;
-   border-color: #EC6500;
- }
- .btn-tank:active {
-   color: #fff;
-   background-color: rgba(236, 102, 0, 0.705);
-   border-color: #EC6500;
- }
- .btn:hover {
-   color: #fff;
-   text-decoration: none;
- }
- .btn-tank:not(:disabled):not(.disabled):active:focus, .btn-tank:not(:disabled):not(.disabled).active:focus,
- .show > .btn-tank.dropdown-toggle:focus {
-   box-shadow: 0 0 0 0.2rem #EC6500;
- }
+}
+.btn-pesquisa:hover {
+  color: #fff;
+  background-color: #EC6500;
+  border-color: #EC6500;
+}
+.btn-pesquisa:active {
+  color: #fff;
+  background-color: rgba(236, 102, 0, 0.705);
+  border-color: #EC6500;
+}
+.btn:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.btn-pesquisa:not(:disabled):not(.disabled):active:focus, .btn-pesquisa:not(:disabled):not(.disabled).active:focus,
+.show > .btn-pesquisa.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #EC6500;
+}
 
- .btn-mapa {
-  background-color: #2AAAAF; 
- }
- .btn-mapa:hover {
-   color: #fff;
-   background-color: #2AAAAF;
-   border-color: #2AAAAF;
- }
- .btn-mapa:active {
-   color: #fff;
-   background-color: rgba(42, 170, 175, 0.685);
-   border-color: #2AAAAF;
- }
- .btn:hover {
-   color: #fff;
-   text-decoration: none;
- }
- .btn-mapa:not(:disabled):not(.disabled):active:focus, .btn-mapa:not(:disabled):not(.disabled).active:focus,
- .show > .btn-mapa.dropdown-toggle:focus {
-   box-shadow: 0 0 0 0.2rem #2AAAAF;
- }
+.btn-mapa {
+background-color: #2AAAAF; 
+}
+.btn-mapa:hover {
+  color: #fff;
+  background-color: #2AAAAF;
+  border-color: #2AAAAF;
+}
+.btn-mapa:active {
+  color: #fff;
+  background-color: rgba(42, 170, 175, 0.685);
+  border-color: #2AAAAF;
+}
+.btn:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.btn-mapa:not(:disabled):not(.disabled):active:focus, .btn-mapa:not(:disabled):not(.disabled).active:focus,
+.show > .btn-mapa.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #2AAAAF;
+}
 
- .btn-extra {
-  background-color: #0079A9; 
- }
- .btn-extra:hover {
-   color: #fff;
-   background-color: #0079A9;
-   border-color: #0079A9;
- }
- .btn-extra:active {
-   color: #fff;
-   background-color: rgba(0, 121, 169, 0.705);
-   border-color: #0079A9;
- }
- .btn:hover {
-   color: #fff;
-   text-decoration: none;
- }
- .btn-extra:not(:disabled):not(.disabled):active:focus, .btn-extra:not(:disabled):not(.disabled).active:focus,
- .show > .btn-extra.dropdown-toggle:focus {
-   box-shadow: 0 0 0 0.2rem #0079A9;
- }
+.btn-extra {
+background-color: #0079A9; 
+}
+.btn-extra:hover {
+  color: #fff;
+  background-color: #0079A9;
+  border-color: #0079A9;
+}
+.btn-extra:active {
+  color: #fff;
+  background-color: rgba(0, 121, 169, 0.705);
+  border-color: #0079A9;
+}
+.btn:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.btn-extra:not(:disabled):not(.disabled):active:focus, .btn-extra:not(:disabled):not(.disabled).active:focus,
+.show > .btn-extra.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #0079A9;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px){
+  
+} 
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+  .btn{
+    width: 30%;
+    margin: 0.75em auto;
+  }
+} 
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px){
+  
+} 
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px){
+  
+}
