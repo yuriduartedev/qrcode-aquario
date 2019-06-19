@@ -114,7 +114,7 @@ nav ul{
 .nav-item:hover{
   background-color: #0079A9;
   color: #fff;
-  transition: .7s;
+  transition: 1s;
 }
 .nav-link::after{  
   position: absolute;

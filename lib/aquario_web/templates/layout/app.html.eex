@@ -52,9 +52,11 @@
                 <li class="nav-item">
                   <a href="#" class="nav-link">Tanques</a>
                 </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Pesquisas</a>
-                </li>                
+                <%= link to: research_path(@conn, :index), class: "nav-link nav-item" do %>
+                  <li class="nav-item">
+                    <p class="nav-link">Pesquisas</p>
+                  </li>                
+                <% end %>
                 <li class="nav-item">
                   <a href="#" class="nav-link">Mapa do Circuito</a>
                 </li>

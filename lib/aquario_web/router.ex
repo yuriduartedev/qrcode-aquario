@@ -22,6 +22,9 @@ defmodule AquarioWeb.Router do
 
     get "/", PageController, :index
 
+    get "/researches", ResearchController, :index
+    get "/researches/:id", ResearchController, :show
+
     scope "/admin", as: "admin", alias: Admin do
       pipe_through :admin_layout
 

@@ -4,10 +4,12 @@
       <span><img class="float-left" src="<%= static_path(@conn, "/images/tanque.png") %>"></span> 
       <span class="align-txt-btn">Tanques</span>  
     </button>
-    <button type="button" class="btn btn-pesquisa">
-      <span><img class="float-left" src="<%= static_path(@conn, "/images/pesquisa.png") %>"></span> 
-      <span class="align-txt-btn">Pesquisas</span>  
-    </button>
+    <%= link to: research_path(@conn, :index) do %>
+      <button type="button" class="btn btn-pesquisa">
+        <span><img class="float-left" src="<%= static_path(@conn, "/images/pesquisa.png") %>"></span> 
+        <span class="align-txt-btn">Pesquisas</span>  
+      </button>
+    <% end %>
     <button type="button" class="btn btn-mapa">
       <span><img class="float-left" src="<%= static_path(@conn, "/images/mapa.png") %>"></span> 
       <span class="align-txt-btn">Mapa do Circuito</span>  
