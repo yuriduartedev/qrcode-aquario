@@ -22,6 +22,9 @@ defmodule AquarioWeb.Router do
 
     get "/", PageController, :index
 
+    get "/tanks", TankController, :index
+    get "/tanks/:id", TankController, :show
+
     get "/researches", ResearchController, :index
     get "/researches/:id", ResearchController, :show
 

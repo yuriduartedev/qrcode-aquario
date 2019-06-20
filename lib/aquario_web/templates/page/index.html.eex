@@ -1,9 +1,11 @@
-<div class="container-fluid pt-5 mt-5">
-  <div class="d-flex flex-column align-items-stretch pt-5 mt-5">
-    <button type="button" class="btn btn-tank">
-      <span><img class="float-left" src="<%= static_path(@conn, "/images/tanque.png") %>"></span> 
-      <span class="align-txt-btn">Tanques</span>  
-    </button>
+<div class="container-fluid">
+  <div class="d-flex flex-column align-items-stretch">
+    <%= link to: tank_path(@conn, :index) do %>
+      <button type="button" class="btn btn-tank">
+        <span><img class="float-left" src="<%= static_path(@conn, "/images/tanque.png") %>"></span> 
+        <span class="align-txt-btn">Tanques</span>  
+      </button>
+    <% end %>
     <%= link to: research_path(@conn, :index) do %>
       <button type="button" class="btn btn-pesquisa">
         <span><img class="float-left" src="<%= static_path(@conn, "/images/pesquisa.png") %>"></span> 

@@ -2,7 +2,7 @@
   width: 90%;
   margin: 0.75rem auto;
   height: 9em;
-  border-radius: .9em;
+  border-radius: 1.5em;
   display: flex;
   justify-content: space-evenly;
   color: #fff;
@@ -15,14 +15,15 @@
 .btn:hover {
   text-decoration: none;
 }
-
 .btn:focus, .btn.focus {
   outline: 0;
   box-shadow: none;
 }
-
 .btn.disabled, .btn:disabled {
   opacity: 0.65;
+}
+.align-btns{
+  margin-top: 5rem;
 }
 .align-txt-btn {
   align-self: center;
@@ -30,6 +31,7 @@
   width: 70%;
   padding-right: 17%;
   font-size: 2.3rem;
+  list-style-type: none;  
 }
 .btn-tank {
  background-color: #FFA900; 
@@ -127,17 +129,24 @@ background-color: #0079A9;
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px){
   .btn{
-    width: 30%;
+    width: 70%;
     margin: 0.75em auto;
+  }
+  .align-btns{
+    margin-top: 15rem;
   }
 } 
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px){
-  
+  .btn{
+    width: 50%;
+  }
 } 
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px){
-  
+@media (min-width: 1600px){
+  .btn{
+    width: 40%;
+  }
 }

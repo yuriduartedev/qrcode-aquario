@@ -1,0 +1,18 @@
+.img-thumb{
+  width: 60%;
+  border-radius: 0.8rem;
+}
+.card-img{
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
+@media (max-width: 600px) {
+  .card-img {
+    width: 45%;
+  }
+  .img-thumb {
+    width: 75%;
+  }
+}

@@ -1,0 +1,12 @@
+<%= for tank <- @tanks do %>
+  <div class="container-fluid">
+    <div class="d-flex flex-column align-items-stretch">
+      <%= link to: tank_path(@conn, :index) do %>
+        <button type="button" class="btn btn-tank">
+          <span class="card-img"><img class="float-left img-thumb" src="<%= static_path(@conn, "/images/agua-viva.jpg") %>"></span> 
+          <li class="align-txt-btn"><%= tank.name_pt_br %></li> 
+        </button>
+      <% end %>    
+    </div>
+  </div>
+<% end %>

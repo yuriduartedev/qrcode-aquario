@@ -30,7 +30,7 @@ header{
   right: 1rem;
   z-index: 999;
   background-color: #fff;
-  border-radius: 3px;
+  border-radius: .7em;
   cursor: pointer;
   display: none;
 }
@@ -79,8 +79,21 @@ nav{
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
   overflow: hidden;
 }
-.logo{
+.header{
+  display: block;
+  position: relative;
+  z-index: -1;
+}
+.logo{  
   display: contents;
+}
+.logo-tank-page{
+  margin: 0 auto;
+  animation: initial;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
 }
 a{
   text-decoration: none;
@@ -132,7 +145,7 @@ nav ul{
   animation: up 1s forwards;
 }
 .nav-item:nth-child(even){
-  animation: down 1s forwards;
+  animation: up 1s forwards;
 }
 .nav-item:hover{
   color: #fff;
@@ -196,7 +209,7 @@ nav ul{
     animation: initial;
   }
   .nav-link{
-    margin: 2rem 0;    
+    margin: 1.2rem 0;  
   }
   header.open nav{
     transform: rotateX(0)
@@ -207,5 +220,11 @@ nav ul{
   .overlay.open{
     opacity: 0.6;
     transform: scaleX(1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header{
+    display: none;
   }
 }

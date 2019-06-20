@@ -43,26 +43,32 @@
           <div class="overlay"></div>
           <nav>  
             <div class="logo">
-              <!-- Logo Aqua -->
+              <!-- Logo Navbar -->
               <%= link to: page_path(@conn, :index), class: "logo-link" do %>
                 <img class="logo brand" src="<%= static_path(@conn, "/images/aqua-logo.svg") %>">
               <% end %> 
               <!-- End Logo  -->    
               <ul>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Tanques</a>
-                </li>
+                <%= link to: tank_path(@conn, :index), class: "nav-link nav-item" do %>
+                  <li class="nav-item">
+                    <p class="nav-link">Tanques</p>
+                  </li>
+                <% end %>
                 <%= link to: research_path(@conn, :index), class: "nav-link nav-item" do %>
                   <li class="nav-item">
                     <p class="nav-link">Pesquisas</p>
                   </li>                
                 <% end %>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Mapa do Circuito</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Atividades Extras</a>
-                </li>
+                  <%= link to: tank_path(@conn, :index), class: "nav-link nav-item" do %>
+                  <li class="nav-item">
+                    <p class="nav-link">Mapa do Circuito</p>
+                  </li>
+                <% end %>
+                  <%= link to: tank_path(@conn, :index), class: "nav-link nav-item" do %>
+                  <li class="nav-item">
+                    <p class="nav-link">Atividades Extras</p>
+                  </li>
+                <% end %>
               </ul>
             </div>
             <div class="bandeiras">
@@ -71,11 +77,23 @@
               <a href="#"><img width="16" height="16" class="ml-2" src="<%= static_path(@conn, "/images/es.png") %>"><span></span></a>
             </div>
           </nav>
-          <main role="main">
+          <!--End Navbar-->
+          <!-- Logo principal -->
+          <div class="container header">
+            <div class="row">
+              <div class="col mt-5">
+                <%= link to: page_path(@conn, :index) do %>
+                  <img class="logo-tank-page" src="<%= static_path(@conn, "/images/aqua-logo.svg") %>">        
+                <% end %>
+              </div>    
+            </div>
+          </div>
+          <!-- End Logo  --> 
+          <main role="main" class="align-btns">            
             <%= render @view_module, @view_template, assigns %>
           </main>
         </header> 
-      <!--End Navbar-->
+      
 
       <!--Navbar 
       <nav class=" my-nav navbar navbar-light navbar-expand-lg">
