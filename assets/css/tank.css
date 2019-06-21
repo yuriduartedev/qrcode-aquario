@@ -20,7 +20,7 @@
   font-size: 1.5rem;
 }
 .wrapper-tank{
-  z-index: -1;
+  z-index: 1;
   position: relative;
 }
 

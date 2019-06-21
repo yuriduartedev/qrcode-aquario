@@ -73,9 +73,9 @@
               </ul>
             </div>
             <div class="bandeiras">
-              <a href="#"><img width="16" height="16" class="ml-2" src="<%= static_path(@conn, "/images/br.png") %>"><span></span></a>
-              <a href="#"><img width="16" height="16" class="ml-2" src="<%= static_path(@conn, "/images/us.png") %>"><span></span></a>
-              <a href="#"><img width="16" height="16" class="ml-2" src="<%= static_path(@conn, "/images/es.png") %>"><span></span></a>
+              <a href="#"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/br.png") %>"><span></span></a>
+              <a href="#"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/us.png") %>"><span></span></a>
+              <a href="#"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/es.png") %>"><span></span></a>
             </div>
           </nav>
           <!--End Navbar-->
@@ -89,11 +89,12 @@
               </div>    
             </div>
           </div>
-          <!-- End Logo  -->
-          <main role="main" class="align-btns">            
-            <%= render @view_module, @view_template, assigns %>
-          </main>        
+          <!-- End Logo  -->                 
         </header> 
+
+        <main role="main" class="align-btns">            
+          <%= render @view_module, @view_template, assigns %>
+        </main> 
 
         
       
