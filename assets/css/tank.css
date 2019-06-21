@@ -1,0 +1,35 @@
+.img-specy-circle{
+  width: 300px;
+  height: 300px;
+}
+.border-tank{
+  border: .8px solid #ffffffc6;
+  margin: 0 auto;
+}
+.text-default{
+  font-family: 'Nunito Sans', sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-shadow: 0.8px 0.8px 2px rgb(62, 62, 62);
+}
+.text-title{ 
+  font-size: 2rem;
+}
+.text-description{
+  font-size: 1.5rem;
+}
+.wrapper-tank{
+  z-index: -1;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .border-tank{
+    margin: 0 auto;
+  }
+  .wrapper-tank{
+    z-index: 0;
+    position: static;
+  }
+}

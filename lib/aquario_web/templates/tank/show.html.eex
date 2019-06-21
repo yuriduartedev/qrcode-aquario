@@ -1,0 +1,19 @@
+  <div class="container my-4">    
+    <div class="row text-center wrapper-tank">
+      <!--Image and Title-->
+      <div class="col-md-12 mx-2">        
+        <img class="rounded-circle img-specy-circle" alt="100x100" src="https://portal-ar.s3.amazonaws.com/uploads/research/image/5/research_formas-corpo.jpg"
+          data-holder-rendered="true">
+          <h2 class="my-4 h2 text-default text-title">Reprodução do Hippocampus reidi em cativeiro.</h2>
+      </div>
+      <!--Image and Title-->  
+      <div class="col-md-12">
+        <div class="col-md-6 mb-3 border-tank"></div>
+      </div>    
+      <!-- Description -->
+      <div class="col-md-6 mx-auto">        
+        <p class="text-default text-description">Pesquisa que visa adquirir conhecimentos sobre a melhor forma de cultivo e desenvolvimento do cavalo marinho (Hippocampus reidi). Os resultados poderão subsidiar novas estratégias para preservação dessa espécie, colaborando assim com o restabelecimento da fauna nativa, em locais prévios ou futuros em que esta espécie esteja extinta.</p>
+      <div>
+      <!-- Description -->    
+    </div>    
+  </div>

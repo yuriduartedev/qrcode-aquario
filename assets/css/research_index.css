@@ -1,5 +1,5 @@
 .img-thumb{
-  width: 60%;
+  width: 10rem;
   border-radius: 0.8rem;
 }
 .card-img{
@@ -13,6 +13,6 @@
     width: 45%;
   }
   .img-thumb {
-    width: 75%;
+    width: 10rem;
   }
 }
