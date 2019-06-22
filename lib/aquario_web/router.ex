@@ -13,6 +13,10 @@ defmodule AquarioWeb.Router do
     plug :accepts, ["json"]
   end
 
+  pipeline :login_layout do
+    plug :put_layout, {AquarioWeb.LayoutView, :login}
+  end
+
   pipeline :admin_layout do
     plug :put_layout, {AquarioWeb.LayoutView, :admin}
   end
@@ -27,7 +31,13 @@ defmodule AquarioWeb.Router do
 
     get "/researches", ResearchController, :index
     get "/researches/:id", ResearchController, :show
+    
+    scope "/login" do
+      pipe_through :login_layout
 
+      get "/", LoginController, :index
+    end
+    
     scope "/admin", as: "admin", alias: Admin do
       pipe_through :admin_layout
 
