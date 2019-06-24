@@ -5,23 +5,3 @@
 .logo {
   width: 3.5em;
 }
-
-/* Login */
-.bg-login-img{
-  background: url(https://s3.us-east-2.amazonaws.com/aquario-staging/manual/raia.jpg?response-content-disposition=inline&X-Amz-Security-Token=AgoGb3JpZ2luEAkaCXVzLWVhc3QtMSKAAkg22gqTLx8PyH28jo%2FvL9SWoJS2pW4P2m5evGcGuhJ96UUl7hQ6scmXqs2CP4yAv%2Bxlj2qDSwzN87C1dbEqzqzZ1kdqkBh21Dlu%2FHO3sJzPW3%2FIat3umk9aDiMDPlytCfdb1Klv%2FQBTU5vOUILckmoZ6d9yaAuPvT7%2BDbnZaJjXi%2BKQiMaV5Dmv%2B1ZSp1IZKooQUgwKGGEFsnqYWwvEDAysZy30ESyZETmS4Py3LFW6IxVymco73bP%2B9hKHcy0BUKyzHKNG61JhW6w6cp86DlpTDdwR%2BgZWMTjbQqYFMwrn34Ufw7QoMmGgsOXuK8SDN709poy7aRwujhDCKwm0yM0q%2BwMI7v%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwxNTIxNTE4MDQwMDEiDJYl7MXTvDLls%2Fc07irPA7DrRFO7k9QkhOEZXNaJ4tkyyBBXozq9yJ%2F3FZ2MTFlvyUGxZ7bN726uTfXcqxl6y6YbsjTxwa%2FoT3W7o7c8PHt%2B74bOcLzy5TLpOCR6dd23GRKQB9n%2Bxae%2FL2SwcVXercbJF1BNF6Ux9HfAAhBbjm4iT%2BWm1n%2BA4ljFIJvUG1lsl8cYSa80bZhX1sUeDtWMywUXqZgi012C0ppnqZND6J%2Bd9x3PaATXJdQf1HLe148TNeGOvlbqQj3YiRJ3a1BniCx8tHQo0N9GCb4SYYzlMz3ynQBGKpKaP8YDiFGgsH8UrhXXScEsP78bSBd8N1fplOv2XKY6uwSpqz4VLzZC%2F2TN8Z6tiPT6rqS3H8VXWQ68IN5GJMny1qwANymdJddHem5cJ0ngagY8rrR4itOuR4MNT%2F%2BvmzvBwj7Eiy76RjGepzOOyquiU5NdVUlrX3%2BpMBn0%2FL5aa11TNjXOpwy6cnGHG781uWUNxr2hscu4TUSr13j%2BCZevr1IDWebAZNP7nFMXu7o7oYOcczDRsdoY3zImsgfQXVvdmQR5048Of9U%2BT%2FibTObUHAoj1IQN3yke7Nwnycet89v7pFUIBNGujI5aEPcm%2BgNi4CWiiim1B48wjo7D6AU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190624T125126Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIASG3HUJBQWQGHSLO7%2F20190624%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=9eb0374f8b5f928960112ee6f3f61a182f1b458537c7bab118f058d15b802f02);
-  background-position: center;
-  background-size: cover;
-}
-.bg-login {
-  background-image: linear-gradient(to top, #2f97ff 0%, white 100%);
-  background-size: cover;
-}
-.btn-login {
-  color: #fff;
-  background-color: #2f97ff;
-  border-color: #2f97ff;
-}
-.btn-login:hover {
-  color: #fff;  
-}
-/* Login */
