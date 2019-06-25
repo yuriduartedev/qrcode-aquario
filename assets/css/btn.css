@@ -135,6 +135,9 @@ background-color: #0079A9;
   .align-btns{
     margin-top: 15rem;
   }
+  .align-txt-btn {
+    width: -webkit-fill-available;
+  }
 } 
 
 /* // Large devices (desktops, 992px and up) */

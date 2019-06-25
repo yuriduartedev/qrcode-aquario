@@ -21,8 +21,16 @@ exports.config = {
     },
     stylesheets: {
       joinTo: {        
-        "css/app.css": [/^css\//, "!css/admin.css", "!css/login.css"],
-        "css/admin.css": ["css/admin.css", "css/login.css"]
+        "css/app.css": [
+          /^css\//, "!css/admin.css", 
+          "!css/login.css",
+          "!css/sb-admin-2.min.css"
+        ],
+        "css/admin.css": [
+          "css/sb-admin-2.min.css",
+          "css/admin.css",
+          "css/login.css"          
+        ]
       }
     },
     templates: {
