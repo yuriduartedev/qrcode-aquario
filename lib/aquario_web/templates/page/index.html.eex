@@ -16,9 +16,12 @@
       <span><img class="float-left" src="<%= static_path(@conn, "/images/mapa.png") %>"></span> 
       <span class="align-txt-btn">Mapa do Circuito</span>  
     </button>
-    <button type="button" class="btn btn-extra">
-      <span><img class="float-left" src="<%= static_path(@conn, "/images/extra.png") %>"></span> 
-      <span class="align-txt-btn">Atividades Extras</span>  
-    </button>
+    <%= link to: "http://blog.aquariomarinhodorio.com.br" do %>
+      <button type="button" class="btn btn-extra">
+        <span><img class="float-left" src="<%= static_path(@conn, "/images/extra.png") %>"></span> 
+        <span class="align-txt-btn">Atividades Extras</span>  
+      </button>
+    <% end %>
   </div>
 </div>
+
