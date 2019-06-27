@@ -1,0 +1,32 @@
+## `msgid`s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove `msgid`s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use `mix gettext.extract --merge` or `mix gettext.merge`
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2\n"
+
+#, elixir-format
+#: lib/aquario_web/templates/page/index.html.eex:22
+msgid "Actives"
+msgstr ""
+
+#, elixir-format
+#: lib/aquario_web/templates/page/index.html.eex:17
+msgid "Circuit Map"
+msgstr ""
+
+#, elixir-format
+#: lib/aquario_web/templates/page/index.html.eex:12
+msgid "Researches"
+msgstr ""
+
+#, elixir-format
+#: lib/aquario_web/templates/page/index.html.eex:6
+msgid "Tanks"
+msgstr ""

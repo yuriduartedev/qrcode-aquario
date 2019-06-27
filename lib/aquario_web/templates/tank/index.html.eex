@@ -4,7 +4,7 @@
       <%= link to: tank_path(@conn, :show, tank) do %>
         <button type="button" class="btn btn-tank">
           <span class=""><img class="float-left img-thumb" src="<%= static_path(@conn, "/images/agua-viva.jpg") %>"></span> 
-          <li class="align-txt-btn"><%= tank.name_pt_br %></li> 
+          <li class="align-txt-btn"><%= get_from_locale(tank, :name) %></li>
         </button>
       <% end %>    
     </div>

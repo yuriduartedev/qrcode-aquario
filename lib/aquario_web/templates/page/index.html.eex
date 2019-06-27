@@ -3,23 +3,23 @@
     <%= link to: tank_path(@conn, :index) do %>
       <button type="button" class="btn btn-tank">
         <span><img class="float-left" src="<%= static_path(@conn, "/images/tanque.png") %>"></span> 
-        <span class="align-txt-btn">Tanques</span>  
+        <span class="align-txt-btn"><%= gettext("Tanks") %></span>  
       </button>
     <% end %>
     <%= link to: research_path(@conn, :index) do %>
       <button type="button" class="btn btn-pesquisa">
         <span><img class="float-left" src="<%= static_path(@conn, "/images/pesquisa.png") %>"></span> 
-        <span class="align-txt-btn">Pesquisas</span>  
+        <span class="align-txt-btn"><%= gettext("Researches") %></span>  
       </button>
     <% end %>
     <button type="button" class="btn btn-mapa">
       <span><img class="float-left" src="<%= static_path(@conn, "/images/mapa.png") %>"></span> 
-      <span class="align-txt-btn">Mapa do Circuito</span>  
+      <span class="align-txt-btn"><%= gettext("Circuit Map") %></span>  
     </button>
     <%= link to: "http://blog.aquariomarinhodorio.com.br" do %>
       <button type="button" class="btn btn-extra">
         <span><img class="float-left" src="<%= static_path(@conn, "/images/extra.png") %>"></span> 
-        <span class="align-txt-btn">Atividades Extras</span>  
+        <span class="align-txt-btn"><%= gettext("Actives") %></span>  
       </button>
     <% end %>
   </div>

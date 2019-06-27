@@ -4,8 +4,8 @@ defmodule AquarioWeb.TankController do
   alias Aquario.Tanks
   alias Aquario.Tanks.Tank
 
-  def index(conn, _params) do
-    tanks = Tanks.list_tanks()
+  def index(conn, _params) do    
+    tanks = Tanks.list_tanks()    
     render(conn, "index.html", tanks: tanks)
   end
 

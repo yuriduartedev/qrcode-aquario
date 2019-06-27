@@ -7,6 +7,7 @@ defmodule AquarioWeb.Router do
     plug :fetch_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug AquarioWeb.SetLocalePlug, default: "pt_BR"
   end
 
   pipeline :api do

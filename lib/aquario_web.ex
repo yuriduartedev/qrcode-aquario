@@ -40,6 +40,12 @@ defmodule AquarioWeb do
       import AquarioWeb.Router.Helpers
       import AquarioWeb.ErrorHelpers
       import AquarioWeb.Gettext
+
+      def get_from_locale(struct, field) do
+        locale = AquarioWeb.Gettext |> Gettext.get_locale() |> String.downcase()
+
+        Map.get(struct, String.to_atom("#{field}_#{locale}"))
+      end
     end
   end
 

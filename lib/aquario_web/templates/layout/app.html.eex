@@ -73,9 +73,9 @@
               </ul>
             </div>
             <div class="bandeiras">
-              <a href="#"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/br.png") %>"><span></span></a>
-              <a href="#"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/us.png") %>"><span></span></a>
-              <a href="#"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/es.png") %>"><span></span></a>
+              <a href="?locale=pt_BR"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/br.png") %>"><span></span></a>
+              <a href="?locale=en_US"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/us.png") %>"><span></span></a>
+              <a href="?locale=es_ES"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/es.png") %>"><span></span></a>
             </div>
           </nav>
           <!--End Navbar-->
