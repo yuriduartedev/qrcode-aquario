@@ -19,7 +19,7 @@
     <%= link to: "http://blog.aquariomarinhodorio.com.br" do %>
       <button type="button" class="btn btn-extra">
         <span><img class="float-left" src="<%= static_path(@conn, "/images/extra.png") %>"></span> 
-        <span class="align-txt-btn"><%= gettext("Actives") %></span>  
+        <span class="align-txt-btn"><%= gettext("Extra activities") %></span>
       </button>
     <% end %>
   </div>

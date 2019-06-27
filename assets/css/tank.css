@@ -16,8 +16,12 @@
 .text-title{ 
   font-size: 2rem;
 }
+.tank-name {
+  font-size: 3rem;
+}
 .text-description{
   font-size: 1.5rem;
+  text-align: justify;
 }
 .wrapper-tank{
   z-index: 1;

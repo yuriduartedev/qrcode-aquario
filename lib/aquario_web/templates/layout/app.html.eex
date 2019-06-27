@@ -52,22 +52,22 @@
               <ul>
                 <%= link to: tank_path(@conn, :index), class: "nav-link nav-item" do %>
                   <li class="nav-item">
-                    <p class="nav-link">Tanques</p>
+                    <p class="nav-link"><%= gettext("Tanks") %></p>
                   </li>
                 <% end %>
                 <%= link to: research_path(@conn, :index), class: "nav-link nav-item" do %>
                   <li class="nav-item">
-                    <p class="nav-link">Pesquisas</p>
+                    <p class="nav-link"><%= gettext("Researches") %></p>
                   </li>                
                 <% end %>
                   <%= link to: tank_path(@conn, :index), class: "nav-link nav-item" do %>
                   <li class="nav-item">
-                    <p class="nav-link">Mapa do Circuito</p>
+                    <p class="nav-link"><%= gettext("Circuit Map") %></p>
                   </li>
                 <% end %>
                   <%= link to: tank_path(@conn, :index), class: "nav-link nav-item" do %>
                   <li class="nav-item">
-                    <p class="nav-link">Atividades Extras</p>
+                    <p class="nav-link"><%= gettext("Extra activities") %></p>
                   </li>
                 <% end %>
               </ul>

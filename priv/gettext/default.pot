@@ -11,11 +11,6 @@ msgid ""
 msgstr ""
 
 #, elixir-format
-#: lib/aquario_web/templates/page/index.html.eex:22
-msgid "Actives"
-msgstr ""
-
-#, elixir-format
 #: lib/aquario_web/templates/page/index.html.eex:17
 msgid "Circuit Map"
 msgstr ""
@@ -28,4 +23,9 @@ msgstr ""
 #, elixir-format
 #: lib/aquario_web/templates/page/index.html.eex:6
 msgid "Tanks"
+msgstr ""
+
+#, elixir-format
+#: lib/aquario_web/templates/page/index.html.eex:22
+msgid "Extra activities"
 msgstr ""

@@ -1,19 +1,41 @@
   <div class="container my-4">    
     <div class="row text-center wrapper-tank">
-      <!--Image and Title-->
-      <div class="col-md-12 mx-2">        
-        <img class="rounded-circle img-specy-circle" alt="100x100" src="https://portal-ar.s3.amazonaws.com/uploads/research/image/5/research_formas-corpo.jpg"
+      <!--Image and Title of Tank -->
+      <div class="col-md-12 mx-2">
+        <h2 class="my-4 h2 text-default tank-name mb-3"><%= get_from_locale(@tank, :name) %></h2>   
+        <img class="rounded-circle img-specy-circle" alt="100x100" src="https://portal-ar.s3.amazonaws.com/uploads/tank/image/1/tank_tank_1.JPG"
           data-holder-rendered="true">
-          <h2 class="my-4 h2 text-default text-title">Reprodução do Hippocampus reidi em cativeiro.</h2>
+          <div class="col-md-6 mx-auto">            
+            <h3 class="my-4 h2 text-default text-title"><%= get_from_locale(@tank, :title) %></h3>
+          </div>          
       </div>
-      <!--Image and Title-->  
-      <div class="col-md-12">
-        <div class="col-md-6 mb-3 border-tank"></div>
-      </div>    
-      <!-- Description -->
+      <!--Image and Title of Tank -->
+
+      <!-- Line -->
+      <div class="col-md-12"><div class="col-md-6 mb-3 border-tank"></div></div>
+      <!-- End Line -->
+
+      <!-- Tank Description -->
       <div class="col-md-6 mx-auto">        
-        <p class="text-default text-description">Pesquisa que visa adquirir conhecimentos sobre a melhor forma de cultivo e desenvolvimento do cavalo marinho (Hippocampus reidi). Os resultados poderão subsidiar novas estratégias para preservação dessa espécie, colaborando assim com o restabelecimento da fauna nativa, em locais prévios ou futuros em que esta espécie esteja extinta.</p>
+        <p class="text-default text-description"><%= get_from_locale(@tank, :description) %></p>
       <div>
-      <!-- Description -->    
+      <!-- Tank Description -->
+
+      <!-- Line -->
+      <div class="col-md-12"><div class="col-md-6 mb-3 border-tank"></div></div>
+      <!-- End Line -->
+
+      <!--Image and Title of Specy -->
+      <div class="col-md-6 mx-auto">
+        <h3 class="my-4 h2 text-default text-title"><%= get_from_locale(@tank, :title) %></h3>
+      </div> 
+      <img class="rounded-circle img-specy-circle mb-5 mt-4" alt="100x100" src="https://portal-ar.s3.amazonaws.com/uploads/specy/image/9/tank_Chrysaora_spp.jpg">
+      <!--Image and Title of Specy -->
+
+      <!-- Specy Description -->
+      <div class="col-md-6 mx-auto">        
+        <p class="text-default text-description"><%= get_from_locale(@tank, :description) %></p>
+      <div>
+      <!-- Specy Description -->
     </div>    
   </div>
