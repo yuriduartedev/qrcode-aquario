@@ -10,10 +10,15 @@
       <% end %>
       <div class="form-row">
         <div class="col-md-4 mb-3">
+          <%= label f, :author, class: "control-label" %>
+          <%= text_input f, :author, class: "form-control" %>
+          <%= error_tag f, :author %>
+        </div>
+        <div class="col-md-4 mb-3">
           <%= label f, :title_pt_br, class: "control-label" %>
           <%= text_input f, :title_pt_br, class: "form-control" %>
           <%= error_tag f, :title_pt_br %>
-        </div>      
+        </div>     
         <div class="col-md-4 mb-3">
           <div class="form-group">
             <%= label f, :title_en_us, class: "control-label" %>

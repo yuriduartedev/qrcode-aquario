@@ -1,6 +1,7 @@
 .table th, td {
   vertical-align: middle!important;
   text-align: center;
+  max-width: 253px;
 }
 .logo {
   width: 3.5em;

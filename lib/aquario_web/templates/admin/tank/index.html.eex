@@ -11,10 +11,8 @@
         <thead>
           <tr>
             <th>Ordem</th>
-            <th>Nome Pt</th>   
-            <th>Título Pt</th>
-            <th>Link Libras</th>
-            <th>Link Áudio</th>
+            <th>Nome</th>   
+            <th>Título</th>
             <th>Opções</th>
           </tr>
         </thead>
@@ -24,8 +22,6 @@
               <td><%= tank.order %></td>              
               <td><%= tank.name_pt_br %></td>
               <td><%= tank.title_pt_br %></td>
-              <td><%= tank.link_libras %></td>
-              <td><%= tank.link_audio %></td>
               <td class="text-center align-middle">
                 <div class="btn-group btn-group-sm" role="group" aria-label="...">
                   <span><%= link "Mostrar", to: admin_tank_path(@conn, :show, tank), class: "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" %></span>

@@ -62,3 +62,19 @@ config :logger, level: :info
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
 import_config "prod.secret.exs"
+
+# Arc
+config :arc,
+  storage: Arc.Storage.S3,
+  bucket: System.get_env("BUCKET"),
+  virtual_host: true
+
+# Ex AWS
+config :ex_aws,
+  access_key_id: System.get_env("AWS_ACCESS_KEY"),
+  secret_access_key: System.get_env("AWS_SECRET_ACCESS_KEY"),
+  region: System.get_env("AWS_REGION")
+
+config :ex_aws, :httpoison_opts,
+  recv_timeout: 260_000,
+  hackney: [recv_timeout: 260_000, pool: false]

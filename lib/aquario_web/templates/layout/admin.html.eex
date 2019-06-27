@@ -79,7 +79,7 @@
       </a>
       <div id="collapsespecy" class="collapse" aria-labelledby="headingspecy" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-          <h6 class="collapse-header">Administrar Espécies:</h6>
+          <h6 class="collapse-header">Administrar Espécies</h6>
           <a><%= link "Listar Espécies", to: admin_specy_path(@conn, :index), class: "collapse-item" %></a>
           <a><%= link "Nova Espécie", to: admin_specy_path(@conn, :new), class: "collapse-item" %></a>
         </div>
@@ -95,7 +95,7 @@
       </a>
       <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-          <h6 class="collapse-header">Administrar Pesquisas:</h6>
+          <h6 class="collapse-header">Administrar Pesquisas</h6>
           <a><%= link "Listar Pesquisas", to: admin_research_path(@conn, :index), class: "collapse-item" %></a>
           <a><%= link "Nova Pesquisa", to: admin_research_path(@conn, :new), class: "collapse-item" %></a>
         </div>

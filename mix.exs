@@ -42,7 +42,16 @@ defmodule Aquario.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:plug_cowboy, "~> 1.0"},
-      {:ex_ngrok, "~> 0.3.0", only: [:dev]}
+      {:ex_ngrok, "~> 0.3.0", only: [:dev]},
+      {:httpoison, "~> 1.4", override: true},
+
+      # Upload
+      {:ex_aws, "~> 2.1"},
+      {:ex_aws_s3, "~> 2.0"},
+      {:hackney, "~> 1.9"},
+      {:sweet_xml, "~> 0.6"},
+      {:arc, "~> 0.11.0"},
+      {:arc_ecto, "~> 0.11.1"}
     ]
   end
 

@@ -11,9 +11,9 @@
         <thead>
           <tr>
             <th>Ordem</th>
-            <th>Nome Pt</th>
-            <th>Nome Científico Pt</th>   
-            <th>Título Pt</th>
+            <th>Nome</th>
+            <th>Nome Científico</th>   
+            <th>Título</th>
             <th>Opções</th>
           </tr>
         </thead>

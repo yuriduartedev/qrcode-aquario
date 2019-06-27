@@ -11,10 +11,8 @@
         <thead>
           <tr>          
             <th>Tanque Relacionado</th>
-            <th>Título Pt</th>   
+            <th>Título</th>   
             <th>Author</th>
-            <th>Link Libras</th>
-            <th>Link Áudio</th>
             <th>Opções</th>
           </tr>
         </thead>
@@ -24,8 +22,6 @@
                 <td><%= research.tank_id %></td>
                 <td><%= research.title_pt_br %></td>      
                 <td><%= research.author %></td>
-                <td><%= research.link_libras %></td>
-                <td><%= research.link_audio %></td>
 
                 <td class="text-right">
                   <span><%= link "Show", to: admin_research_path(@conn, :show, research), class: "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" %></span>

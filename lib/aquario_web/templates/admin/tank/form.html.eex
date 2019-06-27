@@ -1,8 +1,8 @@
-<%= form_for @changeset, @action, fn f -> %>
+<%= form_for @changeset, @action, [autocomplete: "off", multipart: true], fn f -> %>
   <div class="card shadow mb-4 p-3">
     <h3 class="mb-3"></h3>
     
-    <form class="needs-validation" novalidate>
+    <form class="needs-validation">
       <%= if @changeset.action do %>
         <div class="alert alert-danger">
           <p>Oops, algo deu errado! Por favor, verifique os erros abaixo.</p>
@@ -98,10 +98,10 @@
           </div>
         </div>
       </div>
-      <div class="form-row">
+      <div class="form-row mb-2">
         <div class="col-md-4 ml-1 custom-file">        
-          <%= text_input f, :image, class: "custom-file-input" %>
-          <%= label f, "Selecionar a imagem...", class: "custom-file-label" %>
+          <%= file_input f, :image, class: "custom-file-input" %>
+          <%= label f, :image, "Selecionar a imagem...", class: "custom-file-label" %>
           <%= error_tag f, :image %>
         </div>
       </div>

@@ -4,7 +4,7 @@ defmodule Aquario.Researches.Research do
 
 
   schema "researches" do
-    field :author, {:array, :string}
+    field :author, {:array, :jsonb}
     field :description_en_us, :string
     field :description_es_es, :string
     field :description_pt_br, :string

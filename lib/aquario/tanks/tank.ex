@@ -2,6 +2,7 @@ defmodule Aquario.Tanks.Tank do
   use Ecto.Schema
   import Ecto.Changeset
 
+  alias AquarioWeb.PhotoUploader
 
   schema "tanks" do
     many_to_many :species, Aquario.Species.Specy,

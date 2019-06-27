@@ -18,7 +18,7 @@
       <!-- Tank Description -->
       <div class="col-md-6 mx-auto">        
         <p class="text-default text-description"><%= get_from_locale(@tank, :description) %></p>
-      <div>
+      </div>
       <!-- Tank Description -->
 
       <!-- Line -->
@@ -26,16 +26,19 @@
       <!-- End Line -->
 
       <!--Image and Title of Specy -->
-      <div class="col-md-6 mx-auto">
-        <h3 class="my-4 h2 text-default text-title"><%= get_from_locale(@tank, :title) %></h3>
-      </div> 
-      <img class="rounded-circle img-specy-circle mb-5 mt-4" alt="100x100" src="https://portal-ar.s3.amazonaws.com/uploads/specy/image/9/tank_Chrysaora_spp.jpg">
+      <div class="col-md-12 mx-2">
+        <div class="col-md-6 mx-auto">            
+          <h3 class="my-4 h2 text-default text-title"><%= get_from_locale(@tank, :title) %></h3>
+        </div>  
+        <img class="rounded-circle img-specy-circle" alt="100x100" src="https://portal-ar.s3.amazonaws.com/uploads/specy/image/9/tank_Chrysaora_spp.jpg"
+          data-holder-rendered="true">                  
+      </div>
       <!--Image and Title of Specy -->
 
       <!-- Specy Description -->
-      <div class="col-md-6 mx-auto">        
+      <div class="col-md-6 mx-auto my-4">        
         <p class="text-default text-description"><%= get_from_locale(@tank, :description) %></p>
-      <div>
+      </div>
       <!-- Specy Description -->
     </div>    
   </div>
