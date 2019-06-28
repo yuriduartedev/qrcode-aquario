@@ -3,7 +3,7 @@
       <!--Image and Title of Tank -->
       <div class="col-md-12 mx-2">
         <h2 class="my-4 h2 text-default tank-name mb-3"><%= get_from_locale(@tank, :name) %></h2>   
-        <img class="rounded-circle img-specy-circle" alt="100x100" src="https://portal-ar.s3.amazonaws.com/uploads/tank/image/1/tank_tank_1.JPG"
+        <img class="rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({@tank.image, @tank}, :show) %>"
           data-holder-rendered="true">
           <div class="col-md-6 mx-auto">            
             <h3 class="my-4 h2 text-default text-title"><%= get_from_locale(@tank, :title) %></h3>

@@ -4,6 +4,11 @@ defmodule Aquario.Tanks.Tank do
   import Ecto.Changeset
 
   alias AquarioWeb.PhotoUploader
+  alias Aquario.Species
+  alias Aquario.Species.Species
+  alias Aquario.Species.Specy
+  alias AquarioWeb.Admin.SpecyController
+  alias AquarioWeb.SpecyController
 
   schema "tanks" do
     many_to_many :species, Aquario.Species.Specy,

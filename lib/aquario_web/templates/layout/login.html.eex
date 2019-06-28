@@ -19,13 +19,21 @@
   </head>
   <body class="bg-login">
 
-    <div class="container mt-5 pt-5">
-
+    <div class="container mt-5">
+      <!-- Logo principal -->
+      <div class="header">
+        <div class="row">
+          <div class="col text-center mt-4">
+            <%= link to: page_path(@conn, :index) do %>
+              <img style="width: 140px;" class="logo-tank-page" src="<%= static_path(@conn, "/images/aqua-logo.svg") %>">        
+            <% end %>
+          </div>    
+        </div>
+      </div>
+      <!-- End Logo  -->
       <!-- Outer Row -->
-      <div class="row justify-content-center mt-5 pt-5">
-
+      <div class="row justify-content-center mt-5">
         <div class="col-xl-10 col-lg-12 col-md-9">
-
           <div class="card o-hidden border-0 shadow-lg my-5">
             <div class="card-body p-0">
               <!-- Nested Row within Card Body -->

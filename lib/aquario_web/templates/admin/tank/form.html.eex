@@ -98,7 +98,7 @@
           </div>
         </div>
       </div>
-      <div class="form-row mb-2">
+      <div class="form-row mb-3">
         <div class="col-md-4 ml-1 custom-file">        
           <%= file_input f, :image, class: "custom-file-input" %>
           <%= label f, :image, "Selecionar a imagem...", class: "custom-file-label" %>

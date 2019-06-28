@@ -1,6 +1,7 @@
 .img-thumb{
   width: 10rem;
-  border-radius: 0.8rem;
+  border-radius: 2rem;
+  margin: 5px;
 }
 .card-img{
   display: flex;
