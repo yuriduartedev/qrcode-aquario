@@ -6,3 +6,8 @@
 .logo {
   width: 3.5em;
 }
+.image-tank-show{
+  width: 100%;
+  max-width: 420px;
+  margin: 5px;
+}

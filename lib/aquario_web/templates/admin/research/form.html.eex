@@ -10,25 +10,34 @@
       <% end %>
       <div class="form-row">
         <div class="col-md-4 mb-3">
-          <%= label f, :author, class: "control-label" %>
+          <%= label f, "Autor", class: "control-label" %>
           <%= text_input f, :author, value: @changeset.data.author, class: "form-control" %>
           <%= error_tag f, :author %>
         </div>
         <div class="col-md-4 mb-3">
-          <%= label f, :title_pt_br, class: "control-label" %>
+          <div class="form-group">
+            <%= label f, "Selecione o tanque referente a essa pesquisa", class: "control-label" %>            
+            <%= select f, :tank_id, collection_for_select(get_tanks(), :name_pt_br), prompt: "Selecione um tanque", class: "form-control" %>
+            <%= error_tag f, :tank_id %>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <%= label f, "Título em Português", class: "control-label" %>
           <%= text_input f, :title_pt_br, class: "form-control" %>
           <%= error_tag f, :title_pt_br %>
         </div>     
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, :title_en_us, class: "control-label" %>
+            <%= label f, "Título em Ingês", class: "control-label" %>
             <%= text_input f, :title_en_us, class: "form-control" %>
             <%= error_tag f, :title_en_us %>
           </div>
         </div>
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, :title_es_es, class: "control-label" %>
+            <%= label f, "Título em Espanhol", class: "control-label" %>
             <%= text_input f, :title_es_es, class: "form-control" %>
             <%= error_tag f, :title_es_es %>
           </div>
@@ -37,51 +46,45 @@
       <div class="form-row">
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, "Descrição Pt:", class: "control-label" %>
+            <%= label f, "Descrição em Português", class: "control-label" %>
             <%= textarea f, :description_pt_br, class: "form-control", rows: "5" %>
             <%= error_tag f, :description_pt_br %>
           </div>
         </div>
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, "Descrição En:", class: "control-label" %>
+            <%= label f, "Descrição em Inglês", class: "control-label" %>
             <%= textarea f, :description_en_us, class: "form-control", rows: "5" %>
             <%= error_tag f, :description_en_us %>
           </div>
         </div>
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, "Descrição Es:", class: "control-label" %>
+            <%= label f, "Descrição em Espanhol", class: "control-label" %>
             <%= textarea f, :description_es_es, class: "form-control", rows: "5" %>
             <%= error_tag f, :description_es_es %>
           </div>
         </div>
       </div>
-      <div class="form-row">
+      
+      <div class="form-row">                
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, :tank_id, class: "control-label" %>
-            <%= select f, :tank_id, collection_for_select(get_tanks(), :name_pt_br), prompt: "Selecione um tanque" %>
-            <%= error_tag f, :tank_id %>
-          </div>
-        </div>        
-        <div class="col-md-4 mb-3">
-          <div class="form-group">
-            <%= label f, "Link libras:", class: "control-label" %>
-            <%= text_input f, :link_libras, class: "form-control" %>
+            <%= label f, "Link de libras:", class: "control-label" %>
+            <%= text_input f, :link_libras, class: "form-control", placeholder: "Link do YouTube..." %>
             <%= error_tag f, :link_libras %>
           </div>
         </div>
         <div class="col-md-4 mb-3">
             <div class="form-group">
-            <%= label f, "Link áudio:", class: "control-label" %>
-            <%= text_input f, :link_audio, class: "form-control" %>
+            <%= label f, "Link de áudio:", class: "control-label" %>
+            <%= text_input f, :link_audio, class: "form-control", placeholder: "Link do YouTube..." %>
             <%= error_tag f, :link_audio %>
           </div>
         </div>
       </div>
-      <div class="form-row">
-        <div class="ml-1 custom-file col-md-4">        
+      <div class="form-row mb-2">
+        <div class="col-md-4 ml-1 custom-file">        
           <%= text_input f, :image, class: "custom-file-input" %>
           <%= label f, "Selecionar a imagem...", class: "custom-file-label" %>
           <%= error_tag f, :image %>

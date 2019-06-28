@@ -1,8 +1,33 @@
-<%# <h2>Tanque: <%= @tank.name_pt_br %></h2> %>
+<h6 class="mb-3 m-0 font-weight-bold text-primary">Pesquisa: <span><%= @research.title_pt_br %></span></h6>
 <div class="card shadow mb-4 p-3">
-
   <div class="row">
     <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-4 col-md-4 mb-3">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Autor</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @research.author %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-4 mb-3">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Tanque Relacionado</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @research.tank_id %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
     <div class="col-xl-4 col-md-4 mb-3">
       <div class="card border-left-primary shadow h-100 py-2">
         <div class="card-body">
@@ -89,18 +114,7 @@
   <!-- Initial Cards Order and Links -->
   <div class="row">
     <!-- Earnings (Monthly) Card Example -->
-    <div class="col-xl-4 col-md-4 mb-3">
-      <div class="card border-left-primary shadow h-100 py-2">
-        <div class="card-body">
-          <div class="row no-gutters align-items-center">
-            <div class="col mr-2">
-              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Autor</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @research.author %></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
      <!-- Earnings (Monthly) Card Example -->
     <div class="col-xl-4 col-md-4 mb-3">
       <div class="card border-left-primary shadow h-100 py-2">

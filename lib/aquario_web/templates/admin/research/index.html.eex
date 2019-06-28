@@ -12,7 +12,7 @@
           <tr>          
             <th>Tanque Relacionado</th>
             <th>Título</th>   
-            <th>Author</th>
+            <th>Autor</th>
             <th>Opções</th>
           </tr>
         </thead>
@@ -24,9 +24,9 @@
                 <td><%= research.author %></td>
 
                 <td class="text-right">
-                  <span><%= link "Show", to: admin_research_path(@conn, :show, research), class: "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" %></span>
-                  <span><%= link "Edit", to: admin_research_path(@conn, :edit, research), class: "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mr-1 ml-1" %></span>
-                  <span><%= link "Delete", to: admin_research_path(@conn, :delete, research), method: :delete, data: [confirm: "Are you sure?"], class: "d-none d-sm-inline-block btn btn-sm shadow-sm btn-danger" %></span>
+                  <span><%= link "Mostrar", to: admin_research_path(@conn, :show, research), class: "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" %></span>
+                  <span><%= link "Editar", to: admin_research_path(@conn, :edit, research), class: "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mr-1 ml-1" %></span>
+                  <span><%= link "Excluir", to: admin_research_path(@conn, :delete, research), method: :delete, data: [confirm: "Are you sure?"], class: "d-none d-sm-inline-block btn btn-sm shadow-sm btn-danger" %></span>
                 </td>
               </tr>
           <% end %>

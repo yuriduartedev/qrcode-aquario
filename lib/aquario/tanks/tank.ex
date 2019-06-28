@@ -2,7 +2,6 @@ defmodule Aquario.Tanks.Tank do
   use Ecto.Schema  
   use Arc.Ecto.Schema
   import Ecto.Changeset
-  # use Ecto.Query
 
   alias AquarioWeb.PhotoUploader
 

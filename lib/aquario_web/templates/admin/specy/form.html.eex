@@ -1,4 +1,4 @@
-<%= form_for @changeset, @action, fn f -> %>
+<%= form_for @changeset, @action, [autocomplete: "off", multipart: true], fn f -> %>
   <div class="card shadow mb-4 p-3">
     <h3 class="mb-3"></h3>
     
@@ -10,20 +10,20 @@
       <% end %>
       <div class="form-row">
         <div class="col-md-4 mb-3">
-          <%= label f, "Nome Pt:", class: "control-label" %>
+          <%= label f, "Nome em Português", class: "control-label" %>
           <%= text_input f, :name_pt_br, class: "form-control" %>
           <%= error_tag f, :name_pt_br %>
         </div>      
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, "Nome En:", class: "control-label" %>
+            <%= label f, "Nome em Inglês", class: "control-label" %>
             <%= text_input f, :name_en_us, class: "form-control" %>
             <%= error_tag f, :name_en_us %>
           </div>
         </div>
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, "Nome Es:", class: "control-label" %>
+            <%= label f, "Nome em Espanhol", class: "control-label" %>
             <%= text_input f, :name_es_es, class: "form-control" %>
             <%= error_tag f, :name_es_es %>
           </div>
@@ -32,21 +32,21 @@
       <div class="form-row">
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, :scientific_name_pt_br, class: "control-label" %>
+            <%= label f, "Nome científico em Português", class: "control-label" %>
             <%= text_input f, :scientific_name_pt_br, class: "form-control" %>
             <%= error_tag f, :scientific_name_pt_br %>
           </div>
         </div>
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, :scientific_name_en_us, class: "control-label" %>
+            <%= label f, "Nome científico em Inglês", class: "control-label" %>
             <%= text_input f, :scientific_name_en_us, class: "form-control" %>
             <%= error_tag f, :scientific_name_en_us %>
           </div>
         </div>
         <div class="col-md-4 mb-3">
             <div class="form-group">
-            <%= label f, :scientific_name_es_es, class: "control-label" %>
+            <%= label f, "Nome científico em Espanhol", class: "control-label" %>
             <%= text_input f, :scientific_name_es_es, class: "form-control" %>
             <%= error_tag f, :scientific_name_es_es %>
           </div>
@@ -55,21 +55,21 @@
       <div class="form-row">
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, "Título Pt:", class: "control-label" %>
+            <%= label f, "Título em Português", class: "control-label" %>
             <%= text_input f, :title_pt_br, class: "form-control" %>
             <%= error_tag f, :title_pt_br %>
           </div>
         </div>
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, "Título En:", class: "control-label" %>
+            <%= label f, "Título em Inglês", class: "control-label" %>
             <%= text_input f, :title_en_us, class: "form-control" %>
             <%= error_tag f, :title_en_us %>
           </div>
         </div>
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, "Título Es:", class: "control-label" %>
+            <%= label f, "Título em Espanhol", class: "control-label" %>
             <%= text_input f, :title_es_es, class: "form-control" %>
             <%= error_tag f, :title_es_es %>
           </div>
@@ -78,21 +78,21 @@
       <div class="form-row">
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, "Descrição Pt:", class: "control-label" %>
+            <%= label f, "Descrição em Português", class: "control-label" %>
             <%= textarea f, :description_pt_br, class: "form-control", rows: "5" %>
             <%= error_tag f, :description_pt_br %>
           </div>
         </div>
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, "Descrição En:", class: "control-label" %>
+            <%= label f, "Descrição em Inglês", class: "control-label" %>
             <%= textarea f, :description_en_us, class: "form-control", rows: "5" %>
             <%= error_tag f, :description_en_us %>
           </div>
         </div>
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, "Descrição Es:", class: "control-label" %>
+            <%= label f, "Descrição em Espanhol", class: "control-label" %>
             <%= textarea f, :description_es_es, class: "form-control", rows: "5" %>
             <%= error_tag f, :description_es_es %>
           </div>
@@ -101,15 +101,15 @@
       <div class="form-row">
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, "Ordem da espécie:", class: "control-label" %>
+            <%= label f, "Ordem da espécie", class: "control-label" %>
             <%= number_input f, :order, class: "form-control" %>
             <%= error_tag f, :order %>
           </div>
         </div>
       </div>
-      <div class="form-row">
+      <div class="form-row mb-3">
         <div class="custom-file col-md-4 ml-1">        
-          <%= text_input f, :image, class: "custom-file-input" %>
+          <%= file_input f, :image, class: "custom-file-input" %>
           <%= label f, "Selecionar a imagem...", class: "custom-file-label" %>
           <%= error_tag f, :image %>
         </div>

@@ -1,11 +1,9 @@
-/* Login */
 .bg-login-img{
   background: url(https://aquario-staging.s3.us-east-2.amazonaws.com/manual/raia.jpg);
   background-position: center;
   background-size: cover;
 }
 .bg-login {
-  /* background-image: linear-gradient(to top, #2f97ff 0%, white 100%); */
   background-color: rgba(238, 238, 238, 0.466);
   background-size: cover;
 }
@@ -17,4 +15,3 @@
 .btn-login:hover {
   color: #fff;
 }
-/* Login */
