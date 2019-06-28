@@ -181,7 +181,9 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Imagem do Tanque:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @tank.image %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800">
+                 <img class="image-responsive-height" src="<%= AquarioWeb.PhotoUploader.url({@tank.image, @tank}, :show) %>">
+              </div>
             </div>
           </div>
         </div>

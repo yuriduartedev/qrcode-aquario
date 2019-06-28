@@ -11,7 +11,7 @@
       <div class="form-row">
         <div class="col-md-4 mb-3">
           <%= label f, :author, class: "control-label" %>
-          <%= text_input f, :author, class: "form-control" %>
+          <%= text_input f, :author, value: @changeset.data.author, class: "form-control" %>
           <%= error_tag f, :author %>
         </div>
         <div class="col-md-4 mb-3">
@@ -61,7 +61,7 @@
         <div class="col-md-4 mb-3">
           <div class="form-group">
             <%= label f, :tank_id, class: "control-label" %>
-            <%= number_input f, :tank_id, class: "form-control" %>
+            <%= select f, :tank_id, collection_for_select(get_tanks(), :name_pt_br), prompt: "Selecione um tanque" %>
             <%= error_tag f, :tank_id %>
           </div>
         </div>        

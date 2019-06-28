@@ -2,7 +2,7 @@
   <div class="card shadow mb-4 p-3">
     <h3 class="mb-3"></h3>
     
-    <form class="needs-validation">
+    <div class="needs-validation">
       <%= if @changeset.action do %>
         <div class="alert alert-danger">
           <p>Oops, algo deu errado! Por favor, verifique os erros abaixo.</p>
@@ -109,6 +109,6 @@
         <%= submit "Submit", class: "btn btn-success" %>
         <span><%= link "Voltar", to: admin_tank_path(@conn, :index), class: "btn btn-primary" %></span>
       </div>    
-    </form>
+    </div>
   </div>  
 <% end %>

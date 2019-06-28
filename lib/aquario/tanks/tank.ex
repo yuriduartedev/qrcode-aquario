@@ -1,6 +1,8 @@
 defmodule Aquario.Tanks.Tank do
-  use Ecto.Schema
+  use Ecto.Schema  
+  use Arc.Ecto.Schema
   import Ecto.Changeset
+  # use Ecto.Query
 
   alias AquarioWeb.PhotoUploader
 
@@ -13,7 +15,7 @@ defmodule Aquario.Tanks.Tank do
     field :description_en_us, :string
     field :description_es_es, :string
     field :description_pt_br, :string
-    field :image, :string
+    field :image, PhotoUploader.Type
     field :link_audio, :string
     field :link_libras, :string
     field :name_en_us, :string
@@ -31,6 +33,8 @@ defmodule Aquario.Tanks.Tank do
   def changeset(tank, attrs) do
     tank
     |> cast(attrs, [:name_pt_br, :name_en_us, :name_es_es, :order, :image, :description_pt_br, :description_en_us, :description_es_es, :title_pt_br, :title_en_us, :title_es_es, :link_libras, :link_audio])
+    |> put_change(:image_token, Ecto.UUID.generate())
+    |> cast_attachments(attrs, [:image])
     |> validate_required([:name_pt_br, :name_en_us, :name_es_es, :order, :image, :description_pt_br, :description_en_us, :description_es_es, :title_pt_br, :title_en_us, :title_es_es, :link_libras, :link_audio])
   end
 end

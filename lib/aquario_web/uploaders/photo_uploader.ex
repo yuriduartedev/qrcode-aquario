@@ -1,4 +1,4 @@
-defmodule AppWeb.PhotoUploader do
+defmodule AquarioWeb.PhotoUploader do
   use Arc.Definition
   use Arc.Ecto.Definition
 

@@ -10,7 +10,7 @@ defmodule Aquario.Repo.Migrations.CreateResearches do
       add :description_pt_br, :text
       add :description_en_us, :text
       add :description_es_es, :text
-      add :author, :jsonb, default: "[]"
+      add :author, {:array, :string}, default: "{}"
       add :link_libras, :string
       add :link_audio, :string
       add :tank_id, references(:tanks, on_delete: :nothing)

@@ -4,7 +4,7 @@ defmodule Aquario.Researches.Research do
 
 
   schema "researches" do
-    field :author, {:array, :jsonb}
+    field :author, {:array, :string}
     field :description_en_us, :string
     field :description_es_es, :string
     field :description_pt_br, :string
@@ -20,9 +20,16 @@ defmodule Aquario.Researches.Research do
   end
 
   @doc false
-  def changeset(research, attrs) do
+  def changeset(research, attrs) do   
     research
-    |> cast(attrs, [:title_pt_br, :title_en_us, :title_es_es, :image, :description_pt_br, :description_en_us, :description_es_es, :author, :link_libras, :link_audio])
-    |> validate_required([:title_pt_br, :title_en_us, :title_es_es, :image, :description_pt_br, :description_en_us, :description_es_es, :author, :link_libras, :link_audio])
+    |> cast(attrs, [:title_pt_br, :title_en_us, :title_es_es, :image, :description_pt_br, :description_en_us, :description_es_es, :link_libras, :link_audio])
+    |> parse_author()
+    |> validate_required([:title_pt_br, :title_en_us, :title_es_es, :image, :description_pt_br, :description_en_us, :description_es_es, :link_libras, :link_audio])
+  end
+
+  defp parse_author(changeset) do
+    authors = String.split(changeset.params["author"] || "", ",")
+
+    put_change(changeset, :author, authors)
   end
 end

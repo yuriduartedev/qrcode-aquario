@@ -1,4 +1,4 @@
-<h2>Tanque: <%= @tank.name_pt_br %></h2>
+<%# <h2>Tanque: <%= @tank.name_pt_br %></h2> %>
 <div class="card shadow mb-4 p-3">
 
   <div class="row">
@@ -94,8 +94,8 @@
         <div class="card-body">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
-              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Tanque Relacionado:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @research.order %></div>
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Autor</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @research.author %></div>
             </div>
           </div>
         </div>
