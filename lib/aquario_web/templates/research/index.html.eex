@@ -1,0 +1,12 @@
+<%= for research <- @researches do %>
+  <div class="container-fluid">
+    <div class="d-flex flex-column align-items-stretch">
+      <%= link to: research_path(@conn, :show, research) do %>
+        <button type="button" class="btn btn-pesquisa">
+          <span class=""><img class="float-left img-thumb" src="<%= AquarioWeb.PhotoUploader.url({research.image, research}, :show) %>"></span> 
+          <li class="align-txt-btn"><%= get_from_locale(research.tank, :name) %></li>
+        </button>
+      <% end %>    
+    </div>
+  </div>
+<% end %>

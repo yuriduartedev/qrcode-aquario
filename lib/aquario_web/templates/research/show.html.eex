@@ -1,0 +1,44 @@
+<div class="container my-4">
+  <div class="row text-center wrapper-tank">
+    <!--Image and Title of Tank -->
+    <div class="col-md-12 mx-2">
+      <h2 class="my-4 h2 text-default tank-name mb-3"><%= get_from_locale(@research, :name) %></h2>
+      <img class="rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({@research.image, @research}, :show) %>"
+        data-holder-rendered="true">
+        <div class="col-md-6 mx-auto">
+          <h3 class="my-4 h2 text-default text-title"><%= get_from_locale(@research.tank, :name) %></h3>          
+        </div>
+    </div>
+    <!--Image and Title of Tank -->
+
+    <!-- Line -->
+    <div class="col-md-12"><div class="col-md-6 mb-3 border-tank"></div></div>
+    <!-- End Line -->
+
+    <!-- Tank Description -->
+    <div class="col-md-6 mx-auto">
+      <p class="text-default text-description"><%= get_from_locale(@research, :description) %></p>
+    </div>
+    <!-- Tank Description -->
+
+    <!-- Line -->
+    <div class="col-md-12"><div class="col-md-6 mb-3 border-tank"></div></div>
+    <!-- End Line -->
+
+    <!--Image and Title of Specy -->
+    <div class="col-md-12 mx-2">
+      <div class="col-md-6 mx-auto">
+        <h3 class="my-4 h2 text-default text-title"><%= get_from_locale(@research, :title) %></h3>
+      </div>
+      <img class="rounded-circle img-specy-circle" alt="100x100" src="https://portal-ar.s3.amazonaws.com/uploads/specy/image/9/tank_Chrysaora_spp.jpg"
+        data-holder-rendered="true">
+    </div>
+    <!--Image and Title of Specy -->
+
+    <!-- Specy Description -->
+    <div class="col-md-6 mx-auto my-4">
+      <p class="text-default text-description"><%= get_from_locale(@research, :description) %></p>
+    </div>
+    <!-- Specy Description -->
+  </div>
+</div>

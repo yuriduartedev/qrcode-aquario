@@ -1,4 +1,4 @@
-<%= form_for @changeset, @action, fn f -> %>
+<%= form_for @changeset, @action, [autocomplete: "off", multipart: true], fn f -> %>
   <div class="card shadow mb-4 p-3">
     <h3 class="mb-3"></h3>
     
@@ -16,6 +16,7 @@
         </div>
         <div class="col-md-4 mb-3">
           <div class="form-group">
+            <%= inspect(@changeset.data.tank_id) %>
             <%= label f, "Selecione o tanque referente a essa pesquisa", class: "control-label" %>            
             <%= select f, :tank_id, collection_for_select(get_tanks(), :name_pt_br), prompt: "Selecione um tanque", class: "form-control" %>
             <%= error_tag f, :tank_id %>
@@ -83,9 +84,9 @@
           </div>
         </div>
       </div>
-      <div class="form-row mb-2">
+      <div class="form-row mb-3">
         <div class="col-md-4 ml-1 custom-file">        
-          <%= text_input f, :image, class: "custom-file-input" %>
+          <%= file_input f, :image, class: "custom-file-input" %>
           <%= label f, "Selecionar a imagem...", class: "custom-file-label" %>
           <%= error_tag f, :image %>
         </div>

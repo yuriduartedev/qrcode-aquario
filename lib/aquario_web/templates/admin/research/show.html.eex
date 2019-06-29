@@ -20,7 +20,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Tanque Relacionado</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @research.tank_id %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @research.tank.name_pt_br %></div>
             </div>
           </div>
         </div>
@@ -152,7 +152,9 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Imagem do Tanque:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @research.image %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800">
+                <img class="image-tank-show" src="<%= AquarioWeb.PhotoUploader.url({@research.image, @research}, :show) %>">
+              </div>
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ defmodule Aquario.Researches do
 
   """
   def list_researches do
-    Repo.all(Research)
+    Research |> Repo.all() |> Repo.preload(:tank)
   end
 
   @doc """
@@ -35,7 +35,11 @@ defmodule Aquario.Researches do
       ** (Ecto.NoResultsError)
 
   """
-  def get_research!(id), do: Repo.get!(Research, id)
+  def get_research!(id) do
+    Research
+    |> Repo.get!(id)
+    |> Repo.preload(:tank)
+  end
 
   @doc """
   Creates a research.
@@ -67,7 +71,7 @@ defmodule Aquario.Researches do
       {:error, %Ecto.Changeset{}}
 
   """
-  def update_research(%Research{} = research, attrs) do
+  def update_research(%Research{} = research, attrs) do    
     research
     |> Research.changeset(attrs)
     |> Repo.update()
