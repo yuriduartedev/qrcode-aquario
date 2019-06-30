@@ -121,6 +121,16 @@ background-color: #0079A9;
   box-shadow: 0 0 0 0.2rem #0079A9;
 }
 
+.btns-libras{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 5rem;
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  padding: 2px;
+}
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px){
   

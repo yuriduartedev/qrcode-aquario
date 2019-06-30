@@ -37,118 +37,64 @@
     <div class="content">
 
       <!-- Novo Navbar-->
-        <header>
-          <div class="menu">
-            <div class="bar"></div>
-          </div>
-          <div class="overlay"></div>
-          <nav>  
-            <div class="logo">
-              <!-- Logo Navbar -->
-              <%= link to: page_path(@conn, :index), class: "logo-link" do %>
-                <img class="logo brand" src="<%= static_path(@conn, "/images/aqua-logo.svg") %>">
-              <% end %> 
-              <!-- End Logo  -->    
-              <ul>
-                <%= link to: tank_path(@conn, :index), class: "nav-link nav-item" do %>
-                  <li class="nav-item">
-                    <p class="nav-link"><%= gettext("Tanks") %></p>
-                  </li>
-                <% end %>
-                <%= link to: research_path(@conn, :index), class: "nav-link nav-item" do %>
-                  <li class="nav-item">
-                    <p class="nav-link"><%= gettext("Researches") %></p>
-                  </li>                
-                <% end %>
-                  <%= link to: page_path(@conn, :index), class: "nav-link nav-item" do %>
-                  <li class="nav-item">
-                    <p class="nav-link"><%= gettext("Circuit Map") %></p>
-                  </li>
-                <% end %>
-                  <%= link to: "http://blog.aquariomarinhodorio.com.br", class: "nav-link nav-item" do %>
-                  <li class="nav-item">
-                    <p class="nav-link"><%= gettext("Extra activities") %></p>
-                  </li>
-                <% end %>
-              </ul>
-            </div>
-            <div class="bandeiras">
-              <a href="?locale=pt_BR"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/br.png") %>"><span></span></a>
-              <a href="?locale=en_US"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/us.png") %>"><span></span></a>
-              <a href="?locale=es_ES"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/es.png") %>"><span></span></a>
-            </div>
-          </nav>
-          <!--End Navbar-->
-          <!-- Logo principal -->
-          <div class="container header">
-            <div class="row">
-              <div class="col mt-5">
-                <%= link to: page_path(@conn, :index) do %>
-                  <img class="logo-tank-page" src="<%= static_path(@conn, "/images/aqua-logo.svg") %>">        
-                <% end %>
-              </div>    
-            </div>
-          </div>
-          <!-- End Logo  -->                 
-        </header> 
-
-        <main role="main" class="align-btns">            
-          <%= render @view_module, @view_template, assigns %>
-        </main> 
-
-        
-      
-
-      <!--Navbar 
-      <nav class=" my-nav navbar navbar-light navbar-expand-lg">
-        <div class="container">  
-          
-            Start Flags 
-          <ul class="list-inline links-list pull-left ml-2"><li class="dropdown language-selector">            
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true" aria-expanded="false"> 
-              <img width="16" height="16" class="" src="<%= static_path(@conn, "/images/br.png") %>">
-            </a>
-            <ul class="dropdown-menu pull-right bg-dropdown"> 
-              <li><a href="#"><img width="16" height="16" class="ml-2" src="<%= static_path(@conn, "/images/br.png") %>"><span> Português</span></a></li>
-              <li class="active"><a href="#"><img width="16" height="16" class="ml-2" src="<%= static_path(@conn, "/images/us.png") %>"><span> English</span></a></li>
-              <li><a href="#"><img width="16" height="16" class="ml-2" src="<%= static_path(@conn, "/images/es.png") %>"><span> Espanol</span></a></li>
-            </ul>
-          </ul>
-            End Flags -->          
-
-           <!-- Logo Aqua -->
-           <%#= link "text", to: url %>  
-           <!-- 
-          <%= link to: page_path(@conn, :index), class: "logo-link" do %>
-            <img class="logo" src="<%= static_path(@conn, "/images/aqua-logo.svg") %>">
-          <% end %> -->
-  
-           <!-- Start Button Selector 
-          <button class="navbar-toggler no-border mb-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse text-right" id="navbarNav">
-            <ul class="navbar-nav nav-personalize bg-dropdown">
-              <li class="nav-item">
-                <%= link "Tanques", to: page_path(@conn, :index), class: "nav-link" %>
-              </li>
-              <li class="nav-item">
-                <%= link "Pesquisas", to: page_path(@conn, :index), class: "nav-link" %>
-              </li>
-              <li class="nav-item">
-                <%= link "Mapa do circuito", to: page_path(@conn, :index), class: "nav-link" %>
-              </li>
-              <li class="nav-item">
-                <%= link "Atividades Extras", to: page_path(@conn, :index), class: "nav-link" %>
-              </li>
-            </ul>
-          </div>
-          End Button Selector 
+      <header>
+        <div class="menu">
+          <div class="bar"></div>
         </div>
-      </nav>
-      /.Navbar -->
+        <div class="overlay"></div>
+        <nav>  
+          <div class="logo">
+            <!-- Logo Navbar -->
+            <%= link to: page_path(@conn, :index), class: "logo-link" do %>
+              <img class="logo brand" src="<%= static_path(@conn, "/images/aqua-logo.svg") %>">
+            <% end %> 
+            <!-- End Logo  -->    
+            <ul>
+              <%= link to: tank_path(@conn, :index), class: "nav-link nav-item" do %>
+                <li class="nav-item">
+                  <p class="nav-link"><%= gettext("Tanks") %></p>
+                </li>
+              <% end %>
+              <%= link to: research_path(@conn, :index), class: "nav-link nav-item" do %>
+                <li class="nav-item">
+                  <p class="nav-link"><%= gettext("Researches") %></p>
+                </li>                
+              <% end %>
+                <%= link to: page_path(@conn, :index), class: "nav-link nav-item" do %>
+                <li class="nav-item">
+                  <p class="nav-link"><%= gettext("Circuit Map") %></p>
+                </li>
+              <% end %>
+                <%= link to: "http://blog.aquariomarinhodorio.com.br", class: "nav-link nav-item" do %>
+                <li class="nav-item">
+                  <p class="nav-link"><%= gettext("Extra activities") %></p>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+          <div class="bandeiras">
+            <a href="?locale=pt_BR"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/br.png") %>"><span></span></a>
+            <a href="?locale=en_US"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/us.png") %>"><span></span></a>
+            <a href="?locale=es_ES"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/es.png") %>"><span></span></a>
+          </div>
+        </nav>
+        <!--End Navbar-->
+        <!-- Logo principal -->
+        <div class="container header">
+          <div class="row">
+            <div class="col mt-5">
+              <%= link to: page_path(@conn, :index) do %>
+                <img class="logo-tank-page" src="<%= static_path(@conn, "/images/aqua-logo.svg") %>">        
+              <% end %>
+            </div>    
+          </div>
+        </div>
+        <!-- End Logo  -->                 
+      </header> 
 
-      
+      <main role="main" class="align-btns">            
+        <%= render @view_module, @view_template, assigns %>
+      </main>      
 
     </div> <!-- /container -->
 

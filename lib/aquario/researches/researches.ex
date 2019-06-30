@@ -18,7 +18,7 @@ defmodule Aquario.Researches do
 
   """
   def list_researches do
-    Research |> Repo.all() |> Repo.preload(:tank)
+    Research |> Repo.all() |> Repo.preload(:tank) 
   end
 
   @doc """

@@ -5,6 +5,13 @@
         <h2 class="my-4 h2 text-default tank-name mb-3"><%= get_from_locale(@tank, :name) %></h2>   
         <img class="rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({@tank.image, @tank}, :show) %>"
           data-holder-rendered="true">
+          
+          
+
+         
+
+         
+
           <div class="col-md-6 mx-auto">            
             <h3 class="my-4 h2 text-default text-title"><%= get_from_locale(@tank, :title) %></h3>
           </div>          
@@ -42,3 +49,33 @@
       <!-- Specy Description -->
     </div>    
   </div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col band-libras fixed-top-libras">
+      <!-- Button trigger modal -->
+      <%= link to: "#" do %>
+        <img data-toggle="modal" data-target="#ModalLibras" class="btns-libras" src="<%= static_path(@conn, "/images/btn-libras.png") %>">        
+      <% end %>
+    </div>
+    <!-- Modal Libras -->
+    <div class="modal fade youtube-video" id="ModalLibras" tabindex="-1" role="dialog" aria-labelledby="ModalLibrasTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLibrasTitle">Nome do tanque -> Libras</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZQi8VYEaWR8"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

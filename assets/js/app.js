@@ -28,3 +28,23 @@ selector(".menu").addEventListener('click', function () {
 function selector(s) {
   return document.querySelector(s)
 }
+
+$(document).ready(function() {
+  $('a[disabled=disabled]').click(function(event){
+      event.preventDefault(); // Prevent link from following its href
+  });
+
+  // Modal YouTube Stop Close
+  $('.modal.youtube-video').on('hidden.bs.modal', function(e) {
+    $('iframe', this).each(function() {
+      this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+    });
+  });
+
+  // Modal YouTube Play Open
+  $('.modal.youtube-video').on('show.bs.modal', function(e) {
+    $('iframe', this).each(function() {
+      this.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+    });
+  });
+});
