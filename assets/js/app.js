@@ -35,14 +35,14 @@ $(document).ready(function() {
   });
 
   // Modal YouTube Stop Close
-  $('.modal.youtube-video').on('hidden.bs.modal', function(e) {
+  $('.modal.fade.youtube-video').on('hidden.bs.modal', function(e) {
     $('iframe', this).each(function() {
       this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
     });
   });
 
   // Modal YouTube Play Open
-  $('.modal.youtube-video').on('show.bs.modal', function(e) {
+  $('.modal.fade.youtube-video').on('show.bs.modal', function(e) {
     $('iframe', this).each(function() {
       this.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
     });

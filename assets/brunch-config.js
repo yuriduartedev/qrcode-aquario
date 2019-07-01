@@ -2,8 +2,39 @@ exports.config = {
   // See http://brunch.io/#documentation for docs.
   files: {
     javascripts: {
-      joinTo: "js/app.js"
-
+      joinTo: {
+        "js/app.js": [
+          /^js\//,
+          "!js/jquery.min.js",
+          "!js/bootstrap.bundle.min.js",
+          "!js/jquery.easing.min.js",
+          "!js/sb-admin-2.min.js",
+          "!js/Chart.min.js",
+          "!js/chart-area-demo.js",
+          "!js/chart-pie-demo.js",          
+        ],
+        "js/vendor.js": /^(vendor|deps|node_modules).*/,
+        "js/admin.js": [
+          "js/jquery.min.js",
+          "js/bootstrap.bundle.min.js",
+          "js/jquery.easing.min.js",
+          "js/sb-admin-2.min.js",
+          "js/Chart.min.js",
+          "js/chart-area-demo.js",
+          "js/chart-pie-demo.js"
+        ]        
+      },
+      order: {
+        before: [
+          "js/jquery.min.js",
+          "js/bootstrap.bundle.min.js",
+          "js/jquery.easing.min.js",
+          "js/sb-admin-2.min.js",
+          "js/Chart.min.js",
+          "js/chart-area-demo.js",
+          "js/chart-pie-demo.js"
+        ]
+      }
       // To use a separate vendor.js bundle, specify two files path
       // http://brunch.io/docs/config#-files-
       // joinTo: {
@@ -22,7 +53,8 @@ exports.config = {
     stylesheets: {
       joinTo: {        
         "css/app.css": [
-          /^css\//, "!css/admin.css", 
+          /^css\//, 
+          "!css/admin.css", 
           "!css/login.css",
           "!css/sb-admin-2.min.css"
         ],
@@ -68,6 +100,10 @@ exports.config = {
   },
 
   npm: {
-    enabled: true
+    enabled: true,
+    globals: {
+      jQuery: 'jquery',
+      $: 'jquery'
+    }
   }
 };

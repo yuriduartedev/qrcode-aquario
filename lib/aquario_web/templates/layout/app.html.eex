@@ -99,29 +99,17 @@
     </div> <!-- /container -->
 
     <!-- Particle JS -->
+    <script src="<%= static_path(@conn, "/js/vendor.js") %>"></script>
     <script src="<%= static_path(@conn, "/js/particles/particles.js") %>"></script>
     <script src="<%= static_path(@conn, "/js/particles/app.js") %>"></script>
 
     <!-- Global JS -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
     
-    <!-- Bootstrap core JavaScript-->
-    <script src="<%= static_path(@conn, "/js/bootstrap.bundle.min.js") %>"></script>
+    <!-- Bootstrap core JavaScript-->    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="<%= static_path(@conn, "/js/jquery.easing.min.js") %>"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="<%= static_path(@conn, "/js/sb-admin-2.min.js") %>"></script>
-
-    <!-- Page level plugins -->
-    <script src="<%= static_path(@conn, "/js/Chart.min.js") %>"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="<%= static_path(@conn, "/js/chart-area-demo.js") %>"></script>
-    <script src="<%= static_path(@conn, "/js/chart-pie-demo.js") %>"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </body>
 </html>
