@@ -19,7 +19,7 @@
         <tbody>
           <%= for research <- @researches do %>
               <tr>
-                <td><%= research.tank_id %></td>
+                <td><%= research.tank.name_pt_br %></td>
                 <td><%= research.title_pt_br %></td>      
                 <td><%= research.author %></td>
 
