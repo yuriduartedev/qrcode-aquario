@@ -1,66 +1,13 @@
-  <div class="container my-4">    
-    <div class="row text-center wrapper-tank">
-      <!--Image and Title of Tank -->
-      <div class="col-md-12 mx-2">
-        <h2 class="my-4 h2 text-default tank-name mb-3"><%= get_from_locale(@tank, :name) %></h2>   
-        <img class="rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({@tank.image, @tank}, :show) %>"
-          data-holder-rendered="true">
-          
-          
-
-         
-
-         
-
-          <div class="col-md-6 mx-auto">            
-            <h3 class="my-4 h2 text-default text-title"><%= get_from_locale(@tank, :title) %></h3>
-          </div>          
-      </div>
-      <!--Image and Title of Tank -->
-
-      <!-- Line -->
-      <div class="col-md-12"><div class="col-md-6 mb-3 border-tank"></div></div>
-      <!-- End Line -->
-
-      <!-- Tank Description -->
-      <div class="col-md-6 mx-auto">        
-        <p class="text-default text-description"><%= get_from_locale(@tank, :description) %></p>
-      </div>
-      <!-- Tank Description -->
-
-      <!-- Line -->
-      <div class="col-md-12"><div class="col-md-6 mb-3 border-tank"></div></div>
-      <!-- End Line -->
-
-      <!--Image and Title of Specy -->
-      <div class="col-md-12 mx-2">
-        <div class="col-md-6 mx-auto">            
-          <h3 class="my-4 h2 text-default text-title"><%= get_from_locale(@tank, :title) %></h3>
-        </div>  
-        <img class="rounded-circle img-specy-circle" alt="100x100" src="https://portal-ar.s3.amazonaws.com/uploads/specy/image/9/tank_Chrysaora_spp.jpg"
-          data-holder-rendered="true">                  
-      </div>
-      <!--Image and Title of Specy -->
-
-      <!-- Specy Description -->
-      <div class="col-md-6 mx-auto my-4">        
-        <p class="text-default text-description"><%= get_from_locale(@tank, :description) %></p>
-      </div>
-      <!-- Specy Description -->
-    </div>    
-  </div>
-
-
 <div class="container">
   <div class="row">
-    <div class="col band-libras fixed-top-libras">
+    <div class="col band-libras fixed-top-libras d-flex justify-content-center">
       <!-- Button trigger modal -->
       <%= link to: "#" do %>
         <img class="btns-libras" data-toggle="modal" data-target="#ModalLibras" src="<%= static_path(@conn, "/images/btn-libras.png") %>">
       <% end %>
 
       <%= link to: "#" do %>
-        <img class="btns-libras" data-toggle="modal" data-target="#ModalLibras" src="<%= static_path(@conn, "/images/btn-audio.png") %>">
+        <img class="btns-libras" data-toggle="modal" data-target="#ModalAudio" src="<%= static_path(@conn, "/images/btn-audio.png") %>">
       <% end %>     
     </div> 
     <!-- Modal Libras -->
@@ -68,14 +15,14 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="ModalLibrasTitle">Nome do tanque - Libras</h5>
+            <h5 class="modal-personal-title" id="ModalLibrasTitle"><%= get_from_locale(@tank, :name) %> - Libras</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <div class="embed-responsive embed-responsive-4by3">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LD7ql6zPDZo"></iframe>
+              <iframe class="embed-responsive-item" src="<%= @tank.link_libras %>"></iframe>
             </div>
           </div>
         </div>
@@ -86,14 +33,14 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="ModalAudioTitle">Nome do tanque - Audio</h5>
+            <h5 class="modal-personal-title " id="ModalAudioTitle"><%= get_from_locale(@tank, :name) %> - Áudio</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">            
               <span aria-hidden="true">&times;</span>
             </button>     
           </div>
           <div class="modal-body">
             <div class="embed-responsive embed-responsive-4by3">
-              <iframe class="embed-responsive-item" id="" src="https://www.youtube.com/embed/LD7ql6zPDZo"></iframe>
+              <iframe class="embed-responsive-item" id="" src="<%= @tank.link_audio %>"></iframe>
             </div>
           </div>
         </div>
@@ -101,3 +48,47 @@
     </div>
   </div>
 </div>
+
+
+<div class="container my-4">    
+  <div class="row text-center wrapper-tank">
+    <!--Image and Title of Tank -->
+    <div class="col-md-12 mx-2">
+      <h2 class="my-4 h2 text-default tank-name mb-3"><%= get_from_locale(@tank, :name) %></h2>   
+      <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({@tank.image, @tank}, :show) %>" data-holder-rendered="true">
+      <div class="col-md-6 mx-auto">            
+        <h3 class="my-4 h2 text-default text-title"><%= get_from_locale(@tank, :title) %></h3>
+      </div>          
+    </div>
+    <!--Image and Title of Tank -->
+
+    <!-- Line -->
+    <div class="col-md-12 my-4"><div class="col-md-6 mb-3 border-tank"></div></div>
+    <!-- End Line -->
+
+    <!-- Tank Description -->
+    <div class="col-md-6 mx-auto">        
+      <p class="text-default text-description"><%= get_from_locale(@tank, :description) %></p>
+    </div>
+    <!-- Tank Description -->
+
+    <!--Image and Title of Specy -->
+    <div class="col-md-12 mx-2">
+      <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="https://portal-ar.s3.amazonaws.com/uploads/specy/image/9/tank_Chrysaora_spp.jpg" data-holder-rendered="true">
+      <div class="my-4 col-md-6 mx-auto">            
+        <h3 class="h2 text-default text-title"><%= get_from_locale(@tank, :title) %></h3>
+      </div>
+        <!-- Line -->
+        <div class="col-md-12 my-4"><div class="col-md-6 mb-3 border-tank"></div></div>
+        <!-- End Line -->
+    </div>
+    <!--Image and Title of Specy -->
+
+    <!-- Specy Description -->
+    <div class="col-md-6 mx-auto my-4">        
+      <p class="text-default text-description"><%= get_from_locale(@tank, :description) %></p>
+    </div>
+    <!-- Specy Description -->
+  </div>    
+</div>
+
