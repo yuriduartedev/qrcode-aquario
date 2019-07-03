@@ -46,7 +46,7 @@
           <div class="logo">
             <!-- Logo Navbar -->
             <%= link to: page_path(@conn, :index), class: "logo-link" do %>
-              <img class="logo brand" src="<%= static_path(@conn, "/images/aqua-logo.svg") %>">
+              <img alt="Logo do Aqua Rio" title="Logo do Aqua Rio" class="logo brand" src="<%= static_path(@conn, "/images/aqua-logo.svg") %>">
             <% end %> 
             <!-- End Logo  -->    
             <ul>
@@ -73,9 +73,9 @@
             </ul>
           </div>
           <div class="bandeiras">
-            <a href="?locale=pt_BR"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/br.png") %>"><span></span></a>
-            <a href="?locale=en_US"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/us.png") %>"><span></span></a>
-            <a href="?locale=es_ES"><img width="22" height="22" class="ml-2" src="<%= static_path(@conn, "/images/es.png") %>"><span></span></a>
+            <a href="?locale=pt_BR"><img width="22" height="22" alt="Bandeira do Brasil" title="Bandeira do Brasil" class="ml-2" src="<%= static_path(@conn, "/images/br.png") %>"><span></span></a>
+            <a href="?locale=en_US"><img width="22" height="22" alt="Bandeira dos Estados Unidos" title="Bandeira dos Estados Unidos" class="ml-3 mr-3" src="<%= static_path(@conn, "/images/us.png") %>"><span></span></a>
+            <a href="?locale=es_ES"><img width="22" height="22" alt="Bandeira da Espanha" title="Bandeira do Brasil" class="ma Espanha" src="<%= static_path(@conn, "/images/es.png") %>"><span></span></a>
           </div>
         </nav>
         <!--End Navbar-->
@@ -84,7 +84,7 @@
           <div class="row">
             <div class="col mt-5">
               <%= link to: page_path(@conn, :index) do %>
-                <img class="logo-tank-page" src="<%= static_path(@conn, "/images/aqua-logo.svg") %>">        
+                <img alt="Logo do Aqua Rio" title="Logo do Aqua Rio" class="logo-tank-page" src="<%= static_path(@conn, "/images/aqua-logo.svg") %>">        
               <% end %>
             </div>    
           </div>

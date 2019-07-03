@@ -120,7 +120,6 @@ background-color: #0079A9;
 .show > .btn-extra.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem #0079A9;
 }
-
 .btns-libras{
   margin: 0 auto;
   display: flex;
@@ -130,7 +129,16 @@ background-color: #0079A9;
   border-radius: 0.75rem;
   padding: 2px;
 }
-
+.btn-back {
+  width: 60%;
+}
+.align-txt-btn-back {
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  font-size: 2.3rem;
+  list-style-type: none;
+}
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px){
   

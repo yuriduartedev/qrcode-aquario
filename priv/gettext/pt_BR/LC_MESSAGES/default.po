@@ -20,18 +20,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2.3\n"
 
+#: lib/aquario_web/templates/layout/app.html.eex:65
 #: lib/aquario_web/templates/page/index.html.eex:17
 msgid "Circuit Map"
 msgstr "Mapa do circuito"
 
+#: lib/aquario_web/templates/layout/app.html.eex:60
 #: lib/aquario_web/templates/page/index.html.eex:12
 msgid "Researches"
 msgstr "Pesquisas"
 
+#: lib/aquario_web/templates/layout/app.html.eex:55
 #: lib/aquario_web/templates/page/index.html.eex:6
 msgid "Tanks"
 msgstr "Tanques"
 
+#: lib/aquario_web/templates/layout/app.html.eex:70
 #: lib/aquario_web/templates/page/index.html.eex:22
 msgid "Extra activities"
 msgstr "Atividades Extras"
+
+#: lib/aquario_web/templates/tank/show.html.eex:98
+msgid "More tanks"
+msgstr "Mais tanques"

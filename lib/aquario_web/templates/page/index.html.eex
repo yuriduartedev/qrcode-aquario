@@ -1,23 +1,23 @@
 <div class="container-fluid">
   <div class="d-flex flex-column align-items-stretch">
     <%= link to: tank_path(@conn, :index) do %>
-      <button type="button" class="btn btn-tank">
+      <button alt="Botão de Tanques" title="Botão de Tanques" type="button" class="btn btn-tank">
         <span><img class="float-left" src="<%= static_path(@conn, "/images/tanque.png") %>"></span> 
         <span class="align-txt-btn"><%= gettext("Tanks") %></span>  
       </button>
     <% end %>
     <%= link to: research_path(@conn, :index) do %>
-      <button type="button" class="btn btn-pesquisa">
+      <button alt="Botão de Pesquisas" title="Botão de pesquisa" type="button" class="btn btn-pesquisa">
         <span><img class="float-left" src="<%= static_path(@conn, "/images/pesquisa.png") %>"></span> 
         <span class="align-txt-btn"><%= gettext("Researches") %></span>  
       </button>
     <% end %>
-    <button type="button" class="btn btn-mapa">
+    <button alt="Botão de Mapa do Circuito" title="Botão de Mapa do Circuito" type="button" class="btn btn-mapa">
       <span><img class="float-left" src="<%= static_path(@conn, "/images/mapa.png") %>"></span> 
       <span class="align-txt-btn"><%= gettext("Circuit Map") %></span>  
     </button>
     <%= link to: "http://blog.aquariomarinhodorio.com.br" do %>
-      <button type="button" class="btn btn-extra">
+      <button alt="Botão de Atividades Extras" title="Botão de Atividades Extras" type="button" class="btn btn-extra">
         <span><img class="float-left" src="<%= static_path(@conn, "/images/extra.png") %>"></span> 
         <span class="align-txt-btn"><%= gettext("Extra activities") %></span>
       </button>
