@@ -54,10 +54,10 @@
   <div class="row text-center wrapper-tank">
     <!--Image and Title of Tank -->
     <div class="col-md-12 mx-2">
-      <h2 tabindex="1" alt="Nome do tanque" title="Nome do tanque" class="my-4 h2 text-default tank-name mb-3"><%= get_from_locale(@tank, :name) %></h2>   
+      <h2 class="my-4 h2 text-default tank-name mb-3" title="Nome do tanque" tabindex="1"><%= get_from_locale(@tank, :name) %></h2>   
       <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({@tank.image, @tank}, :show) %>" data-holder-rendered="true">
       <div class="col-md-6 mx-auto">            
-        <h3 tabindex="2" alt="Título do tanque" title="Título do tanque" class="my-4 h2 text-default text-title"><%= get_from_locale(@tank, :title) %></h3>
+        <h3 class="my-4 h2 text-default text-title" title="Título do tanque" tabindex="2"><%= get_from_locale(@tank, :title) %></h3>
       </div>          
     </div>
     <!--Image and Title of Tank -->
@@ -68,7 +68,7 @@
 
     <!-- Tank Description -->
     <div class="col-md-6 mx-auto">        
-      <p alt="Descrição do tanque" title="Descrição do tanque" tabindex="3"  class="text-default text-description"><%= get_from_locale(@tank, :description) %></p>
+      <p class="text-default text-description" title="Descrição do tanque" tabindex="3"><%= get_from_locale(@tank, :description) %></p>
     </div>
     <!-- Tank Description -->
 
@@ -76,7 +76,7 @@
     <div class="col-md-12 mx-2">
       <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="https://portal-ar.s3.amazonaws.com/uploads/specy/image/9/tank_Chrysaora_spp.jpg" data-holder-rendered="true">
       <div class="my-4 col-md-6 mx-auto">            
-        <h3 alt="Título da espécie" title="Título da espécie" tabindex="4" class="h2 text-default text-title"><%= get_from_locale(@tank, :title) %></h3>
+        <h3 class="h2 text-default text-title" title="Título da espécie" tabindex="4"><%= get_from_locale(@tank, :title) %></h3>
       </div>
         <!-- Line -->
         <div class="col-md-12 my-4"><div class="col-md-6 mb-3 border-tank"></div></div>
@@ -86,10 +86,18 @@
 
     <!-- Specy Description -->
     <div class="col-md-6 mx-auto my-4">        
-      <p alt="Descrição da espécie" title="Descrição da espécie" tabindex="5" class="text-default text-description"><%= get_from_locale(@tank, :description) %></p>
+      <p class="text-default text-description" title="Descrição da espécie" tabindex="5"><%= get_from_locale(@tank, :description) %></p>
     </div>
     <!-- Specy Description -->
   </div>    
 </div>
-
+<div class="container-fluid">
+  <div class="d-flex flex-column align-items-stretch">
+    <%= link to: tank_path(@conn, :index), class: "col-md-6 mx-auto text-center mb-5" do %>
+      <button type="button" class="btn btn-tank text-center" title="Descrição da espécie" tabindex="6">
+        <li class="align-txt-btn-back text-center"><%= gettext("More tanks") %></li>
+      </button>
+    <% end %>    
+  </div>
+</div>
 
