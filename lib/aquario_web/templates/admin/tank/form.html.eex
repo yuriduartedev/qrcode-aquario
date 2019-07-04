@@ -84,17 +84,17 @@
           </div>
         </div>
         <div class="col-md-4 mb-3">
-            <div class="form-group">
-            <%= label f, "Link áudio:", class: "control-label" %>
-            <%= text_input f, :link_audio, class: "form-control" %>
-            <%= error_tag f, :link_audio %>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
           <div class="form-group">
             <%= label f, "Link libras:", class: "control-label" %>
             <%= text_input f, :link_libras, class: "form-control" %>
             <%= error_tag f, :link_libras %>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="form-group">
+            <%= label f, "Link áudio:", class: "control-label" %>
+            <%= text_input f, :link_audio, class: "form-control" %>
+            <%= error_tag f, :link_audio %>
           </div>
         </div>
       </div>

@@ -35,16 +35,34 @@ $(document).ready(function() {
   });
 
   // Modal YouTube Stop Close
-  $('.modal.fade.youtube-video').on('hidden.bs.modal', function(e) {
+  $('.modal.youtube-video').on('hidden.bs.modal', function(e) {
     $('iframe', this).each(function() {
       this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
     });
   });
 
   // Modal YouTube Play Open
-  $('.modal.fade.youtube-video').on('show.bs.modal', function(e) {
-    $('iframe', this).each(function() {
+  $('.modal.youtube-video').on('show.bs.modal', function(e) {
+    $('iframe', this).each(function() {      
       this.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
     });
   });
+});
+
+function toggleFAB(fab){
+	if(document.querySelector(fab).classList.contains('show')){
+  	document.querySelector(fab).classList.remove('show');
+  }else{
+  	document.querySelector(fab).classList.add('show');
+  }
+}
+
+document.querySelector('.fab .main').addEventListener('click', function(){
+	toggleFAB('.fab');
+});
+
+document.querySelectorAll('.fab ul li button').forEach((item)=>{
+	item.addEventListener('click', function(){
+		toggleFAB('.fab');
+	});
 });

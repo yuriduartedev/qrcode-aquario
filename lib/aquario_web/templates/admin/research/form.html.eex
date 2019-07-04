@@ -15,8 +15,7 @@
           <%= error_tag f, :author %>
         </div>
         <div class="col-md-4 mb-3">
-          <div class="form-group">
-            <%= inspect(@changeset.data.tank_id) %>
+          <div class="form-group">            
             <%= label f, "Selecione o tanque referente a essa pesquisa", class: "control-label" %>            
             <%= select f, :tank_id, collection_for_select(get_tanks(), :name_pt_br), prompt: "Selecione um tanque", class: "form-control" %>
             <%= error_tag f, :tank_id %>
@@ -71,14 +70,14 @@
       <div class="form-row">                
         <div class="col-md-4 mb-3">
           <div class="form-group">
-            <%= label f, "Link de libras:", class: "control-label" %>
+            <%= label f, "Link de libras", class: "control-label" %>
             <%= text_input f, :link_libras, class: "form-control", placeholder: "Link do YouTube..." %>
             <%= error_tag f, :link_libras %>
           </div>
         </div>
         <div class="col-md-4 mb-3">
             <div class="form-group">
-            <%= label f, "Link de áudio:", class: "control-label" %>
+            <%= label f, "Link de áudio", class: "control-label" %>
             <%= text_input f, :link_audio, class: "form-control", placeholder: "Link do YouTube..." %>
             <%= error_tag f, :link_audio %>
           </div>
