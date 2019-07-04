@@ -1,41 +1,32 @@
-<%# <div class="wrapper">
-  <a href="#">Teste<span class="fa fa-whatsapp fa-2x"></span></a>
-</div>
-
-<div class="spacer"></div> %>
-
-<div class="fab">
-  <button class="main">
-  </button>
-  <ul>
-    <li>
-      <label for="opcao1">Vídeo em libras</label>
-      <%= if @tank.link_libras != nil do %>
-        <%= link to: "#" do %>
-          <img class="btns-libras" id="test" alt="Botão de libras" title="Botão de libras" data-toggle="modal" data-target="#ModalLibras" src="<%= static_path(@conn, "/images/btn-libras.png") %>">
+<%= if @tank.link_libras || @tank.link_audio do %>
+  <div class="fab">
+    <button class="main">
+    </button>
+    <ul>
+      <li>
+        <%= if @tank.link_libras != nil do %>
+        <label for="opcao1">Vídeo em libras</label>
+          <%= link to: "#" do %>
+            <img class="btns-libras" id="test" alt="Botão de libras" title="Botão de libras" data-toggle="modal" data-target="#ModalLibras" src="<%= static_path(@conn, "/images/btn-libras.png") %>">
+          <% end %>
         <% end %>
-      <% end %>
-    </li>
-    <li>
-      <label for="opcao2">Vídeo em áudio</label>
-      <%= if @tank.link_audio != nil do %>
-        <%= link to: "#" do %>
-          <img class="btns-libras" alt="Botão de áudio" title="Botão de áudio" data-toggle="modal" data-target="#ModalAudio" src="<%= static_path(@conn, "/images/btn-audio.png") %>">
-        <% end %>  
-      <% end %>
-    </li>
-  </ul>
-</div>
+      </li>
+      <li>
+        <%= if @tank.link_audio != nil do %>
+        <label for="opcao2">Vídeo em áudio</label>
+          <%= link to: "#" do %>
+            <img class="btns-libras" alt="Botão de áudio" title="Botão de áudio" data-toggle="modal" data-target="#ModalAudio" src="<%= static_path(@conn, "/images/btn-audio.png") %>">
+          <% end %>  
+        <% end %>
+      </li>
+    </ul>
+  </div>
+<% end %>
 
 <div class="container">
   <div class="row">
     <div class="col band-libras fixed-top-libras d-flex justify-content-center">
       <!-- Button trigger modal -->
-
-      
-
-      
-
     </div> 
     <!-- Modal Libras -->
     <div class="modal fade youtube-video" id="ModalLibras" tabindex="-1" role="dialog" aria-labelledby="ModalLibrasTitle" aria-hidden="true">

@@ -13,7 +13,7 @@ exports.config = {
           "!js/chart-area-demo.js",
           "!js/chart-pie-demo.js",          
         ],
-        // "js/vendor.js": /^(vendor|deps|node_modules).*/,
+        "js/vendor.js": /^(vendor|deps|node_modules).*/,
         "js/admin.js": [
           "js/jquery.min.js",
           "js/bootstrap.bundle.min.js",
