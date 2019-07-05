@@ -5,7 +5,7 @@
     <ul>
       <li>
         <%= if @tank.link_libras != nil do %>
-        <label for="opcao1">Vídeo em libras</label>
+        <label for="opcao1"><%= gettext("Video in pounds") %></label>
           <%= link to: "#" do %>
             <img class="btns-libras" id="test" alt="Botão de libras" title="Botão de libras" data-toggle="modal" data-target="#ModalLibras" src="<%= static_path(@conn, "/images/btn-libras.png") %>">
           <% end %>
@@ -13,7 +13,7 @@
       </li>
       <li>
         <%= if @tank.link_audio != nil do %>
-        <label for="opcao2">Vídeo em áudio</label>
+        <label for="opcao2"><%= gettext("Video with audio") %></label>
           <%= link to: "#" do %>
             <img class="btns-libras" alt="Botão de áudio" title="Botão de áudio" data-toggle="modal" data-target="#ModalAudio" src="<%= static_path(@conn, "/images/btn-audio.png") %>">
           <% end %>  

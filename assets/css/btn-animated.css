@@ -69,6 +69,8 @@
 }
 
 .fab ul li label{
+  width: 150px;
+  text-align: center;
   margin-right:10px;
   white-space: nowrap;
   display: block;
@@ -81,6 +83,7 @@
   font-size: 16px;
   pointer-events: none;
   opacity:0;
+  color: #0079A9;
   
   -webkit-transition: .2s ease-out;
   -moz-transition: .2s ease-out;

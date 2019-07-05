@@ -40,6 +40,14 @@ msgstr "Tanques"
 msgid "Extra activities"
 msgstr "Atividades Extras"
 
-#: lib/aquario_web/templates/tank/show.html.eex:98
+#: lib/aquario_web/templates/tank/show.html.eex:115
 msgid "More tanks"
 msgstr "Mais tanques"
+
+#: lib/aquario_web/templates/tank/show.html.eex:8
+msgid "Video in pounds"
+msgstr "Vídeo em libras"
+
+#: lib/aquario_web/templates/tank/show.html.eex:16
+msgid "Video with audio"
+msgstr "Vídeo com áudio"
