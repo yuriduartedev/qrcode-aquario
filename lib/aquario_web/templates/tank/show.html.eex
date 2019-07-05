@@ -110,8 +110,8 @@
 </div>
 <div class="container-fluid">
   <div class="d-flex flex-column align-items-stretch">
-    <%= link to: tank_path(@conn, :index), class: "col-md-6 mx-auto text-center mb-5" do %>
-      <button type="button" class="btn btn-tank text-center" title="Descrição da espécie" tabindex="6">
+    <%= link to: tank_path(@conn, :index), class: "col-md-6 mx-auto text-center" do %>
+      <button type="button" class="btn btn-tank text-center btn-back" title="Descrição da espécie" tabindex="6">
         <li class="align-txt-btn-back text-center"><%= gettext("More tanks") %></li>
       </button>
     <% end %>    

@@ -132,6 +132,9 @@ background-color: #0079A9;
 .btn-back {
   width: 60%;
 }
+.btn-back {
+  width: 72%;
+}
 .align-txt-btn-back {
   align-self: center;
   text-align: center;
