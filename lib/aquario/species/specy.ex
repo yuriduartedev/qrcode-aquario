@@ -4,8 +4,14 @@ defmodule Aquario.Species.Specy do
   import Ecto.Changeset
 
   alias AquarioWeb.PhotoUploader
+  alias Aquario.Tanks.Tank
 
   schema "species" do
+    many_to_many :tanks, Tank,
+      join_through: "species_tanks",
+      on_delete: :delete_all,
+      on_replace: :delete
+      
     field :description_en_us, :string
     field :description_es_es, :string
     field :description_pt_br, :string

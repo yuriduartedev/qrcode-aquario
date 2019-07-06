@@ -1,6 +1,7 @@
 defmodule AquarioWeb.TankController do
   use AquarioWeb, :controller
-
+  
+  alias Aquario.Repo
   alias Aquario.Tanks
   alias Aquario.Tanks.Tank
 
@@ -10,7 +11,11 @@ defmodule AquarioWeb.TankController do
   end
 
   def show(conn, %{"id" => id}) do
-    tank = Tanks.get_tank!(id)
+    tank =
+      id
+      |> Tanks.get_tank!()
+      |> Repo.preload(:species)
+
     render(conn, "show.html", tank: tank)
   end
 end

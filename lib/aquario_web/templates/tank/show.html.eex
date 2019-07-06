@@ -89,6 +89,11 @@
     </div>
     <!-- Tank Description -->
 
+  <%= for specy <- @tank.species do %>
+    <%= specy.title_pt_br %>
+  <% end %>
+
+
     <!--Image and Title of Specy -->
     <div class="col-md-12 mx-2">
       <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="https://portal-ar.s3.amazonaws.com/uploads/specy/image/9/tank_Chrysaora_spp.jpg" data-holder-rendered="true">

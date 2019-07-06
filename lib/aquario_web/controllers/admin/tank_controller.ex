@@ -3,6 +3,9 @@ defmodule AquarioWeb.Admin.TankController do
 
   alias Aquario.Tanks
   alias Aquario.Tanks.Tank
+  alias Aquario.Species
+  
+  plug :load_species when action in [:new, :create, :edit, :update]  
 
   def index(conn, _params) do
     tanks = Tanks.list_tanks()
@@ -11,6 +14,7 @@ defmodule AquarioWeb.Admin.TankController do
 
   def new(conn, _params) do
     changeset = Tanks.change_tank(%Tank{})
+    
     render(conn, "new.html", changeset: changeset)
   end
 
@@ -56,5 +60,9 @@ defmodule AquarioWeb.Admin.TankController do
     conn
     |> put_flash(:info, "Tank deleted successfully.")
     |> redirect(to: admin_tank_path(conn, :index))
+  end
+
+  defp load_species(conn, _opts) do
+    assign(conn, :species, Species.list_species)
   end
 end
