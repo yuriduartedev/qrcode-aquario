@@ -91,7 +91,7 @@
 
     <!--Image and Title of Specy -->
     <div class="col-md-12 mx-2">
-      <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="https://portal-ar.s3.amazonaws.com/uploads/specy/image/9/tank_Chrysaora_spp.jpg" data-holder-rendered="true">
+      <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="<%=  %>" data-holder-rendered="true">
       <div class="my-4 col-md-6 mx-auto">            
         <h3 class="h2 text-default text-title" title="Título da espécie" tabindex="4"><%= get_from_locale(@tank, :title) %></h3>
       </div>

@@ -28,7 +28,7 @@
                   <div class="btn-group btn-group-sm" role="group" aria-label="...">
                     <span><%= link "Mostrar", to: admin_specy_path(@conn, :show, specy), class: "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" %></span>
                     <span><%= link "Editar", to: admin_specy_path(@conn, :edit, specy), class: "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mr-1 ml-1" %></span>
-                    <span><%= link "Excluir", to: admin_specy_path(@conn, :delete, specy), method: :delete, data: [confirm: "Are you sure?"], class: "d-none d-sm-inline-block btn btn-sm shadow-sm btn-danger" %></span>
+                    <span><%= link "Excluir", to: admin_specy_path(@conn, :delete, specy), method: :delete, data: [confirm: "Tem certeza que deseja excluir essa espécie?"], class: "d-none d-sm-inline-block btn btn-sm shadow-sm btn-danger" %></span>
                   </div>
                 </td>
               </tr>
