@@ -169,7 +169,7 @@
                   <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     <span class="mr-2 d-none d-lg-inline text-gray-600 small">Yuri Duarte</span>
-                    <img class="img-profile rounded-circle" src="https://lh3.googleusercontent.com/D-oYbtuRmO9S9-KjeWsR7qvNKfXlp3aUsRzC1_3YyNxveu8508nF58s30UmWFnv8sGyOsvKsMg6mqcGuqHJPiec6tl5NVeZ5ZYGZdT23QXqeCHc6HlgUrFsFbYE40ymJxKJONe_1OoWOE73mAv_HhM_7BEqOZ-TJL_yDyhlTcT2h8HgESWR60LuEIhsh7n4PkkQZdHdl0S0gIZEeqiL18whSyT1IYZUWt0uSG4hRN03pUrsDU9EH0z9Tm0ilY0JxPinHVAyqcEAUMNosSL1u82fhZlZaoDhWcEkH8SB9qnGbeYsBQcNxcqbioSKhAzbuxnld6yojLXZVA2jrPfazsiu1sqkApVB4Ez6cOBzTWqUcD4PSurEmQvNRv5yCy_jn27-vGG5yeDv0JDLqcCIUINtqCR7IMHh_-aUEgtbqM8BGXKe84i1ch4muTbEjjD6e8S7rZDdQn9KaX_wVfs8_REI-ZEDQsmX4cKBjIeQj9JhS4GzCIhH0LChCgD4LpZ9FegVxjrPP8Ypzw-xNWsOOEtiwIwkQ9VroEMSfB4qXmKLNgdyjV9w1OlvJfrIgf9Mv6KVcrECFes35dTl_qAy0HLondiP5Oqq8j7rDA9kLiGCSU-97QCcpBHM0v2iwWdnkJIkj5OWvaZAyzJCEKQbpzLq879H94kVL=w710-h946-no">
+                    <img class="img-profile rounded-circle" src="">
                   </a>
                   <!-- Dropdown - User Information -->
                   <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -238,8 +238,10 @@
     <script src="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/js/sb-admin-2.min.js"></script>
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
     <script src="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/vendor/chart.js/Chart.min.js"></script>
     <script src="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/js/demo/chart-area-demo.js"></script>
     <script src="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/js/demo/chart-pie-demo.js"></script>
+  
   </body>
 </html>
