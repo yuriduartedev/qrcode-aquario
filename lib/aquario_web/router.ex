@@ -19,6 +19,7 @@ defmodule AquarioWeb.Router do
   end
 
   pipeline :admin_layout do
+    plug BasicAuth, use_config: {:aquario, :aquario_auth}
     plug :put_layout, {AquarioWeb.LayoutView, :admin}
   end
 
