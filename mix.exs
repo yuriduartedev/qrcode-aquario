@@ -44,6 +44,7 @@ defmodule Aquario.Mixfile do
       {:plug_cowboy, "~> 1.0"},
       {:ex_ngrok, "~> 0.3.0", only: [:dev]},
       {:httpoison, "~> 1.4", override: true},
+      {:basic_auth, "~> 2.2.2"},
 
       # Upload
       {:ex_aws, "~> 2.1"},

@@ -1,16 +1,20 @@
 defmodule AquarioWeb.TankController do
   use AquarioWeb, :controller
-
+  
+  alias Aquario.Repo
   alias Aquario.Tanks
   alias Aquario.Tanks.Tank
 
-  def index(conn, _params) do    
-    tanks = Tanks.list_tanks()    
+  def index(conn, _params) do
+    tanks = Tanks.list_tanks()
     render(conn, "index.html", tanks: tanks)
   end
 
   def show(conn, %{"id" => id}) do
-    tank = Tanks.get_tank!(id)
+    tank =
+      id
+      |> Tanks.get_tank!()
+      |> Repo.preload([:species, :researches])
     render(conn, "show.html", tank: tank)
   end
 end

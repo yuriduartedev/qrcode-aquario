@@ -30,7 +30,7 @@ defmodule Aquario.Researches.Research do
     |> put_change(:image_token, Ecto.UUID.generate())
     |> cast_attachments(attrs, [:image])
     |> parse_author()
-    |> validate_required([:title_pt_br, :title_en_us, :title_es_es, :image, :description_pt_br, :description_en_us, :description_es_es, :link_libras, :link_audio, :tank_id])
+    |> validate_required([:title_pt_br, :description_pt_br, :tank_id])
     |> IO.inspect()
   end
 
