@@ -107,7 +107,7 @@
       </div>
       
       <div class="form-row mb-3">
-        Selecione abaixo todas as espécies que faz parte desse tanque:
+        Selecione abaixo todas as espécies que fazem parte desse tanque:
         <br>
         <%= error_tag f, :species %>
         <br>

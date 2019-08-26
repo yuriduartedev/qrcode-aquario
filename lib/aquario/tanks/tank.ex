@@ -4,6 +4,7 @@ defmodule Aquario.Tanks.Tank do
   import Ecto.Changeset
   import Ecto.Query
 
+  alias Aquario.Researches.Research
   alias AquarioWeb.PhotoUploader
   alias Aquario.Species.Specy
   alias Aquario.Repo
@@ -13,6 +14,8 @@ defmodule Aquario.Tanks.Tank do
       join_through: "species_tanks",
       on_delete: :delete_all,
       on_replace: :delete
+
+    has_many :researches, Research
 
     field :description_en_us, :string
     field :description_es_es, :string
@@ -34,13 +37,13 @@ defmodule Aquario.Tanks.Tank do
   @doc false
   def changeset(tank, attrs) do
     tank
-    |> Repo.preload(:species)
+    |> Repo.preload(:species)    
     |> cast(attrs, [:name_pt_br, :name_en_us, :name_es_es, :order, :image, :description_pt_br, :description_en_us, :description_es_es, :title_pt_br, :title_en_us, :title_es_es, :link_libras, :link_audio])
     |> put_change(:image_token, Ecto.UUID.generate())
     |> cast_attachments(attrs, [:image])
-    |> validate_required([:name_pt_br, :name_en_us, :name_es_es, :image, :description_pt_br, :description_en_us, :description_es_es, :title_pt_br, :title_en_us, :title_es_es])
+    |> validate_required([:name_pt_br, :description_pt_br, :title_pt_br])
     |> put_assoc(:species, parse_species(attrs))
-    |> validate_length(:species, min: 1)
+    |> validate_length(:species, min: 0)
   end
 
   defp parse_species(attrs)  do

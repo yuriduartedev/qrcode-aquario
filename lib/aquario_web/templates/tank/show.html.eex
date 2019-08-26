@@ -73,6 +73,11 @@
     <div class="col-md-12 mx-2">
       <h2 class="my-4 h2 text-default tank-name mb-3" title="Nome do tanque" tabindex="1"><%= get_from_locale(@tank, :name) %></h2>   
       <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({@tank.image, @tank}, :show) %>" data-holder-rendered="true">
+      
+      <%#= if @tank.researches.any? do %>
+        <%# <h1>Botão redireciona para pesquisa</h1> %>
+      <%# end %>
+      
       <div class="col-md-6 mx-auto">            
         <h3 class="my-4 h2 text-default text-title" title="Título do tanque" tabindex="2"><%= get_from_locale(@tank, :title) %></h3>
       </div>          
@@ -89,28 +94,25 @@
     </div>
     <!-- Tank Description -->
 
-  <%= for specy <- @tank.species do %>
-    <%= specy.title_pt_br %>
-  <% end %>
-
-
-    <!--Image and Title of Specy -->
-    <div class="col-md-12 mx-2">
-      <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="https://portal-ar.s3.amazonaws.com/uploads/specy/image/9/tank_Chrysaora_spp.jpg" data-holder-rendered="true">
-      <div class="my-4 col-md-6 mx-auto">            
-        <h3 class="h2 text-default text-title" title="Título da espécie" tabindex="4"><%= get_from_locale(@tank, :title) %></h3>
+    <%= for specy <- @tank.species do %>
+      <!--Image and Title of Specy -->
+      <div class="col-md-12 mx-2">
+        <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({specy.image, specy}, :show) %>" data-holder-rendered="true">
+        <div class="my-4 col-md-6 mx-auto">            
+          <h3 class="h2 text-default text-title" title="Título da espécie" tabindex="4"><%= get_from_locale(specy, :name) %> - <span class="font-italic"><%= get_from_locale(specy, :scientific_name) %></span></h3>
+        </div>
+          <!-- Line -->
+          <div class="col-md-12 my-4"><div class="col-md-6 mb-3 border-tank"></div></div>
+          <!-- End Line -->
       </div>
-        <!-- Line -->
-        <div class="col-md-12 my-4"><div class="col-md-6 mb-3 border-tank"></div></div>
-        <!-- End Line -->
-    </div>
-    <!--Image and Title of Specy -->
+      <!--Image and Title of Specy -->
 
-    <!-- Specy Description -->
-    <div class="col-md-6 mx-auto my-4">        
-      <p class="text-default text-description" title="Descrição da espécie" tabindex="5"><%= get_from_locale(@tank, :description) %></p>
-    </div>
-    <!-- Specy Description -->
+      <!-- Specy Description -->
+      <div class="col-md-6 mx-auto my-4">        
+        <p class="text-default text-description" title="Descrição da espécie" tabindex="5"><%= get_from_locale(specy, :description) %></p>
+      </div>
+      <!-- Specy Description -->
+    <% end %>
   </div>    
 </div>
 <div class="container-fluid">
@@ -122,4 +124,3 @@
     <% end %>    
   </div>
 </div>
-
