@@ -78,9 +78,9 @@
         <%# <h1>Botão redireciona para pesquisa</h1> %>
       <%# end %>
       
-      <div class="col-md-6 mx-auto">            
+      <!--<div class="col-md-6 mx-auto">            
         <h3 class="my-4 h2 text-default text-title" title="Título do tanque" tabindex="2"><%= get_from_locale(@tank, :title) %></h3>
-      </div>          
+      </div>-->          
     </div>
     <!--Image and Title of Tank -->
 
@@ -94,13 +94,6 @@
     </div>
     <!-- Tank Description -->
 
-<<<<<<< HEAD
-    <!--Image and Title of Specy -->
-    <div class="col-md-12 mx-2">
-      <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="<%=  %>" data-holder-rendered="true">
-      <div class="my-4 col-md-6 mx-auto">            
-        <h3 class="h2 text-default text-title" title="Título da espécie" tabindex="4"><%= get_from_locale(@tank, :title) %></h3>
-=======
     <%= for specy <- @tank.species do %>
       <!--Image and Title of Specy -->
       <div class="col-md-12 mx-2">
@@ -111,7 +104,6 @@
           <!-- Line -->
           <div class="col-md-12 my-4"><div class="col-md-6 mb-3 border-tank"></div></div>
           <!-- End Line -->
->>>>>>> release/0.0.1
       </div>
       <!--Image and Title of Specy -->
 
