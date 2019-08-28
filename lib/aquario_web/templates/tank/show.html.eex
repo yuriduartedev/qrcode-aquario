@@ -72,10 +72,10 @@
     <!--Image and Title of Tank -->
     <div class="col-md-12 mx-2">
       <h2 class="my-4 h2 text-default tank-name mb-3" title="Nome do tanque" tabindex="1"><%= get_from_locale(@tank, :name) %></h2>   
-      <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({@tank.image, @tank}, :show) %>" data-holder-rendered="true">
+      <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({@tank.image, @tank}, :show) %>" data-holder-rendered="true"><br />
       
       <%#= if @tank.researches.any? do %>
-        <%# <h1>Botão redireciona para pesquisa</h1> %>
+        <button>Botão redireciona para pesquisa desse tanque</button>
       <%# end %>
       
       <!--<div class="col-md-6 mx-auto">            
@@ -101,13 +101,9 @@
         <div class="my-4 col-md-6 mx-auto">            
           <h3 class="h2 text-default text-title" title="Título da espécie" tabindex="4"><%= get_from_locale(specy, :name) %> - <span class="font-italic"><%= get_from_locale(specy, :scientific_name) %></span></h3>
         </div>
-          <!-- Line -->
-          <div class="col-md-12 my-4"><div class="col-md-6 mb-3 border-tank"></div></div>
-          <!-- End Line -->
-<<<<<<< HEAD
-
-=======
->>>>>>> master
+        <!-- Line -->
+        <div class="col-md-12 my-4"><div class="col-md-6 mb-3 border-tank"></div></div>
+        <!-- End Line -->
       </div>
       <!--Image and Title of Specy -->
 
