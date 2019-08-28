@@ -4,7 +4,7 @@ exports.config = {
     javascripts: {
       joinTo: {
         "js/app.js": [
-          /^js\//,
+          /^js\//,          
           "!js/jquery.min.js",
           "!js/bootstrap.bundle.min.js",
           "!js/jquery.easing.min.js",
@@ -22,7 +22,7 @@ exports.config = {
           "js/Chart.min.js",
           "js/chart-area-demo.js",
           "js/chart-pie-demo.js"
-        ]        
+        ]
       },
       order: {
         before: [
@@ -90,6 +90,11 @@ exports.config = {
     babel: {
       // Do not use ES6 compiler in vendor code
       ignore: [/vendor/]
+    },
+    copycat: {
+      "js/particles": [
+        "js/particles"
+      ]
     }
   },
 
