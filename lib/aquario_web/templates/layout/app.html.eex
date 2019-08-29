@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72188258-9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-72188258-9');
+    </script>
+
+    <!-- About -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="aquariomarinhodorio.com.br">
+    <meta property="og:url" content="https://www.aquariomarinhodorio.com.br" />
+    <meta property="og:image" content="https://qrcode-aqua.herokuapp.com/images/aqua-logo-3ffb5710ab4dd5ad39cd81d9c36243f4.svg?vsn=d">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:description" content="Conheça um pouco mais sobre as espécies da maior Aquário Marinho da América do Sul.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Visita Online AquaRio!" />
+    <meta name="description" content="Conheça um pouco mais sobre as espécies da maior Aquário Marinho da América do Sul.">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
