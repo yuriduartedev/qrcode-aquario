@@ -20,29 +20,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2.3\n"
 
-#: lib/aquario_web/templates/layout/app.html.eex:65
+#: lib/aquario_web/templates/layout/app.html.eex:97
 #: lib/aquario_web/templates/page/index.html.eex:17
 msgid "Circuit Map"
 msgstr "Mapa do circuito"
 
-#: lib/aquario_web/templates/layout/app.html.eex:60
+#: lib/aquario_web/templates/layout/app.html.eex:92
 #: lib/aquario_web/templates/page/index.html.eex:12
 msgid "Researches"
 msgstr "Pesquisas"
 
-#: lib/aquario_web/templates/layout/app.html.eex:55
+#: lib/aquario_web/templates/layout/app.html.eex:87
 #: lib/aquario_web/templates/page/index.html.eex:6
 msgid "Tanks"
 msgstr "Tanques"
 
-#: lib/aquario_web/templates/layout/app.html.eex:70
+#: lib/aquario_web/templates/layout/app.html.eex:102
 #: lib/aquario_web/templates/page/index.html.eex:22
 msgid "Extra activities"
 msgstr "Atividades Extras"
-
-#: lib/aquario_web/templates/tank/show.html.eex:115
-msgid "More tanks"
-msgstr "Mais tanques"
 
 #: lib/aquario_web/templates/tank/show.html.eex:8
 msgid "Video in pounds"
@@ -51,3 +47,11 @@ msgstr "Vídeo em libras"
 #: lib/aquario_web/templates/tank/show.html.eex:16
 msgid "Video with audio"
 msgstr "Vídeo com áudio"
+
+#: lib/aquario_web/templates/research/show.html.eex:37
+msgid "Other researches"
+msgstr "Outras pesquisas"
+
+#: lib/aquario_web/templates/tank/show.html.eex:126
+msgid "Other tanks"
+msgstr "Outros Tanques"
