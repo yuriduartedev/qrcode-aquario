@@ -80,12 +80,12 @@
                   <p class="nav-link"><%= gettext("Researches") %></p>
                 </li>                
               <% end %>
-                <%= link to: page_path(@conn, :index), class: "nav-link nav-item" do %>
+              <%= link to: map_path(@conn, :index), class: "nav-link nav-item" do %>
                 <li class="nav-item">
                   <p class="nav-link"><%= gettext("Circuit Map") %></p>
                 </li>
               <% end %>
-                <%= link to: "http://blog.aquariomarinhodorio.com.br", class: "nav-link nav-item" do %>
+              <%= link to: "http://blog.aquariomarinhodorio.com.br", class: "nav-link nav-item" do %>
                 <li class="nav-item">
                   <p class="nav-link"><%= gettext("Extra activities") %></p>
                 </li>
