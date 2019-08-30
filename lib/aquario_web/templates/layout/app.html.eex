@@ -35,10 +35,11 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
     <!-- My-Css -->
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">    
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    
   </head>
 
-  <body>
+  <body>    
     <div class="background-ocean"></div>
 
     <div class="fish-animation">
