@@ -9,6 +9,11 @@ use Mix.Config
 config :aquario,
   ecto_repos: [Aquario.Repo]
 
+# Configure your database
+config :aquario, Aquario.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  pool_size: 10
+
 # Configures the endpoint
 config :aquario, AquarioWeb.Endpoint,
   url: [host: "localhost"],

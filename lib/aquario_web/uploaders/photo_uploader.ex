@@ -20,7 +20,7 @@ defmodule AquarioWeb.PhotoUploader do
       |> List.last()
       |> String.downcase()
 
-    "uploads/#{module_name}/#{scope.id}"
+    "uploads/#{module_name}/#{scope.image_token}"
   end
 
   def transform(:show, _) do

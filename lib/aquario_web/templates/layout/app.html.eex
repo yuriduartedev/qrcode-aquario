@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72188258-9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-72188258-9');
+    </script>
+
+    <!-- About -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="aquariomarinhodorio.com.br">
+    <meta property="og:url" content="https://www.aquariomarinhodorio.com.br" />
+    <meta property="og:image" content="https://qrcode-aqua.herokuapp.com/images/aqua-logo-3ffb5710ab4dd5ad39cd81d9c36243f4.svg?vsn=d">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:description" content="Conheça um pouco mais sobre as espécies da maior Aquário Marinho da América do Sul.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Visita Online AquaRio!" />
+    <meta name="description" content="Conheça um pouco mais sobre as espécies da maior Aquário Marinho da América do Sul.">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -104,13 +124,14 @@
 
     <!-- Particle JS -->
     <script src="<%= static_path(@conn, "/js/vendor.js") %>"></script>
+
     <script src="<%= static_path(@conn, "/js/particles/particles.js") %>"></script>
     <script src="<%= static_path(@conn, "/js/particles/app.js") %>"></script>
 
     <!-- Global JS -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
     
-    <!-- Bootstrap core JavaScript-->    
+    <!-- Bootstrap core JavaScript-->
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
