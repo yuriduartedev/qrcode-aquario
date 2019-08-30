@@ -76,7 +76,9 @@
       
       <%= if @tank.researches != [] do %>
          <%= link to: research_path(@conn, :show, @tank.id) do %>
-          <button>Botão redireciona para pesquisa desse tanque</button>
+          <button type="button" class="btn btn-tank text-center btn-back" title="Aqui tem pesquisa!" tabindex="">
+            <li class="align-txt-btn-back text-center">Aqui tem pesquisa!</li>
+          </button>
         <% end %>     
       <% end %>
       
