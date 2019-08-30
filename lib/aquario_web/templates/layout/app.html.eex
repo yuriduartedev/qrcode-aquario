@@ -35,7 +35,17 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
     <!-- My-Css -->
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">    
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <!-- Force HTTPS -->
+    <%= if Mix.env == :prod do %>
+    <script type="text/javascript">
+        if (location.protocol != 'https:')
+        {
+        location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+    <!-- Force HTTPS -->
+    <% end %>
   </head>
 
   <body>
