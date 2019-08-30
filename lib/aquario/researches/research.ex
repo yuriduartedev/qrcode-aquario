@@ -12,6 +12,7 @@ defmodule Aquario.Researches.Research do
     field :description_es_es, :string
     field :description_pt_br, :string
     field :image, PhotoUploader.Type
+    field :image_token, :string, virtual: true
     field :link_audio, :string
     field :link_libras, :string
     field :title_en_us, :string
@@ -31,7 +32,6 @@ defmodule Aquario.Researches.Research do
     |> cast_attachments(attrs, [:image])
     |> parse_author()
     |> validate_required([:title_pt_br, :description_pt_br, :tank_id])
-    |> IO.inspect()
   end
 
   defp parse_author(changeset) do
