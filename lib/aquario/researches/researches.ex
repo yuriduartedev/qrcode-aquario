@@ -41,6 +41,13 @@ defmodule Aquario.Researches do
     |> Repo.preload(:tank)
   end
 
+def list_researches_by_tank_id(id) do
+  Research
+    |> where(tank_id: id)
+    |> Repo.all()
+    |> Repo.preload(:tank)
+end
+
   @doc """
   Creates a research.
 

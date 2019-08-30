@@ -9,8 +9,8 @@ defmodule AquarioWeb.ResearchController do
     render(conn, "index.html", researches: researches)
   end
 
-  def show(conn, %{"id" => id}) do
-    research = Researches.get_research!(id)
-    render(conn, "show.html", research: research)
+  def show(conn, %{"tank_id" => tank_id}) do
+    researches = Researches.list_researches_by_tank_id(tank_id)
+    render(conn, "show.html", researches: researches)
   end
 end

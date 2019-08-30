@@ -74,9 +74,9 @@
       <h2 class="my-4 h2 text-default tank-name mb-3" title="Nome do tanque" tabindex="1"><%= get_from_locale(@tank, :name) %></h2>   
       <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({@tank.image, @tank}, :show) %>" data-holder-rendered="true"><br />
       
-      <%#= if @tank.researches.any? do %>
-        <button>Botão redireciona para pesquisa desse tanque</button>
-      <%# end %>
+      <%= if @tank.researches != [] do %>
+        <button>Botão redireciona para pesquisa desse tanque</button>       
+      <% end %>
       
       <!--<div class="col-md-6 mx-auto">            
         <h3 class="my-4 h2 text-default text-title" title="Título do tanque" tabindex="2"><%= get_from_locale(@tank, :title) %></h3>
