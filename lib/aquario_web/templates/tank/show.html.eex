@@ -75,8 +75,9 @@
       <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({@tank.image, @tank}, :show) %>" data-holder-rendered="true"><br />
       
       <%= if @tank.researches != [] do %>
-        
-        <button>Botão redireciona para pesquisa desse tanque</button>       
+         <%= link to: research_path(@conn, :show, @tank.id) do %>
+          <button>Botão redireciona para pesquisa desse tanque</button>
+        <% end %>     
       <% end %>
       
       <!--<div class="col-md-6 mx-auto">            

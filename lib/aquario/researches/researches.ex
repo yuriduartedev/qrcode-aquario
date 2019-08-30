@@ -43,7 +43,7 @@ defmodule Aquario.Researches do
 
 def list_researches_by_tank_id(id) do
   Research
-    |> where(tank_id: id)
+    |> where(tank_id: ^id)
     |> Repo.all()
     |> Repo.preload(:tank)
 end
