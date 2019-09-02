@@ -20,7 +20,7 @@
         <tbody>
           <%= for specy <- @species do %>
               <tr>
-                
+                <td><%= specy.order %></td>
                 <td><%= specy.name_pt_br %></td>
                 <td><%= specy.scientific_name_pt_br %></td>  
                 <td><%= specy.title_pt_br %></td>
