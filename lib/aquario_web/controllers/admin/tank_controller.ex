@@ -1,6 +1,8 @@
 defmodule AquarioWeb.Admin.TankController do
   use AquarioWeb, :controller
-
+  import Ecto.Query
+  
+  alias Aquario.Repo
   alias Aquario.Tanks
   alias Aquario.Tanks.Tank
   alias Aquario.Species
@@ -8,7 +10,9 @@ defmodule AquarioWeb.Admin.TankController do
   plug :load_species when action in [:new, :create, :edit, :update]  
 
   def index(conn, _params) do
-    tanks = Tanks.list_tanks()
+    query = from(t in Tank, order_by: t.order)
+    tanks = Repo.all(query)
+    ordered(query)
     render(conn, "index.html", tanks: tanks)
   end
 
@@ -64,5 +68,10 @@ defmodule AquarioWeb.Admin.TankController do
 
   defp load_species(conn, _opts) do
     assign(conn, :species, Species.list_species)
+  end
+
+  defp ordered(query) do
+    from t in query,
+    order_by: t.order
   end
 end
