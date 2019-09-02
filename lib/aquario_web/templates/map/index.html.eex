@@ -2,22 +2,22 @@
     <div class="row">
       <div class="col-lg-6 col-md-6 col-xs-6 mb-5">
           <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
-              data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              data-image=""
               data-target="#secondFloor">
               <h3 class="text-default text-center"><%= gettext("Second floor") %></h3>
               <img class="img-thumbnail"
-                    src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                    alt="Another alt text">
+                    src=""
+                    alt="Mapa do segundo andar.">
           </a>
       </div>
       <div class="col-lg-6 col-md-6 col-xs-6 mb-5">
           <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
-              data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              data-image=""
               data-target="#thirdFloor">
               <h3 class="text-default text-center"><%= gettext("Third floor") %></h3>
               <img class="img-thumbnail"
-                    src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                    alt="Another alt text">
+                    src=""
+                    alt="Mapa do terceiro andar.">
           </a>
       </div>
       </div>
@@ -52,7 +52,7 @@
                       </button>
                   </div>
                   <div class="modal-body">
-                      <img id="image-gallery-image" class="img-responsive col-md-12" src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                      <img id="image-gallery-image" class="img-responsive col-md-12" src="">
                   </div>
               </div>
           </div>
@@ -66,7 +66,7 @@
                       </button>
                   </div>
                   <div class="modal-body">
-                      <img id="image-gallery-image" class="img-responsive col-md-12" src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                      <img id="image-gallery-image" class="img-responsive col-md-12" src="">
                   </div>
               </div>
           </div>
