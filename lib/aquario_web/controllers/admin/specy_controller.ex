@@ -1,11 +1,15 @@
 defmodule AquarioWeb.Admin.SpecyController do
   use AquarioWeb, :controller
-
+  import Ecto.Query
+  
+  alias Aquario.Repo
   alias Aquario.Species
   alias Aquario.Species.Specy
 
-  def index(conn, _params) do
-    species = Species.list_species()
+  def index(conn, _params) do    
+    query = from(s in Specy, order_by: s.order)
+    species = Repo.all(query)
+    ordered(query)
     render(conn, "index.html", species: species)
   end
 
@@ -56,5 +60,10 @@ defmodule AquarioWeb.Admin.SpecyController do
     conn
     |> put_flash(:info, "Specy deleted successfully.")
     |> redirect(to: admin_specy_path(conn, :index))
+  end
+
+  defp ordered(query) do
+    from s in query,
+    order_by: s.order
   end
 end
