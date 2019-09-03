@@ -66,3 +66,8 @@ msgstr ""
 #: lib/aquario_web/templates/tank/show.html.eex:126
 msgid "Other tanks"
 msgstr ""
+
+#, elixir-format
+#: lib/aquario_web/templates/research/show.html.eex:10
+msgid "By"
+msgstr ""
