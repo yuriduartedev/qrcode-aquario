@@ -16,7 +16,7 @@ defmodule Aquario.Species.Specy do
     field :description_es_es, :string
     field :description_pt_br, :string
     field :image, PhotoUploader.Type
-    field :image_token, :string, virtual: true
+    field :image_token, :string
     field :name_en_us, :string
     field :name_es_es, :string
     field :name_pt_br, :string
