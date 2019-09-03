@@ -73,3 +73,12 @@ body {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+.border-radius {
+  border-radius: 1rem;
+}
+
+.map-header {
+  -ms-flex-align: center;
+  align-items: center;
+}
