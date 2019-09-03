@@ -32,8 +32,10 @@ defmodule AquarioWeb.Router do
     get "/tanks/:id", TankController, :show
 
     get "/researches", ResearchController, :index
-    get "/researches/:id", ResearchController, :show
+    get "/researches/:tank_id", ResearchController, :show
     
+    get "/map", MapController, :index
+
     scope "/login" do
       pipe_through :login_layout
 

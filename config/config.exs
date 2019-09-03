@@ -37,8 +37,8 @@ config :arc,
 
 # Basic Auth
 config :aquario, aquario_auth: [
-  username: "aqua",
-  password: "educacao",
+  username: System.get_env("USERNAME") || "admin",
+  password: System.get_env("PASSWORD") || "admin",
   realm: "Admin Area"
 ]
 

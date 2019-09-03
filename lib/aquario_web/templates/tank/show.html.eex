@@ -16,7 +16,7 @@
         <label for="opcao2"><%= gettext("Video with audio") %></label>
           <%= link to: "#" do %>
             <img class="btns-libras" alt="Botão de áudio" title="Botão de áudio" data-toggle="modal" data-target="#ModalAudio" src="<%= static_path(@conn, "/images/btn-audio.png") %>">
-          <% end %>
+          <% end %>  
         <% end %>
       </li>
     </ul>
@@ -27,7 +27,7 @@
   <div class="row">
     <div class="col band-libras fixed-top-libras d-flex justify-content-center">
       <!-- Button trigger modal -->
-    </div>
+    </div> 
     <!-- Modal Libras -->
     <div class="modal fade youtube-video" id="ModalLibras" tabindex="-1" role="dialog" aria-labelledby="ModalLibrasTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -45,16 +45,16 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>     
     <!-- Modal Audio -->
     <div class="modal fade youtube-video" id="ModalAudio" tabindex="-1" role="dialog" aria-labelledby="ModalAudioTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-personal-title " id="ModalAudioTitle"><%= get_from_locale(@tank, :name) %> - Áudio</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">            
               <span aria-hidden="true">&times;</span>
-            </button>
+            </button>     
           </div>
           <div class="modal-body">
             <div class="embed-responsive embed-responsive-4by3">
@@ -67,20 +67,24 @@
   </div>
 </div>
 
-<div class="container my-4">
+<div class="container my-4">    
   <div class="row text-center wrapper-tank">
     <!--Image and Title of Tank -->
     <div class="col-md-12 mx-2">
       <h2 class="my-4 h2 text-default tank-name mb-3" title="Nome do tanque" tabindex="1"><%= get_from_locale(@tank, :name) %></h2>
-      <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({@tank.image, @tank}, :show) %>" data-holder-rendered="true">
-
-      <%#= if @tank.researches.any? do %>
-        <%# <h1>Botão redireciona para pesquisa</h1> %>
-      <%# end %>
-
-      <!--<div class="col-md-6 mx-auto">
+      <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({@tank.image, @tank}, :show) %>" data-holder-rendered="true"><br />
+      
+      <%= if @tank.researches != [] do %>
+         <%= link to: research_path(@conn, :show, @tank.id) do %>
+          <button type="button" class="btn btn-tank text-center btn-back" title="Aqui tem pesquisa!" tabindex="">
+            <li class="align-txt-btn-back text-center">Aqui tem pesquisa!</li>
+          </button>
+        <% end %>     
+      <% end %>
+      
+      <!--<div class="col-md-6 mx-auto">            
         <h3 class="my-4 h2 text-default text-title" title="Título do tanque" tabindex="2"><%= get_from_locale(@tank, :title) %></h3>
-      </div>-->
+      </div>-->          
     </div>
     <!--Image and Title of Tank -->
 
@@ -89,7 +93,7 @@
     <!-- End Line -->
 
     <!-- Tank Description -->
-    <div class="col-md-6 mx-auto">
+    <div class="col-md-6 mx-auto">        
       <p class="text-default text-description" title="Descrição do tanque" tabindex="3"><%= get_from_locale(@tank, :description) %></p>
     </div>
     <!-- Tank Description -->
@@ -98,29 +102,29 @@
       <!--Image and Title of Specy -->
       <div class="col-md-12 mx-2">
         <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({specy.image, specy}, :show) %>" data-holder-rendered="true">
-        <div class="my-4 col-md-6 mx-auto">
+        <div class="my-4 col-md-6 mx-auto">            
           <h3 class="h2 text-default text-title" title="Título da espécie" tabindex="4"><%= get_from_locale(specy, :name) %> - <span class="font-italic"><%= get_from_locale(specy, :scientific_name) %></span></h3>
         </div>
-          <!-- Line -->
-          <div class="col-md-12 my-4"><div class="col-md-6 mb-3 border-tank"></div></div>
-          <!-- End Line -->
+        <!-- Line -->
+        <div class="col-md-12 my-4"><div class="col-md-6 mb-3 border-tank"></div></div>
+        <!-- End Line -->
       </div>
       <!--Image and Title of Specy -->
 
       <!-- Specy Description -->
-      <div class="col-md-6 mx-auto my-4">
+      <div class="col-md-6 mx-auto my-4">        
         <p class="text-default text-description" title="Descrição da espécie" tabindex="5"><%= get_from_locale(specy, :description) %></p>
       </div>
       <!-- Specy Description -->
     <% end %>
-  </div>
+  </div>    
 </div>
 <div class="container-fluid">
   <div class="d-flex flex-column align-items-stretch">
     <%= link to: tank_path(@conn, :index), class: "col-md-6 mx-auto text-center" do %>
       <button type="button" class="btn btn-tank text-center btn-back" title="Descrição da espécie" tabindex="6">
-        <li class="align-txt-btn-back text-center"><%= gettext("More tanks") %></li>
+        <li class="align-txt-btn-back text-center"><%= gettext("Other tanks") %></li>
       </button>
-    <% end %>
+    <% end %>    
   </div>
 </div>
