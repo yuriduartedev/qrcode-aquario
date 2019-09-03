@@ -12,32 +12,27 @@ msgstr ""
 "Plural-Forms: nplurals=2\n"
 
 #, elixir-format
-#: lib/aquario_web/templates/layout/app.html.eex:86
+#: lib/aquario_web/templates/layout/app.html.eex:97
 #: lib/aquario_web/templates/page/index.html.eex:18
 msgid "Circuit Map"
 msgstr ""
 
 #, elixir-format
-#: lib/aquario_web/templates/layout/app.html.eex:81
+#: lib/aquario_web/templates/layout/app.html.eex:92
 #: lib/aquario_web/templates/page/index.html.eex:12
 msgid "Researches"
 msgstr ""
 
 #, elixir-format
-#: lib/aquario_web/templates/layout/app.html.eex:76
+#: lib/aquario_web/templates/layout/app.html.eex:87
 #: lib/aquario_web/templates/page/index.html.eex:6
 msgid "Tanks"
 msgstr ""
 
 #, elixir-format
-#: lib/aquario_web/templates/layout/app.html.eex:91
+#: lib/aquario_web/templates/layout/app.html.eex:102
 #: lib/aquario_web/templates/page/index.html.eex:24
 msgid "Extra activities"
-msgstr ""
-
-#, elixir-format
-#: lib/aquario_web/templates/tank/show.html.eex:122
-msgid "More tanks"
 msgstr ""
 
 #, elixir-format
@@ -50,12 +45,29 @@ msgstr ""
 msgid "Video with audio"
 msgstr ""
 
-#, elixir-format, fuzzy
-#: lib/aquario_web/templates/map/index.html.eex:8
+#, elixir-format
+#: lib/aquario_web/templates/map/index.html.eex:7
+#: lib/aquario_web/templates/map/index.html.eex:28
 msgid "Second floor"
 msgstr ""
 
-#, elixir-format, fuzzy
-#: lib/aquario_web/templates/map/index.html.eex:9
+#, elixir-format
+#: lib/aquario_web/templates/map/index.html.eex:17
+#: lib/aquario_web/templates/map/index.html.eex:42
 msgid "Third floor"
+msgstr ""
+
+#, elixir-format
+#: lib/aquario_web/templates/research/show.html.eex:37
+msgid "Other researches"
+msgstr ""
+
+#, elixir-format
+#: lib/aquario_web/templates/tank/show.html.eex:126
+msgid "Other tanks"
+msgstr ""
+
+#, elixir-format
+#: lib/aquario_web/templates/research/show.html.eex:10
+msgid "By"
 msgstr ""

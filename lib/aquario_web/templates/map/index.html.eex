@@ -6,7 +6,7 @@
               data-target="#secondFloor">
               <h3 class="text-default text-center"><%= gettext("Second floor") %></h3>
               <img class="img-thumbnail border-radius"
-                    src="https://aquario-staging.s3.us-east-2.amazonaws.com/manual/segundo-andar.jpg"
+                    src="https://aquario-staging.s3.us-east-2.amazonaws.com/manual/segundoandar.jpg"
                     alt="Mapa do segundo andar.">
           </a>
       </div>
@@ -16,7 +16,7 @@
               data-target="#thirdFloor">
               <h3 class="text-default text-center"><%= gettext("Third floor") %></h3>
               <img class="img-thumbnail border-radius"
-                    src="https://aquario-staging.s3.us-east-2.amazonaws.com/manual/terceiro-andar.jpg"
+                    src="https://aquario-staging.s3.us-east-2.amazonaws.com/manual/terceiroandar.jpg"
                     alt="Mapa do terceiro andar.">
           </a>
       </div>
@@ -30,7 +30,7 @@
                       </button>
                   </div>
                   <div class="modal-body">
-                      <img id="image-gallery-image" class="img-responsive col-md-12" src="https://aquario-staging.s3.us-east-2.amazonaws.com/manual/segundo-andar.jpg">
+                      <img id="image-gallery-image" class="img-responsive col-md-12" src="https://aquario-staging.s3.us-east-2.amazonaws.com/manual/segundoandar.jpg">
                   </div>
               </div>
           </div>
@@ -44,7 +44,7 @@
                       </button>
                   </div>
                   <div class="modal-body">
-                      <img id="image-gallery-image" class="img-responsive col-md-12" src="https://aquario-staging.s3.us-east-2.amazonaws.com/manual/terceiro-andar.jpg">
+                      <img id="image-gallery-image" class="img-responsive col-md-12" src="https://aquario-staging.s3.us-east-2.amazonaws.com/manual/terceiroandar.jpg">
                   </div>
               </div>
           </div>
