@@ -47,10 +47,10 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
     <!-- My-Css -->
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>"
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
-  <body>
+  <body>    
     <div class="background-ocean"></div>
 
     <div class="fish-animation">
@@ -92,12 +92,12 @@
                   <p class="nav-link"><%= gettext("Researches") %></p>
                 </li>                
               <% end %>
-                <%= link to: page_path(@conn, :index), class: "nav-link nav-item" do %>
+              <%= link to: map_path(@conn, :index), class: "nav-link nav-item" do %>
                 <li class="nav-item">
                   <p class="nav-link"><%= gettext("Circuit Map") %></p>
                 </li>
               <% end %>
-                <%= link to: "http://blog.aquariomarinhodorio.com.br", class: "nav-link nav-item" do %>
+              <%= link to: "http://blog.aquariomarinhodorio.com.br", class: "nav-link nav-item" do %>
                 <li class="nav-item">
                   <p class="nav-link"><%= gettext("Extra activities") %></p>
                 </li>

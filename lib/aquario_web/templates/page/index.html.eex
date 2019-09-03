@@ -12,10 +12,12 @@
         <span class="align-txt-btn"><%= gettext("Researches") %></span>  
       </button>
     <% end %>
+    <%= link to: map_path(@conn, :index) do %>
     <button alt="Botão de Mapa do Circuito" title="Botão de Mapa do Circuito" type="button" class="btn btn-mapa">
       <span><img class="float-left" src="<%= static_path(@conn, "/images/mapa.png") %>"></span> 
       <span class="align-txt-btn"><%= gettext("Circuit Map") %></span>  
     </button>
+    <% end %>
     <%= link to: "http://blog.aquariomarinhodorio.com.br" do %>
       <button alt="Botão de Atividades Extras" title="Botão de Atividades Extras" type="button" class="btn btn-extra">
         <span><img class="float-left" src="<%= static_path(@conn, "/images/extra.png") %>"></span> 

@@ -59,3 +59,26 @@ body {
   font-size: 2rem;
   font-family: "Nunito", sans-serif;
 }
+
+.btn-map:focus, .btn-map:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.border-radius {
+  border-radius: 1rem;
+}
+
+.map-header {
+  -ms-flex-align: center;
+  align-items: center;
+}

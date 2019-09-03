@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-xs-6 mb-5">
+          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+              data-image=""
+              data-target="#secondFloor">
+              <h3 class="text-default text-center"><%= gettext("Second floor") %></h3>
+              <img class="img-thumbnail border-radius"
+                    src="https://aquario-staging.s3.us-east-2.amazonaws.com/manual/segundo-andar.jpg"
+                    alt="Mapa do segundo andar.">
+          </a>
+      </div>
+      <div class="col-lg-6 col-md-6 col-xs-6 mb-5">
+          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+              data-image=""
+              data-target="#thirdFloor">
+              <h3 class="text-default text-center"><%= gettext("Third floor") %></h3>
+              <img class="img-thumbnail border-radius"
+                    src="https://aquario-staging.s3.us-east-2.amazonaws.com/manual/terceiro-andar.jpg"
+                    alt="Mapa do terceiro andar.">
+          </a>
+      </div>
+      </div>
+      <div class="modal fade" id="secondFloor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content border-radius">
+                  <div class="modal-header map-header">
+                      <h4 class="modal-title nav-link" id="image-gallery-title"><%= gettext("Second floor") %></h4>
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Fechar</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <img id="image-gallery-image" class="img-responsive col-md-12" src="https://aquario-staging.s3.us-east-2.amazonaws.com/manual/segundo-andar.jpg">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="thirdFloor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content border-radius">
+                  <div class="modal-header map-header">
+                      <h4 class="modal-title nav-link" id="image-gallery-title"><%= gettext("Third floor") %></h4>
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Fechar</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <img id="image-gallery-image" class="img-responsive col-md-12" src="https://aquario-staging.s3.us-east-2.amazonaws.com/manual/terceiro-andar.jpg">
+                  </div>
+              </div>
+          </div>
+      </div>
+	</div>
+</div>
