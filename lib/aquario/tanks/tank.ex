@@ -40,7 +40,7 @@ defmodule Aquario.Tanks.Tank do
     tank
     |> Repo.preload(:species)    
     |> cast(attrs, [:name_pt_br, :name_en_us, :name_es_es, :order, :image, :description_pt_br, :description_en_us, :description_es_es, :title_pt_br, :title_en_us, :title_es_es, :link_libras, :link_audio])
-    |> put_change(:image_token, Ecto.UUID.generate())
+    |> put_change(:image_token, tank.image_token || Ecto.UUID.generate())
     |> cast_attachments(attrs, [:image])
     |> validate_required([:name_pt_br, :description_pt_br, :title_pt_br])
     |> put_assoc(:species, parse_species(attrs))

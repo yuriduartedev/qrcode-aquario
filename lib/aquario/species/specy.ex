@@ -35,7 +35,7 @@ defmodule Aquario.Species.Specy do
   def changeset(specy, attrs) do
     specy
     |> cast(attrs, [:name_pt_br, :name_en_us, :name_es_es, :scientific_name_pt_br, :scientific_name_en_us, :scientific_name_es_es, :order, :image, :description_pt_br, :description_en_us, :description_es_es, :title_pt_br, :title_en_us, :title_es_es])
-    |> put_change(:image_token, Ecto.UUID.generate())
+    |> put_change(:image_token, specy.image_token || Ecto.UUID.generate())
     |> cast_attachments(attrs, [:image])
     |> validate_required([:name_pt_br, :scientific_name_pt_br, :description_pt_br ])
   end

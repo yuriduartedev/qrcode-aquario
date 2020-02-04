@@ -28,7 +28,7 @@ defmodule Aquario.Researches.Research do
   def changeset(research, attrs) do   
     research
     |> cast(attrs, [:title_pt_br, :title_en_us, :title_es_es, :image, :description_pt_br, :description_en_us, :description_es_es, :link_libras, :link_audio, :tank_id])
-    |> put_change(:image_token, Ecto.UUID.generate())
+    |> put_change(:image_token, research.image_token || Ecto.UUID.generate())
     |> cast_attachments(attrs, [:image])
     |> parse_author()
     |> validate_required([:title_pt_br, :description_pt_br, :tank_id])
