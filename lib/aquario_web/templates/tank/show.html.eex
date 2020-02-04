@@ -15,7 +15,7 @@
         <%= if @tank.link_audio != nil do %>
         <label for="opcao2"><%= gettext("Video with audio") %></label>
           <%= link to: "#" do %>
-            <img class="btns-libras" alt="Botão de áudio" title="Botão de áudio" data-toggle="modal" data-target="#ModalAudio" src="<%= static_path(@conn, "/images/btn-audio.png") %>">
+            <img class="btns-libras" alt="Botão de áudio" title="Botão de áudio" data-toggle="modal" data-target="#ModalAudio" src="<%= static_path(@conn, "/images/novo-botao-audio.png") %>">
           <% end %>  
         <% end %>
       </li>
