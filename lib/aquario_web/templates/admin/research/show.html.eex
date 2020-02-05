@@ -1,4 +1,4 @@
-<h6 class="mb-3 m-0 font-weight-bold text-primary">Pesquisa: <span><%= @research.title_pt_br %></span></h6>
+<h6 class="mb-3 m-0 font-weight-bold text-primary">Pesquisa: <span><%= raw @research.title_pt_br %></span></h6>
 <div class="card shadow mb-4 p-3">
   <div class="row">
     <!-- Earnings (Monthly) Card Example -->
@@ -8,7 +8,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Autor</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @research.author %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= raw @research.author %></div>
             </div>
           </div>
         </div>
@@ -20,7 +20,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Tanque Relacionado</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @research.tank.name_pt_br %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= raw @research.tank.name_pt_br %></div>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-2">Título em Portugês:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @research.title_pt_br %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= raw @research.title_pt_br %></div>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-2">Título em Inglês:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @research.title_en_us %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= raw @research.title_en_us %></div>
             </div>
           </div>
         </div>
@@ -60,7 +60,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-2">Título em Espanhol:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @research.title_es_es %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= raw @research.title_es_es %></div>
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Descrição em Portugês:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @research.description_pt_br %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= raw @research.description_pt_br %></div>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Descrição em Inglês:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @research.description_en_us %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= raw @research.description_en_us %></div>
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Descrição em Espanhol:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @research.description_es_es %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= raw @research.description_es_es %></div>
             </div>
           </div>
         </div>

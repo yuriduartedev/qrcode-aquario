@@ -33,7 +33,7 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-personal-title" id="ModalLibrasTitle"><%= get_from_locale(@tank, :name) %> - Libras</h5>
+            <h5 class="modal-personal-title" id="ModalLibrasTitle"><%= raw get_from_locale(@tank, :name) %> - Libras</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -51,7 +51,7 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-personal-title " id="ModalAudioTitle"><%= get_from_locale(@tank, :name) %> - Áudio</h5>
+            <h5 class="modal-personal-title " id="ModalAudioTitle"><%= raw get_from_locale(@tank, :name) %> - Áudio</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">            
               <span aria-hidden="true">&times;</span>
             </button>     
@@ -71,20 +71,24 @@
   <div class="row text-center wrapper-tank">
     <!--Image and Title of Tank -->
     <div class="col-md-12 mx-2">
-      <h2 class="my-4 h2 text-default tank-name mb-3" title="Nome do tanque" tabindex="1"><%= get_from_locale(@tank, :name) %></h2>
+      <h2 class="my-4 h2 text-default tank-name mb-3" title="Nome do tanque" tabindex="1"><%= raw get_from_locale(@tank, :name) %></h2>
+      <div class="col-md-6 mx-auto">            
+        <h3 class="my-4 h2 text-default text-title" title="Título do tanque" tabindex="2"><%= raw get_from_locale(@tank, :title) %></h3>
+      </div>
       <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({@tank.image, @tank}, :show) %>" data-holder-rendered="true"><br />
       
       <%= if @tank.researches != [] do %>
+        <div class="m-auto">        
          <%= link to: research_path(@conn, :show, @tank.id) do %>
-          <button type="button" class="btn btn-tank text-center btn-back" title="Aqui tem pesquisa!" tabindex="">
+          <img src="<%= static_path(@conn, "/images/btn-pesquisa.png") %>" alt="">
+          <%# <button type="button" class="btn btn-tank text-center btn-back" title="Aqui tem pesquisa!" tabindex="">
             <li class="align-txt-btn-back text-center">Aqui tem pesquisa!</li>
-          </button>
+          </button> %>
+        </div>
         <% end %>     
       <% end %>
       
-      <!--<div class="col-md-6 mx-auto">            
-        <h3 class="my-4 h2 text-default text-title" title="Título do tanque" tabindex="2"><%= get_from_locale(@tank, :title) %></h3>
-      </div>-->          
+      
     </div>
     <!--Image and Title of Tank -->
 
@@ -93,8 +97,11 @@
     <!-- End Line -->
 
     <!-- Tank Description -->
-    <div class="col-md-6 mx-auto">        
-      <p class="text-default text-description" title="Descrição do tanque" tabindex="3"><%= get_from_locale(@tank, :description) %></p>
+    <div class="col-md-6 mx-auto style="
+    background-color: rgba(0,126,214,0.5);
+    border-radius: 10px;
+    padding: 15px 10px 10px 10px;">        
+      <p class="text-default text-description" title="Descrição do tanque" tabindex="3"><%= raw get_from_locale(@tank, :description) %></p>
     </div>
     <!-- Tank Description -->
 
@@ -103,7 +110,7 @@
       <div class="col-md-12 mx-2">
         <img class="my-4 rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({specy.image, specy}, :show) %>" data-holder-rendered="true">
         <div class="my-4 col-md-6 mx-auto">            
-          <h3 class="h2 text-default text-title" title="Título da espécie" tabindex="4"><%= get_from_locale(specy, :name) %> - <span class="font-italic"><%= get_from_locale(specy, :scientific_name) %></span></h3>
+          <h3 class="h2 text-default text-title" title="Título da espécie" tabindex="4"><%= raw get_from_locale(specy, :name) %> - <span class="font-italic"><%= get_from_locale(specy, :scientific_name) %></span></h3>
         </div>
         <!-- Line -->
         <div class="col-md-12 my-4"><div class="col-md-6 mb-3 border-tank"></div></div>
@@ -113,7 +120,7 @@
 
       <!-- Specy Description -->
       <div class="col-md-6 mx-auto my-4">        
-        <p class="text-default text-description" title="Descrição da espécie" tabindex="5"><%= get_from_locale(specy, :description) %></p>
+        <p class="text-default text-description" title="Descrição da espécie" tabindex="5"><%= raw get_from_locale(specy, :description) %></p>
       </div>
       <!-- Specy Description -->
     <% end %>

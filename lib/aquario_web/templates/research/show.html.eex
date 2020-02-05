@@ -4,9 +4,9 @@
     <!--Image and Title of Tank -->
     <div class="col-md-12 mx-2">
       <div class="col-md-6 mx-auto">
-        <h3 class="my-4 h2 text-default text-title"><%= get_from_locale(research.tank, :name) %></h3>       
+        <h3 class="my-4 h2 text-default text-title"><%= raw get_from_locale(research.tank, :name) %></h3>       
         <img class="mb-3 rounded-circle img-specy-circle" alt="100x100" src="<%= AquarioWeb.PhotoUploader.url({research.image, research}, :show) %>" data-holder-rendered="true">
-        <h3 class="my-4 h2 text-default text-title"><%= get_from_locale(research, :title) %></h3>
+        <h3 class="my-4 h2 text-default text-title"><%= raw get_from_locale(research, :title) %></h3>
         <span class="text-default text-description"><%= gettext("By")%>: <i class="text-light"><%= research.author %></i></span>
       </div>
     </div>
@@ -19,7 +19,7 @@
     <!-- Research Description -->
     <div class="col-md-12 mx-2">
       <div class="col-md-6 mx-auto">
-        <p class="text-default text-description"><%= get_from_locale(research, :description) %></p>
+        <p class="text-default text-description"><%= raw get_from_locale(research, :description) %></p>
       </div>
     </div>
     <!-- Research Description -->

@@ -1,4 +1,4 @@
-<h6 class="mb-3 m-0 font-weight-bold text-primary">Tanque: <span><%= @tank.name_pt_br %></span></h6>
+<h6 class="mb-3 m-0 font-weight-bold text-primary">Tanque: <span><%= raw @tank.name_pt_br %></span></h6>
 <div class="card shadow mb-4 p-3">
 
   <div class="row">
@@ -9,7 +9,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-2">Nome em Portugês:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @tank.name_pt_br %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= raw @tank.name_pt_br %></div>
             </div>
           </div>
         </div>
@@ -22,7 +22,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-2">Nome em Inglês:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @tank.name_en_us %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= raw @tank.name_en_us %></div>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-2">Nome em Espanhol:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @tank.name_es_es %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= raw @tank.name_es_es %></div>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Título em Portugês:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @tank.title_pt_br %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= raw @tank.title_pt_br %></div>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Título em Inglês:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @tank.title_en_us %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= raw @tank.title_en_us %></div>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Título em Espanhol:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @tank.title_es_es %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= raw @tank.title_es_es %></div>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Descrição em Portugês:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @tank.description_pt_br %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= raw @tank.description_pt_br %></div>
             </div>
           </div>
         </div>
@@ -108,7 +108,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Descrição em Inglês:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @tank.description_en_us %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= raw @tank.description_en_us %></div>
             </div>
           </div>
         </div>
@@ -121,7 +121,7 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Descrição em Espanhol:</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= @tank.description_es_es %></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><%= raw @tank.description_es_es %></div>
             </div>
           </div>
         </div>
