@@ -42,7 +42,7 @@ defmodule Aquario.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:plug_cowboy, "~> 1.0"},
-      {:ex_ngrok, "~> 0.3.0", only: [:dev]},
+      # {:ex_ngrok, "~> 0.3.0", only: [:dev]},
       {:httpoison, "~> 1.4", override: true},
       {:basic_auth, "~> 2.2.2"},
 
