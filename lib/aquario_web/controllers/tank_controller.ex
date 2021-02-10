@@ -13,6 +13,10 @@ defmodule AquarioWeb.TankController do
     render(conn, "index.html", tanks: tanks)
   end
 
+  def show(conn, %{"id" => 1}) do
+    redirect(conn, external: "https://www.huggy.chat/bb215e48-ed16-453d-8661-61cae8af811f")
+  end
+
   def show(conn, %{"id" => id}) do
     tank =
       id
