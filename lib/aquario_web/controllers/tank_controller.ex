@@ -49,6 +49,10 @@ defmodule AquarioWeb.TankController do
     redirect(conn, external: "https://www.huggy.chat/8b0d1391-4b27-4beb-ac62-0507ac5e80d5")
   end
 
+  def show(conn, %{"id" => "14"}) do
+    redirect(conn, external: "https://www.huggy.chat/8eeffb18-e23e-4ee3-b3e5-a0047e77ff61")
+  end
+
   def show(conn, %{"id" => "17"}) do
     redirect(conn, external: "https://www.huggy.chat/b363d7fa-1e00-4cd0-94e9-0c05d9b85882")
   end
