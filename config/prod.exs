@@ -78,3 +78,6 @@ config :ex_aws,
 config :ex_aws, :httpoison_opts,
   recv_timeout: 260_000,
   hackney: [recv_timeout: 260_000, pool: false]
+
+config :aquario, Aquario.Repo,
+  ssl: true
